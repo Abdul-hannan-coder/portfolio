@@ -21,13 +21,13 @@ export default function Contact() {
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-24">
           {/* Editorial Headline (Asymmetric) */}
           <div className="lg:col-span-12 mb-8">
-            <h1 className="font-headline text-5xl lg:text-7xl font-bold tracking-tighter leading-tight max-w-3xl">
+            <h1 className="font-headline text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight max-w-3xl">
               Let's build the <span className="text-primary italic">future</span> together.
             </h1>
           </div>
           {/* Contact Form Section */}
-          <div className="lg:col-span-7 bg-surface-container-low p-10 rounded-xl">
-            <form className="space-y-8">
+          <div className="lg:col-span-7 bg-surface-container-low p-6 md:p-10 rounded-xl">
+            <form className="space-y-6 md:space-y-8">
               <div className="space-y-2">
                 <label className="font-label text-xs uppercase tracking-widest text-on-surface-variant" htmlFor="full_name">
                   Full Name
@@ -80,25 +80,25 @@ export default function Contact() {
             {/* Text Info */}
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+                <div className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
                   <span className="material-symbols-outlined">alternate_email</span>
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h4 className="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
                     Inquiries
                   </h4>
-                  <p className="text-xl font-headline break-all">{email}</p>
+                  <p className="text-sm md:text-xl font-headline text-on-surface">{email}</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+                <div className="w-10 h-10 md:w-12 md:h-12 shrink-0 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
                   <span className="material-symbols-outlined">location_on</span>
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <h4 className="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">
                     Based In
                   </h4>
-                  <p className="text-xl font-headline">{location}</p>
+                  <p className="text-sm md:text-xl font-headline">{location}</p>
                 </div>
               </div>
             </div>

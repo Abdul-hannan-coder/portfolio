@@ -18,7 +18,7 @@ export default function About() {
         <section className="mb-24 relative">
           <div className="grid grid-cols-12 gap-8 items-start">
             <div className="col-span-12 lg:col-span-8">
-              <h2 className="font-headline text-5xl lg:text-6xl font-bold tracking-tighter mb-8 leading-none uppercase">
+              <h2 className="font-headline text-4xl lg:text-6xl font-bold tracking-tighter mb-8 leading-tight lg:leading-none uppercase break-words">
                 {about.title} <span className="gold-gradient-text">{about.highlightedTitle}</span>.
               </h2>
               <div className="space-y-6 text-lg text-on-surface-variant leading-relaxed font-body">
@@ -89,14 +89,14 @@ export default function About() {
         {/* Testimonials Section */}
         {testimonials.length > 0 && (
           <section className="mb-24">
-            <h3 className="font-headline text-3xl font-bold mb-12 flex items-center gap-4 text-right">
+            <h3 className="font-headline text-2xl md:text-3xl font-bold mb-8 md:mb-12 flex items-center gap-4 text-right">
               <span className="h-px flex-1 bg-outline-variant/20"></span>
               Client Feedback
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {testimonials.map((testimonial, idx) => (
-                <div key={idx} className="relative bg-surface-container-lowest p-10 rounded-2xl editorial-shadow overflow-hidden flex flex-col justify-between">
-                  <span className="absolute -top-4 -left-4 text-9xl font-serif text-primary/10 select-none">“</span>
+                <div key={idx} className="relative bg-surface-container-lowest p-6 md:p-10 rounded-2xl editorial-shadow overflow-hidden flex flex-col justify-between">
+                  <span className="absolute -top-4 -left-4 text-8xl md:text-9xl font-serif text-primary/10 select-none">“</span>
                   <div className="relative z-10 flex-1 flex flex-col">
                     <p className="font-body text-lg text-on-surface italic mb-8 flex-1">
                       "{testimonial.client.feedback}"
