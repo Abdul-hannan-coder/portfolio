@@ -163,11 +163,11 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
       </section>
 
       {/* Modern CTA */}
-      <section className="mt-8 mb-16 p-12 rounded-xl premium-gradient flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden group">
+      <section className="mt-8 mb-16 p-8 md:p-12 rounded-xl premium-gradient flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 relative overflow-hidden group">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-        <div className="relative z-10 text-on-primary">
-          <h3 className="font-headline text-3xl font-bold mb-2">Want to build something similar?</h3>
-          <p className="font-label opacity-80">Let's discuss how we can bring your vision to life.</p>
+        <div className="relative z-10 text-on-primary text-center md:text-left">
+          <h3 className="font-headline text-2xl md:text-3xl font-bold mb-2 break-words">Want to build something similar?</h3>
+          <p className="font-label opacity-80 text-sm md:text-base">Let's discuss how we can bring your vision to life.</p>
         </div>
         <Link
           href="/contact"
