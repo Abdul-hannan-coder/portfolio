@@ -1,0 +1,315 @@
+{
+  "personal": {
+    "name": "Abdul Hannan ",
+    "initials": "AH",
+    "title": "Frontend Engineer | Automation and Gohighlevel Expert ",
+    "subtitle": "I specialize in building high-performance, scalable web applications and automating business processes using Gohighlevel. With a strong background in frontend development and a passion for creating seamless user experiences, I help businesses enhance their online presence and streamline operations through innovative solutions.",
+    "tagline": "Frontend Engineer | Automation and Gohighlevel Expert",
+    "profileImage": "/profile-nano.png",
+    "heroImage": "/profile-nano.png"
+  },
+  "about": {
+    "title": "Meet",
+    "highlightedTitle": "ABDUL HANNAN",
+    "paragraphs": [
+      "I am a passionate and dedicated software engineer with a strong background in frontend development and automation. With over 2 years of experience in the industry, I have honed my skills in building high-performance web applications and automating business processes using Gohighlevel. My expertise lies in creating seamless user experiences and helping businesses enhance their online presence through innovative solutions. I am committed to continuous learning and staying up-to-date with the latest technologies to deliver exceptional results for my clients."
+    ]
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "icon": "home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "icon": "person",
+      "href": "/about"
+    },
+    {
+      "label": "Projects",
+      "icon": "work",
+      "href": "/projects"
+    },
+    {
+      "label": "Contact",
+      "icon": "email",
+      "href": "/contact"
+    }
+  ],
+  "timeline": [
+    {
+      "type": "work",
+      "icon": "computer",
+      "iconColor": "teal",
+      "title": "Frontend Engineer | Automation Expert",
+      "location": "Lahore, Pakistan",
+      "period": "Present",
+      "description": [
+        "Design and develop high-performance web applications using modern frontend technologies.",
+        "Automate business processes and workflows using Gohighlevel to enhance operational efficiency.",
+        "Collaborate with cross-functional teams to deliver seamless user experiences and innovative solutions.",
+        "Stay up-to-date with the latest industry trends and technologies to continuously improve skills and deliver exceptional results."
+      ],
+      "skills": [
+        "Next.js",
+        "React",
+        "Gohighlevel Automation",
+        "N8N , Make , Zapier Automation",
+        "Redux",
+        "Tailwind CSS",
+        "Docker",
+        "Vercel",
+        "Cloud Deployment (AWS, Oracle Cloud, Azure)",
+        "Collaboration and Communication"
+      ]
+    },
+    {
+      "type": "education",
+      "icon": "school",
+      "iconColor": "amber",
+      "title": "Bachelors in Computer Science",
+      "location": "Virtual University of Pakistan",
+      "period": "Sep 2024  - Feb 2028",
+      "description": [
+        "Core Courses: Data Structures and Algorithms, Operating Systems, Database Systems, Software Engineering, Computer Networks, Artificial Intelligence",
+        "Specialization Courses: Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Big Data",
+        "Audit Courses: Cloud Computing, Semantic Web"
+      ],
+      "skills": [
+        "Computer Science Fundamentals",
+        "Software Development",
+        "Machine Learning",
+        "Artificial Intelligence",
+        "Cloud Computing"
+      ]
+    },
+    {
+      "type": "education",
+      "icon": "school",
+      "iconColor": "amber",
+      "title": "Diploma in Computer Imforamation Technology",
+      "location": "Pak Polytechnic Institute, Lahore",
+      "period": "Sep 2020 - Aug 2023",
+      "description": [
+        "Core Courses: Programming Fundamentals, Data Structures, Database Management, Web Development, Computer Networks",
+        "Specialization Courses: Web Application with java , Network Security , Database Management with MySQL ",
+        "Audit Courses: Physics"
+      ],
+      "skills": [
+        "Programming Fundamentals",
+        "Data Structures",
+        "Database Management",
+        "Web Development",
+        "Computer Networks",
+        "Web Application Development",
+        "Network Security",
+        "MySQL"
+      ]
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "href": "https://github.com/Abdul-hannan-coder ",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/abdul-hannan-bhatti/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Email",
+      "href": "abdulhannan.personal@gmail.com",
+      "icon": "email"
+    }
+  ],
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Explore my work across Upwork, Private clients, and Fiverr. Each project includes detailed descriptions, client feedback, and reviews.",
+    "filters": {
+      "platforms": [
+        "All Projects",
+        "SAAS"
+      ],
+      "categories": [
+        "All Categories",
+        "N8N",
+        "Make",
+        "Zapier",
+        "Gohighlevel",
+        "SAAS",
+        "Nextjs",
+        "Reactjs",
+        "Nodejs",
+        "Docker",
+        "Vercel",
+        "Cloud Deployment (AWS, Oracle Cloud, Azure)",
+        "Collaboration and Communication"
+      ],
+      "domains": [
+        "All Domains",
+        "Healthcare",
+        "Banking & Finance",
+        "Travel & Hospitality",
+        "Education",
+        "Customer Support",
+        "AI & Automation"
+      ]
+    },
+    "items": [
+      {
+        "slug": "facebook-postsiva",
+        "platform": "SAAS",
+        "featured": true,
+        "rating": 5.0,
+        "title": "Facebook Postsiva - AI-Powered Content Creation and Scheduling",
+        "category": "SAAS Platform for Social Media Management",
+        "date": "May 28, 2025- Feb 9, 2026",
+        "client": {
+          "name": "LinkedIn Client (United States, New York)",
+          "feedback": "Great freelancer! Always a pleasure working with him"
+        },
+        "tags": [
+          "AI Content Creation",
+          "Social Media Management",
+          "Scheduling",
+          "Facebook",
+          "SAAS"
+        ],
+        "description": "It allow users to create and schedule Facebook page posts using AI-powered content generation and scheduling features. The platform provides an intuitive interface for users to input their content preferences and schedule posts for optimal engagement.It also offers ai enhance ment , image generation , create content from scratch and more features to help users create engaging and relevant content for their Facebook pages.",
+        "objectives": [
+          "Develop an AI-powered content creation tool for Facebook posts.",
+          "Implement scheduling features for optimal post timing.",
+          "Create an intuitive user interface for easy content input and management.",
+          "Integrate with Facebook API for seamless post scheduling and management."
+        ],
+        "detailedDescription": "Facebook Postsiva is an AI-powered platform designed to help users create and schedule engaging content for their Facebook pages. The platform leverages advanced AI algorithms to generate content based on user preferences and trends, ensuring maximum engagement. Users can easily schedule posts, manage their content calendar, and track performance metrics. The intuitive interface and seamless integration with Facebook API make it a powerful tool for social media management.",
+        "image": [
+           "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
+          "https://i.ibb.co/4RSYfKrX/Whats-App-Image-2026-02-13-at-10-39-39-PM-1.jpg",
+          "https://i.ibb.co/WN4jrFw3/Whats-App-Image-2026-02-13-at-10-39-27-PM-5.jpg",
+          "https://i.ibb.co/1WNdHXC/Whats-App-Image-2026-02-13-at-10-39-27-PM-4.jpg",
+          "https://i.ibb.co/Tx76B784/Whats-App-Image-2026-02-13-at-10-39-39-PM.jpg",
+         
+          "https://i.ibb.co/0yKsnP99/Whats-App-Image-2026-02-13-at-10-39-27-PM-2.jpg",
+          "https://i.ibb.co/PsYn3pn0/Whats-App-Image-2026-02-13-at-10-39-27-PM.jpg",
+          "https://i.ibb.co/8g6qCCV1/Whats-App-Image-2026-02-13-at-10-39-27-PM-1.jpg"
+        ],
+        "technologies": [
+          "Fastapi",
+          "Nextjs",
+          "Tailwind css",
+          "vercel",
+          "deoploment",
+          "CI/CD",
+          "Redis",
+          "MySQL"
+        ],
+        "video": "https://www.youtube.com/embed/noEVR5r4YMs?si=XpQ0MbF0KojVLEf9",
+        "liveUrl": "https://postsiva.facebook.com"
+      },
+
+        {
+          "slug": "Gohighlevel",
+          "platform": "Private Clients",
+          "featured": false,
+          "rating": 4.5,
+          "title": "Gohighlevel Funnel and Community Setup and Automations",
+          "category": "Gohighlevel Platform for Marketing Automation",
+          "date": "March 15, 2025 - April 30, 2025",
+          "client": {
+            "name": "Private Client (United States, California)",
+            "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
+          },
+          "tags": [
+            "Gohighlevel",
+            "Marketing Automation",
+            "Funnel Setup",
+            "Community Building",
+            "Lead Generation"
+          ],
+          "description": "This project involved setting up a comprehensive marketing funnel and community on the Gohighlevel platform for a private client. The goal was to create an effective lead generation system and build a thriving community around the client's brand. The project included designing and implementing various automations to streamline marketing efforts and enhance customer engagement.",
+          "objectives": [
+            "Design and implement a marketing funnel using Gohighlevel to capture and nurture leads.",
+            "Set up a community platform to engage with customers and build brand loyalty.",
+            "Create automations to streamline marketing processes and improve efficiency.",
+            "Integrate the funnel and community with existing marketing tools for seamless operation."
+          ],
+          "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
+          "image": [
+             "https://i.ibb.co/chKhZ2Cr/screencapture-listcatcher-2026-02-17-22-48-21.png",
+            "https://i.ibb.co/mVXHL25Z/screencapture-listcatcher-book-appointment-2026-02-17-22-48-52.png"
+           
+          ],
+          "technologies": [
+            "Gohighlevel",
+            "Marketing Automation",
+            "Funnel Setup",
+            "Community Building",
+            "Lead Generation"
+          ],
+          "video": null,
+          "liveUrl": "https://listcatcher.com"
+        }
+    ]
+  },
+  "certifications": [
+    {
+      "title": "AI For Everyone",
+      "issuer": "Coursera",
+      "date": "2024",
+      "credentialId": "UC-XXXXXXXX",
+      "icon": "verified",
+      "iconColor": "blue",
+      "image": "https://i.ibb.co/FkfFYKxN/Ai-Essentials-page-0001.jpg",
+      "skills": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "AI Ethics",
+        "AI Strategy",
+        "AI Applications"
+      ],
+      "description": "Comprehensive course covering the fundamentals of AI, its applications, and ethical considerations in the modern world."
+    },
+    {
+      "title": "Introduction to Frontend Development",
+      "issuer": "Meta (Facebook)",
+      "date": "2023",
+      "credentialId": "AWS-SAA-XXXXXXXX",
+      "icon": "cloud",
+      "iconColor": "orange",
+      "image": "https://i.ibb.co/PdSQHQS/Introduction-to-Front-End-Development-page-0001.jpg",
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Frontend Development"
+      ],
+      "description": "In-depth introduction to frontend development, covering essential technologies and frameworks for building responsive and interactive web applications."
+    },
+    {
+      "title": "C++ Essentials",
+      "issuer": "Cisco Networking Academy",
+      "date": "2025",
+      "credentialId": "GHL-XXXXXXXX",
+      "icon": "autorenew",
+      "iconColor": "green",
+      "image": "https://i.ibb.co/vxKg41Pc/certificate-bc240410806aha-vu-edu-pk-2a826796-73b5-4e40-b226-74153d8a8b1b-page-0001.jpg",
+      "skills": [
+        "C++ Programming",
+        "Object-Oriented Programming",
+        "Data Structures",
+        "Algorithms",
+        "Software Development"
+      ],
+      "description": "Comprehensive course on C++ programming, covering core concepts, object-oriented programming, data structures, and algorithms for software development."
+    }
+  ],
+  "footer": {
+    "title": "FIND ME ON",
+    "subtitle": "Feel free to <span class=\"text-primary\">connect</span> with me"
+  }
+}
