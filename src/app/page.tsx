@@ -71,7 +71,7 @@ export default function Home() {
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex justify-between items-start mb-3">
                   <Link href={`/projects/${project.slug}`} className="hover:underline">
-                    <h4 className="font-headline text-xl font-bold group-hover:text-primary transition-colors line-clamp-1">
+                    <h4 className="font-headline text-xl font-bold group-hover:text-primary transition-colors line-clamp-2">
                       {project.title}
                     </h4>
                   </Link>

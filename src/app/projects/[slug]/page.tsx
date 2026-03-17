@@ -29,8 +29,8 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
 
       {/* Project Hero / Details Section */}
       <section className="bg-surface-container-low rounded-xl p-8 lg:p-12 mb-8 relative overflow-hidden flex flex-col gap-8">
-        <div className="relative z-10 flex flex-col md:flex-row gap-8 justify-between items-start">
-          <div className="max-w-3xl">
+        <div className="relative z-10 flex flex-col lg:flex-row gap-8 justify-between items-start">
+          <div className="flex-1 max-w-3xl">
             <div className="flex gap-3 mb-4 flex-wrap">
               <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">
                 {project.category}
@@ -62,7 +62,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
             </div>
           </div>
 
-          <div className="md:w-1/3 flex flex-col gap-6 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30">
+          <div className="w-full lg:w-80 shrink-0 flex flex-col gap-6 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30">
             <div>
               <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Client</h3>
               <p className="font-bold">{project.client.name}</p>

@@ -95,8 +95,8 @@ export default function About() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {testimonials.map((testimonial, idx) => (
-                <div key={idx} className="relative bg-surface-container-lowest p-6 md:p-10 rounded-2xl editorial-shadow overflow-hidden flex flex-col justify-between">
-                  <span className="absolute -top-4 -left-4 text-8xl md:text-9xl font-serif text-primary/10 select-none">“</span>
+                <div key={idx} className="relative bg-surface-container-lowest p-6 md:p-10 rounded-2xl editorial-shadow overflow-hidden flex flex-col justify-between group">
+                  <span className="absolute top-2 left-4 md:top-4 md:left-6 text-8xl md:text-9xl font-serif text-primary/5 select-none transition-transform group-hover:scale-110 group-hover:text-primary/10">“</span>
                   <div className="relative z-10 flex-1 flex flex-col">
                     <p className="font-body text-lg text-on-surface italic mb-8 flex-1">
                       "{testimonial.client.feedback}"

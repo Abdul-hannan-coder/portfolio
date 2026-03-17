@@ -164,7 +164,7 @@
         "platform": "SAAS",
         "featured": true,
         "rating": 5.0,
-        "title": "Facebook Postsiva - AI-Powered Content Creation and Scheduling",
+        "title": "Facebook Postsiva",
         "category": "SAAS Platform for Social Media Management",
         "date": "May 28, 2025- Feb 9, 2026",
         "client": {
@@ -202,7 +202,7 @@
           "Nextjs",
           "Tailwind css",
           "vercel",
-          "deoploment",
+          "Deployment",
           "CI/CD",
           "Redis",
           "MySQL"
@@ -216,7 +216,7 @@
           "platform": "Private Clients",
           "featured": false,
           "rating": 4.5,
-          "title": "Gohighlevel Funnel and Community Setup and Automations",
+          "title": "Gohighlevel Funnel & Automations",
           "category": "Gohighlevel Platform for Marketing Automation",
           "date": "March 15, 2025 - April 30, 2025",
           "client": {

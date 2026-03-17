@@ -105,6 +105,18 @@ export default function Sidebar() {
               <span className="text-sm font-medium">{currentRole?.location || 'Global'}</span>
             </div>
           </div>
+          
+          <div className="pt-4">
+            <Link 
+              href="/finresume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full flex items-center justify-center gap-2 py-3 bg-surface-container-highest hover:bg-primary text-on-surface hover:text-on-primary rounded-xl transition-all font-bold text-sm tracking-wide"
+            >
+              <span className="material-symbols-outlined text-lg">download</span>
+              Download Resume
+            </Link>
+          </div>
         </div>
       </div>
       {/* SideNavBar Footer Tabs */}
