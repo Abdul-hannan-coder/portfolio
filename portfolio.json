@@ -254,11 +254,11 @@
           "liveUrl": "https://listcatcher.com"
         },
         {
-          "slug": "",
+          "slug": "social-ai-automation",
           "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
           "featured": false,
           "rating": 5,
-          "title": "AI Powered Linkedin and X (Twitter) Content Automation System",
+          "title": "Social Content AI Automation",
           "category": "AI Content Automation",
           "date": "March 15, 2025 - April 30, 2025",
           "client": {
@@ -284,7 +284,7 @@
           ],
             "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
           "image": [
-           "/public/project1.png"
+           "/project1.png"
            
           ],
           "technologies": [
