@@ -252,6 +252,51 @@
           ],
           "video": null,
           "liveUrl": "https://listcatcher.com"
+        },
+        {
+          "slug": "",
+          "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
+          "featured": false,
+          "rating": 5,
+          "title": "AI Powered Linkedin and X (Twitter) Content Automation System",
+          "category": "AI Content Automation",
+          "date": "March 15, 2025 - April 30, 2025",
+          "client": {
+            "name": "Private Client (France, Paris)",
+            "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
+          },
+          "tags": [
+            "AI Content Creation",
+            "Social Media Management",
+            "Scheduling",
+            "LinkedIn",
+            "X (Twitter)",
+            "Competitor Analysis",
+          "Image generation",
+          "Content Enhancement"
+          ],
+          "description": "Built an AI-powered content automation platform for LinkedIn and X (Twitter) that helps users generate posts, analyze competitors, and create lead magnets from a single dashboard.",
+          "objectives": [
+              "Built a full SaaS dashboard with Next.js and TypeScript for managing posts, tracking competitors, analyzing content performance, and generating new ideas.",
+              "Developed an n8n automation workflow to identify high-performing content formats, hooks, and engagement patterns through competitor analysis.",
+              "Implemented AI-powered generation for LinkedIn posts and X threads tailored to the user's positioning, niche, and target audience.",
+              "Automated lead magnet creation for assets such as checklists, frameworks, guides, and templates aligned with each content topic."
+          ],
+            "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
+          "image": [
+           "/public/project1.png"
+           
+          ],
+          "technologies": [
+            "Next.js",
+            "TypeScript",
+            "n8n Automation",
+            "AI Content Generation",
+            "LinkedIn API",
+            "X (Twitter) API"
+          ],
+          "video": "https://www.tella.tv/video/product-review-front-end-database-workflow-demo-brvw",
+          "liveUrl": "https://content-posting-bice.vercel.app/"
         }
     ]
   },
