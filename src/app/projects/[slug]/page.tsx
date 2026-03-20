@@ -63,29 +63,47 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           </div>
 
           <div className="w-full lg:w-80 shrink-0 flex flex-col gap-6 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30">
-            <div>
-              <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Client</h3>
-              <p className="font-bold">{project.client.name}</p>
-            </div>
-            {project.client.feedback && (
+            {project.client && (
+              <>
+                <div>
+                  <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Client</h3>
+                  <p className="font-bold">{project.client?.name}</p>
+                </div>
+                {project.client?.feedback && (
+                  <div>
+                    <h3 className="text-sm font-label text-on-surface-variant mb-2 uppercase tracking-wider">Feedback</h3>
+                    <div className="relative">
+                      <span className="material-symbols-outlined absolute -top-2 -left-3 text-4xl text-primary/20">format_quote</span>
+                      <p className="italic text-on-surface relative z-10 text-sm">"{project.client?.feedback}"</p>
+                    </div>
+                  </div>
+                )}
+              </>
+            )}
+            {project.domain && (
               <div>
-                <h3 className="text-sm font-label text-on-surface-variant mb-2 uppercase tracking-wider">Feedback</h3>
-                <div className="relative">
-                  <span className="material-symbols-outlined absolute -top-2 -left-3 text-4xl text-primary/20">format_quote</span>
-                  <p className="italic text-on-surface relative z-10 text-sm">"{project.client.feedback}"</p>
+                <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Domain</h3>
+                <p className="font-bold">{project.domain}</p>
+              </div>
+            )}
+            {project.duration && (
+              <div>
+                <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Duration</h3>
+                <p className="font-bold">{project.duration}</p>
+              </div>
+            )}
+            {project.technologies && project.technologies.length > 0 && (
+              <div>
+                <h3 className="text-sm font-label text-on-surface-variant mb-2 uppercase tracking-wider">Technologies</h3>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map(tech => (
+                    <span key={tech} className="px-2 py-1 bg-secondary-container text-on-secondary-container rounded text-xs font-bold">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             )}
-            <div>
-              <h3 className="text-sm font-label text-on-surface-variant mb-2 uppercase tracking-wider">Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map(tech => (
-                  <span key={tech} className="px-2 py-1 bg-secondary-container text-on-secondary-container rounded text-xs font-bold">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
@@ -97,26 +115,34 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         <div className="lg:col-span-2 space-y-8">
           <div className="bg-surface-container-low rounded-xl p-8 lg:p-12">
-            <h2 className="font-headline text-2xl font-bold mb-6 flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">description</span>
-              Detailed Overview
-            </h2>
-            <p className="text-on-surface-variant leading-relaxed mb-8 whitespace-pre-line">
-              {project.detailedDescription}
-            </p>
+            {project.detailedDescription && (
+              <>
+                <h2 className="font-headline text-2xl font-bold mb-6 flex items-center gap-2">
+                  <span className="material-symbols-outlined text-primary">description</span>
+                  Detailed Overview
+                </h2>
+                <p className="text-on-surface-variant leading-relaxed mb-8 whitespace-pre-line">
+                  {project.detailedDescription}
+                </p>
+              </>
+            )}
 
-            <h3 className="font-headline text-xl font-bold mb-4 flex items-center gap-2 mt-8">
-              <span className="material-symbols-outlined text-primary">target</span>
-              Key Objectives
-            </h3>
-            <ul className="space-y-4">
-              {project.objectives?.map((objective, i) => (
-                <li key={i} className="flex gap-3 text-on-surface-variant">
-                  <span className="material-symbols-outlined text-primary shrink-0">check_circle</span>
-                  <span>{objective}</span>
-                </li>
-              ))}
-            </ul>
+            {project.objectives && project.objectives.length > 0 && (
+              <>
+                <h3 className="font-headline text-xl font-bold mb-4 flex items-center gap-2 mt-8">
+                  <span className="material-symbols-outlined text-primary">target</span>
+                  Key Objectives
+                </h3>
+                <ul className="space-y-4">
+                  {project.objectives.map((objective, i) => (
+                    <li key={i} className="flex gap-3 text-on-surface-variant">
+                      <span className="material-symbols-outlined text-primary shrink-0">check_circle</span>
+                      <span>{objective}</span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
 
           {/* Video Section if available */}
@@ -141,25 +167,27 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
         </div>
 
         {/* Image Gallery */}
-        <div className="lg:col-span-1 space-y-6">
-          <div className="bg-surface-container-low rounded-xl p-6 border border-outline-variant/10">
-            <h3 className="font-headline text-xl font-bold mb-6 flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary">photo_library</span>
-              Gallery
-            </h3>
-            <div className="flex flex-col gap-4">
-              {project.image.map((img, i) => (
-                <div key={i} className="rounded-lg overflow-hidden border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group rounded-xl">
-                  <img 
-                    src={img} 
-                    alt={`Gallery preview ${i+1}`} 
-                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
-                  />
-                </div>
-              ))}
+        {project.image && project.image.length > 0 && (
+          <div className="lg:col-span-1 space-y-6">
+            <div className="bg-surface-container-low rounded-xl p-6 border border-outline-variant/10">
+              <h3 className="font-headline text-xl font-bold mb-6 flex items-center gap-2">
+                <span className="material-symbols-outlined text-primary">photo_library</span>
+                Gallery
+              </h3>
+              <div className="flex flex-col gap-4">
+                {project.image.map((img, i) => (
+                  <div key={i} className="rounded-lg overflow-hidden border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group rounded-xl">
+                    <img 
+                      src={img} 
+                      alt={`Gallery preview ${i+1}`} 
+                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </section>
 
       {/* Modern CTA */}
