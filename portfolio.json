@@ -356,5 +356,61 @@
   "footer": {
     "title": "FIND ME ON",
     "subtitle": "Feel free to <span class=\"text-primary\">connect</span> with me"
-  }
+  },
+  "testimonials": [
+    {
+      "text": "The AI automation transformed our internal operations, streamlining our data management. The smart workflows keep our processes perfectly optimized effortlessly.",
+      "image": "/Rifak.jpeg",
+      "name": "Briana Patton",
+      "role": "Operations Manager"
+    },
+    {
+      "text": "Deploying these AI and automation systems was smooth and quick. The intelligent bots made scaling our customer support completely effortless.",
+      "image": "/imran.jpeg",
+      "name": "Bilal Ahmed",
+      "role": "Startup Founder"
+    },
+    {
+      "text": "The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our systems run at peak efficiency around the clock.",
+      "image": "/Baptiste.jpeg",
+      "name": "Saman Malik",
+      "role": "Head of Marketing"
+    },
+    {
+      "text": "The seamless integration of N8N workflows enhanced our software's capabilities. Highly recommend for its smart automation and robust reliability.",
+      "image": "/Enzo.jpeg",
+      "name": "Omar Raza",
+      "role": "Technical Architect"
+    },
+    {
+      "text": "Its robust tracking and quick support have transformed our lead generation, making our sales pipeline significantly faster and more efficient.",
+      "image": "/hamza.png",
+      "name": "Zainab Hussain",
+      "role": "Sales Director"
+    },
+    {
+      "text": "The smooth implementation exceeded expectations. It streamlined our CRM structure, improving overall revenue forecasting dramatically.",
+      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+      "name": "Aliza Khan",
+      "role": "Business Analyst"
+    },
+    {
+      "text": "Our team's productivity improved instantly with a user-friendly design and excellent smart routing that adapts to our ever-changing business logic.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+      "name": "Farhan Siddiqui",
+      "role": "Agency Owner"
+    },
+    {
+      "text": "They delivered an AI solution that exceeded expectations, understanding our specific needs and enhancing our daily operational throughput immensely.",
+      "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=150&q=80",
+      "name": "Sana Sheikh",
+      "role": "Real Estate Broker"
+    },
+    {
+      "text": "Using these custom solutions, our overhead costs significantly decreased while maintaining perfect accuracy all year round. Absolutely incredible.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80",
+      "name": "Hassan Ali",
+      "role": "Tech Entrepreneur"
+    }
+  ]
 }

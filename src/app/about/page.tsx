@@ -3,8 +3,7 @@ import Footer from "@/components/Footer";
 import portfolioData from "../../../portfolio.json";
 
 export default function About() {
-  const { about, personal, projects } = portfolioData;
-  const testimonials = projects.items.filter((item: any) => item.client && item.client.feedback).slice(0, 2);
+  const { about, personal, testimonials } = portfolioData;
 
   return (
     <main className="flex-1 flex flex-col">
@@ -99,16 +98,18 @@ export default function About() {
                   <span className="absolute top-2 left-4 md:top-4 md:left-6 text-8xl md:text-9xl font-serif text-primary/5 select-none transition-transform group-hover:scale-110 group-hover:text-primary/10">“</span>
                   <div className="relative z-10 flex-1 flex flex-col">
                     <p className="font-body text-lg text-on-surface italic mb-8 flex-1">
-                      "{testimonial.client.feedback}"
+                      "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-4 mt-auto">
-                      <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
-                        <span className="material-symbols-outlined">person</span>
-                      </div>
+                      <img
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className="w-12 h-12 rounded-full object-cover bg-surface-container-high"
+                      />
                       <div>
-                        <h5 className="font-headline font-bold text-on-surface line-clamp-1">{testimonial.client.name.split('(')[0].trim()}</h5>
+                        <h5 className="font-headline font-bold text-on-surface line-clamp-1">{testimonial.name}</h5>
                         <p className="font-label text-xs text-on-surface-variant line-clamp-1">
-                          {testimonial.client.name.includes('(') ? testimonial.client.name.split('(')[1].replace(')', '') : "Client"}
+                          {testimonial.role}
                         </p>
                       </div>
                     </div>
