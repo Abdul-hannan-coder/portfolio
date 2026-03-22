@@ -2,9 +2,9 @@
   "personal": {
     "name": "Abdul Hannan ",
     "initials": "AH",
-    "title": "Frontend Engineer | Automation and Gohighlevel Expert ",
-    "subtitle": "I specialize in building high-performance, scalable web applications and automating business processes using Gohighlevel. With a strong background in frontend development and a passion for creating seamless user experiences, I help businesses enhance their online presence and streamline operations through innovative solutions.",
-    "tagline": "Frontend Engineer | Automation and Gohighlevel Expert",
+    "title": "Full Stack Automation Developer ",
+    "subtitle": "I specialize in building high-performance, scalable web applications using modern technologies like React/Next.js .I also have vast experience in automating business processes using Gohighlevel. With a strong background in frontend development and a passion for creating seamless user experiences, I help businesses enhance their online presence and streamline operations through innovative solutions.",
+    "tagline": "Full Stack Automation Developer | Gohighlevel Expert",
     "profileImage": "/profile-nano.png",
     "heroImage": "/profile-nano.png"
   },
@@ -42,7 +42,7 @@
       "type": "work",
       "icon": "computer",
       "iconColor": "teal",
-      "title": "Frontend Engineer | Automation Expert",
+      "title": "Full Stack Automation Developer",
       "location": "Lahore, Pakistan",
       "period": "Present",
       "description": [
