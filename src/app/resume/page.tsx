@@ -17,7 +17,7 @@ export default function Resume() {
     <main className="flex-1 flex flex-col">
       <div className="max-w-6xl mx-auto w-full">
         {/* Header with Tabs Navigation */}
-        <header className="flex justify-between items-center mb-16 mt-8">
+        <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">
           <Navigation />
           <div className="hidden md:flex items-center">
             <button className="primary-gradient-bg px-6 py-2 rounded-full text-on-primary font-label text-sm font-bold shadow-lg shadow-primary-container/10">

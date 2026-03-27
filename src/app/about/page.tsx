@@ -9,7 +9,7 @@ export default function About() {
     <main className="flex-1 flex flex-col">
       <div className="max-w-5xl mx-auto w-full">
         {/* Header with Navigation */}
-        <header className="flex justify-between items-center mb-16 mt-8">
+        <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">
           <Navigation />
         </header>
 

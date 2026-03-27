@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex-1 flex flex-col">
       {/* Header with Navigation */}
-      <header className="flex justify-between items-center mb-8 lg:mb-16 mt-14 lg:mt-8">
+      <header className="flex justify-between items-center mb-8 lg:mb-16 mt-20 lg:mt-8">
         <Navigation />
       </header>
 

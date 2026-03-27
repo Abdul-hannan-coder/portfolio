@@ -23,7 +23,7 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
   return (
     <main className="flex-1 flex flex-col min-h-screen">
       {/* Header with Navigation */}
-      <header className="flex justify-between items-center mb-16 mt-8">
+      <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">
         <Navigation />
       </header>
 
