@@ -160,6 +160,52 @@
     },
     "items": [
       {
+        "slug": "laptop-station-ai-assistant",
+        "platform": "E-commerce & AI Automation",
+        "featured": true,
+        "rating": 5.0,
+        "title": "Laptop Station AI Assistant",
+        "category": "AI Customer Support & Sales",
+        "date": "Live",
+        "client": {
+          "name": "Laptop Station (UK)",
+          "feedback": "The AI assistant seamlessly handles our customer lifecycle from discovery to checkout, acting like a true 24/7 sales agent."
+        },
+        "tags": [
+          "AI Agent",
+          "Customer Support",
+          "Sales Automation",
+          "n8n",
+          "Shopify",
+          "GPT-4o-mini"
+        ],
+        "description": "An AI-powered sales and support assistant embedded into the Laptop Station e-commerce store, handling the full customer lifecycle without human involvement.",
+        "detailedDescription": "The Laptop Station AI Assistant is an always-on, autonomous agent that provides 24/7 customer support and sales guidance for laptopstation.co.uk. Built with n8n and powered by GPT-4o-mini (with a GPT-5-mini fallback), it seamlessly integrates with Shopify's GraphQL and REST APIs. The assistant actively searches strictly in-stock inventory based on customer budgets and preferences, generates direct multi-item cart links, and provides live tracking updates for existing orders. It maintains conversational memory, handles edge cases gracefully without exposing API errors, and ensures completely human-free end-to-end shopping journeys.",
+        "objectives": [
+          "Provide 24/7 automated sales assistance and product discovery using natural language",
+          "Search real-time inventory via Shopify GraphQL to only recommend in-stock products",
+          "Enable frictionless checkout by dynamically generating direct cart URLs for single or multiple items",
+          "Deliver instant post-purchase order tracking through Shopify REST API integration",
+          "Maintain high reliability with automated LLM fallback (GPT-4o-mini to GPT-5-mini)"
+        ],
+        "image": [
+          "/shopify-chatbot-laptopstation/Whisk_6db2c33c62d55d390e44c907bdf04d13dr.jpeg",
+          "/shopify-chatbot-laptopstation/Whisk_a2afcc52f16c15e91c34305d70dce612dr.jpeg"
+        ],
+        "technologies": [
+          "n8n",
+          "GPT-4o-mini",
+          "gpt-5-mini",
+          "Shopify GraphQL Admin API",
+          "Shopify REST API",
+          "Webhooks"
+        ],
+        "video": "/shopify-chatbot-laptopstation/Introducing the Anitin Chatbot for Laptop Recommendations and Order Tracking! 💻.mp4",
+        "liveUrl": "https://laptopstation-chatbot.vercel.app/",
+        "domain": "E-commerce & AI Automation",
+        "duration": "Live"
+      },
+      {
         "slug": "facebook-postsiva",
         "platform": "SAAS",
         "featured": true,
