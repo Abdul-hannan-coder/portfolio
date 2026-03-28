@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "../../../portfolio.json";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -107,10 +108,12 @@ export default function About() {
                       "{testimonial.text}"
                     </p>
                     <div className="flex items-center gap-4 mt-auto">
-                      <img
+                      <Image
                         src={testimonial.image}
                         alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover bg-surface-container-high"
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 rounded-full object-cover bg-surface-container-high shrink-0"
                       />
                       <div>
                         <h5 className="font-headline font-bold text-on-surface line-clamp-1">{testimonial.name}</h5>

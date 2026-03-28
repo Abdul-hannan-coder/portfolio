@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "../../../../portfolio.json";
@@ -219,10 +220,13 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
               </h3>
               <div className="flex flex-col gap-4">
                 {project.image.map((img, i) => (
-                  <div key={i} className="rounded-xl overflow-y-auto max-h-[60vh] md:max-h-[500px] border border-outline-variant/20 hover:border-primary/50 transition-colors custom-scrollbar bg-surface-container-lowest">
-                    <img 
+                  <div key={i} className="relative rounded-xl overflow-y-auto max-h-[60vh] md:max-h-[500px] border border-outline-variant/20 hover:border-primary/50 transition-colors custom-scrollbar bg-surface-container-lowest">
+                    <Image 
                       src={img} 
                       alt={`Gallery preview ${i+1}`} 
+                      width={1200}
+                      height={2500}
+                      unoptimized={img.includes('.gif')}
                       className="w-full h-auto object-top" 
                     />
                   </div>

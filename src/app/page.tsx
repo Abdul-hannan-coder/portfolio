@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "../../portfolio.json";
@@ -75,9 +76,11 @@ export default function Home() {
             >
               <div className="w-full md:w-[45%] lg:w-2/5 shrink-0 aspect-video md:aspect-auto relative overflow-hidden">
                 <Link href={`/projects/${project.slug}`} className="absolute inset-0 block w-full h-full">
-                  <img
+                  <Image
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     alt={project.title}
-                    className="project-image w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    className="project-image object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     src={project.image[0] || "/profile-nano.png"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>
