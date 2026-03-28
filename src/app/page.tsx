@@ -1,11 +1,25 @@
+"use client";
+
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "../../portfolio.json";
+import { useState } from "react";
 
 export default function Home() {
   const { personal, projects } = portfolioData;
-  const displayFilters = projects.filters.categories.slice(0, 4);
+  const displayFilters = ["All Projects", "GoHighLevel", "n8n", "SaaS", "AI"];
+  const [activeFilter, setActiveFilter] = useState(displayFilters[0]);
+
+  const filteredProjects = activeFilter === "All Projects" 
+    ? projects.items 
+    : projects.items.filter(project => {
+        const filterStr = activeFilter.toLowerCase();
+        return (
+           project.category.toLowerCase().includes(filterStr) || 
+           project.tags.some(tag => tag.toLowerCase().includes(filterStr))
+        );
+      });
 
   return (
     <main className="flex-1 flex flex-col">
@@ -36,11 +50,12 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
           <h3 className="font-headline text-2xl font-bold">{projects.title}</h3>
           <div className="flex flex-wrap gap-3">
-            {displayFilters.map((filter, index) => (
+            {displayFilters.map((filter) => (
               <button
                 key={filter}
+                onClick={() => setActiveFilter(filter)}
                 className={`px-4 py-1.5 rounded-full text-xs font-label transition-colors ${
-                  index === 0
+                  activeFilter === filter
                     ? "bg-primary text-on-primary"
                     : "bg-surface-container-high text-on-surface-variant hover:text-primary"
                 }`}
@@ -53,7 +68,7 @@ export default function Home() {
 
         {/* Horizontal Project List */}
         <div className="grid grid-cols-1 gap-8">
-          {projects.items.map((project) => (
+          {filteredProjects.map((project) => (
             <article
               key={project.slug}
               className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500"
@@ -62,7 +77,7 @@ export default function Home() {
                 <Link href={`/projects/${project.slug}`} className="absolute inset-0 block w-full h-full">
                   <img
                     alt={project.title}
-                    className="project-image w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="project-image w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     src={project.image[0] || "/profile-nano.png"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>

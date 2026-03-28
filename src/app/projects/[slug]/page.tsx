@@ -176,11 +176,11 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
               </h3>
               <div className="flex flex-col gap-4">
                 {project.image.map((img, i) => (
-                  <div key={i} className="rounded-lg overflow-hidden border border-outline-variant/20 hover:border-primary/50 transition-colors cursor-pointer group rounded-xl">
+                  <div key={i} className="rounded-xl overflow-y-auto max-h-[60vh] md:max-h-[500px] border border-outline-variant/20 hover:border-primary/50 transition-colors custom-scrollbar bg-surface-container-lowest">
                     <img 
                       src={img} 
                       alt={`Gallery preview ${i+1}`} 
-                      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
+                      className="w-full h-auto object-top" 
                     />
                   </div>
                 ))}

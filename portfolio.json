@@ -160,6 +160,58 @@
     },
     "items": [
       {
+        "slug": "stop-losing-leads-hq",
+        "platform": "Loveable & GHL Builder",
+        "featured": true,
+        "rating": 5,
+        "title": "Stop Losing the Leads HQ - Lead Automation Funnel",
+        "category": "Sales Automation & Lead Management Funnel",
+        "date": "Live",
+        "client": {
+          "name": "Stop Losing Leads HQ",
+          "feedback": "Outstanding work building out the entire funnel structure and automating the complex lead routing logic."
+        },
+        "tags": [
+          "ghl-integration",
+          "lead-routing",
+          "automation-workflow",
+          "form-submission",
+          "crm-integration",
+          "conversational-ai",
+          "landing-page",
+          "sales-funnel"
+        ],
+        "description": "Multi-stage sales funnel with lead capture, automated routing, AI-powered follow-up workflows, and CRM integration built on GHL with Loveable frontend components.",
+        "detailedDescription": "A complete lead generation and management funnel built with Loveable (UI/component design) and GoHighLevel (GHL) automation platform. Features include: landing page with lead capture forms, real-time form submission handling, automated lead distribution workflows, AI-powered response automation, lead scoring system, follow-up sequence automation, database integration, and conversion tracking. Implementation includes responsive design, form validation, webhook integration, and multi-stage funnel automation sequences.",
+        "objectives": [
+          "Build responsive multi-page landing funnel with form capture and validation",
+          "Implement real-time lead data routing to GHL CRM system via API/webhooks",
+          "Create automated workflow sequences for lead nurturing and follow-up",
+          "Integrate AI automation for instant lead response and categorization",
+          "Set up conversion tracking and analytics pipeline",
+          "Develop quiz/assessment logic with branching conditional workflows"
+        ],
+        "image": [
+          "/stopfindingleads/thumbnail.png",
+          "/stopfindingleads/funnel1.png"
+        ],
+        "technologies": [
+          "GoHighLevel (GHL)",
+          "Loveable",
+          "API/Webhooks Integration",
+          "Automation Workflows",
+          "Conditional Logic",
+          "Form Submission Handling",
+          "CRM Integration",
+          "AI/Automation Engine",
+          "Responsive Design"
+        ],
+        "video": "https://www.loom.com/embed/00f4bf07dc4d4dafae61bb3bc1b8b842",
+        "liveUrl": "https://stoplosingleadshq.com/",
+        "domain": "stoplosingleadshq.com",
+        "duration": "Live"
+      },
+      {
         "slug": "laptop-station-ai-assistant",
         "platform": "E-commerce & AI Automation",
         "featured": true,
@@ -287,6 +339,7 @@
         ],
         "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
         "image": [
+          "/thumbnails/listcatcher_yellow.png",
           "https://i.ibb.co/chKhZ2Cr/screencapture-listcatcher-2026-02-17-22-48-21.png",
           "https://i.ibb.co/mVXHL25Z/screencapture-listcatcher-book-appointment-2026-02-17-22-48-52.png"
         ],
@@ -297,7 +350,7 @@
           "Community Building",
           "Lead Generation"
         ],
-        "video": null,
+        "video": "https://www.loom.com/embed/87ef3d2e66f84e7392f2003e10899358",
         "liveUrl": "https://listcatcher.com",
         "domain": "Gohighlevel Platform for Marketing Automation",
         "duration": "March 15, 2025 - April 30, 2025"
