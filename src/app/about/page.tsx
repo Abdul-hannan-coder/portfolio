@@ -1,6 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "../../../portfolio.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Learn more about Abdul Hannan, my professional experience, skills, and the journey of building intelligent automation systems.",
+};
 
 export default function About() {
   const { about, personal, testimonials } = portfolioData;

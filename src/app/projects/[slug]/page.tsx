@@ -11,6 +11,34 @@ export function generateStaticParams() {
   }));
 }
 
+import type { Metadata } from "next";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = portfolioData.projects.items.find((p) => p.slug === slug) || 
+                  portfolioData.projects.archivedItems?.find((p) => p.slug === slug);
+
+  if (!project) return { title: 'Project Not Found' };
+
+  return {
+    title: project.title,
+    description: project.description,
+    keywords: project.tags,
+    openGraph: {
+      title: project.title + ' | A Hannan',
+      description: project.description,
+      images: project.image?.length > 0 ? [{ url: project.image[0] }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: project.title,
+      description: project.description,
+      images: project.image?.length > 0 ? [project.image[0]] : [],
+    }
+  };
+}
+
+
 export default async function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
 

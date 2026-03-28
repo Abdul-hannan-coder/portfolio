@@ -14,8 +14,39 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "A Hannan | Digital Alchemist",
-  description: "Portfolio of a creative software engineer.",
+  metadataBase: new URL('https://abdulhannan.dev'),
+  title: {
+    default: "Abdul Hannan | Full Stack Automation Developer",
+    template: "%s | Abdul Hannan",
+  },
+  description: "Portfolio of Abdul Hannan, a Full Stack Automation Developer specializing in Next.js, GoHighLevel, n8n, and intelligent business automations.",
+  keywords: ["Abdul Hannan", "Full Stack Developer", "Automation Expert", "GoHighLevel Expert", "n8n", "Next.js", "React", "Tailwind CSS", "Marketing Funnels", "SaaS Developer"],
+  authors: [{ name: "Abdul Hannan" }],
+  creator: "Abdul Hannan",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://abdulhannan.dev",
+    title: "Abdul Hannan | Full Stack Automation Developer",
+    description: "Architecting custom software solutions and high-converting marketing funnels.",
+    siteName: "Abdul Hannan Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Abdul Hannan | Full Stack Automation Developer",
+    description: "Architecting custom software solutions and high-converting marketing funnels.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

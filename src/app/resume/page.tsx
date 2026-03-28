@@ -1,6 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "../../../portfolio.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Resume & Experience",
+  description: "View the technical arsenal and professional timeline of Abdul Hannan, including extensive automation work and freelance operations.",
+};
 
 export default function Resume() {
   const { timeline } = portfolioData;
