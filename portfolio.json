@@ -163,7 +163,7 @@
         "slug": "laptop-station-ai-assistant",
         "platform": "E-commerce & AI Automation",
         "featured": true,
-        "rating": 5.0,
+        "rating": 5,
         "title": "Laptop Station AI Assistant",
         "category": "AI Customer Support & Sales",
         "date": "Live",
@@ -202,7 +202,7 @@
           "Shopify REST API",
           "Webhooks"
         ],
-        "video": "/shopify-chatbot-laptopstation/Introducing the Anitin Chatbot for Laptop Recommendations and Order Tracking! 💻.mp4",
+        "video": "https://www.youtube.com/embed/NpOtFcGaB_8?si=S0ByfLtmWEKBRqJy",
         "liveUrl": "https://laptopstation-chatbot.vercel.app/",
         "domain": "E-commerce & AI Automation",
         "duration": "Live"
@@ -211,7 +211,7 @@
         "slug": "facebook-postsiva",
         "platform": "SAAS",
         "featured": true,
-        "rating": 5.0,
+        "rating": 5,
         "title": "Facebook Postsiva",
         "category": "SAAS Platform for Social Media Management",
         "date": "May 28, 2025- Feb 9, 2026",
@@ -235,12 +235,11 @@
         ],
         "detailedDescription": "Facebook Postsiva is an AI-powered platform designed to help users create and schedule engaging content for their Facebook pages. The platform leverages advanced AI algorithms to generate content based on user preferences and trends, ensuring maximum engagement. Users can easily schedule posts, manage their content calendar, and track performance metrics. The intuitive interface and seamless integration with Facebook API make it a powerful tool for social media management.",
         "image": [
-           "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
+          "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
           "https://i.ibb.co/4RSYfKrX/Whats-App-Image-2026-02-13-at-10-39-39-PM-1.jpg",
           "https://i.ibb.co/WN4jrFw3/Whats-App-Image-2026-02-13-at-10-39-27-PM-5.jpg",
           "https://i.ibb.co/1WNdHXC/Whats-App-Image-2026-02-13-at-10-39-27-PM-4.jpg",
           "https://i.ibb.co/Tx76B784/Whats-App-Image-2026-02-13-at-10-39-39-PM.jpg",
-         
           "https://i.ibb.co/0yKsnP99/Whats-App-Image-2026-02-13-at-10-39-27-PM-2.jpg",
           "https://i.ibb.co/PsYn3pn0/Whats-App-Image-2026-02-13-at-10-39-27-PM.jpg",
           "https://i.ibb.co/8g6qCCV1/Whats-App-Image-2026-02-13-at-10-39-27-PM-1.jpg"
@@ -260,343 +259,531 @@
         "domain": "SAAS Platform for Social Media Management",
         "duration": "May 28, 2025 - Feb 9, 2026"
       },
-
-        {
-          "slug": "Gohighlevel",
-          "platform": "Private Clients",
-          "featured": false,
-          "rating": 4.5,
-          "title": "Gohighlevel Funnel & Automations",
-          "category": "Gohighlevel Platform for Marketing Automation",
-          "date": "March 15, 2025 - April 30, 2025",
-          "client": {
-            "name": "Private Client (United States, California)",
-            "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
-          },
-          "tags": [
-            "Gohighlevel",
-            "Marketing Automation",
-            "Funnel Setup",
-            "Community Building",
-            "Lead Generation"
-          ],
-          "description": "This project involved setting up a comprehensive marketing funnel and community on the Gohighlevel platform for a private client. The goal was to create an effective lead generation system and build a thriving community around the client's brand. The project included designing and implementing various automations to streamline marketing efforts and enhance customer engagement.",
-          "objectives": [
-            "Design and implement a marketing funnel using Gohighlevel to capture and nurture leads.",
-            "Set up a community platform to engage with customers and build brand loyalty.",
-            "Create automations to streamline marketing processes and improve efficiency.",
-            "Integrate the funnel and community with existing marketing tools for seamless operation."
-          ],
-          "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
-          "image": [
-             "https://i.ibb.co/chKhZ2Cr/screencapture-listcatcher-2026-02-17-22-48-21.png",
-            "https://i.ibb.co/mVXHL25Z/screencapture-listcatcher-book-appointment-2026-02-17-22-48-52.png"
-           
-          ],
-          "technologies": [
-            "Gohighlevel",
-            "Marketing Automation",
-            "Funnel Setup",
-            "Community Building",
-            "Lead Generation"
-          ],
-          "video": null,
-          "liveUrl": "https://listcatcher.com",
-          "domain": "Gohighlevel Platform for Marketing Automation",
-          "duration": "March 15, 2025 - April 30, 2025"
+      {
+        "slug": "Gohighlevel",
+        "platform": "Private Clients",
+        "featured": false,
+        "rating": 4.5,
+        "title": "Gohighlevel Funnel & Automations",
+        "category": "Gohighlevel Platform for Marketing Automation",
+        "date": "March 15, 2025 - April 30, 2025",
+        "client": {
+          "name": "Private Client (United States, California)",
+          "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
         },
-        {
-          "slug": "social-ai-automation",
-          "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
-          "featured": false,
-          "rating": 5,
-          "title": "Social Content AI Automation",
-          "category": "AI Content Automation",
-          "date": "March 15, 2025 - April 30, 2025",
-          "client": {
-            "name": "Private Client (France, Paris)",
-            "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
-          },
-          "tags": [
-            "AI Content Creation",
-            "Social Media Management",
-            "Scheduling",
-            "LinkedIn",
-            "X (Twitter)",
-            "Competitor Analysis",
+        "tags": [
+          "Gohighlevel",
+          "Marketing Automation",
+          "Funnel Setup",
+          "Community Building",
+          "Lead Generation"
+        ],
+        "description": "This project involved setting up a comprehensive marketing funnel and community on the Gohighlevel platform for a private client. The goal was to create an effective lead generation system and build a thriving community around the client's brand. The project included designing and implementing various automations to streamline marketing efforts and enhance customer engagement.",
+        "objectives": [
+          "Design and implement a marketing funnel using Gohighlevel to capture and nurture leads.",
+          "Set up a community platform to engage with customers and build brand loyalty.",
+          "Create automations to streamline marketing processes and improve efficiency.",
+          "Integrate the funnel and community with existing marketing tools for seamless operation."
+        ],
+        "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
+        "image": [
+          "https://i.ibb.co/chKhZ2Cr/screencapture-listcatcher-2026-02-17-22-48-21.png",
+          "https://i.ibb.co/mVXHL25Z/screencapture-listcatcher-book-appointment-2026-02-17-22-48-52.png"
+        ],
+        "technologies": [
+          "Gohighlevel",
+          "Marketing Automation",
+          "Funnel Setup",
+          "Community Building",
+          "Lead Generation"
+        ],
+        "video": null,
+        "liveUrl": "https://listcatcher.com",
+        "domain": "Gohighlevel Platform for Marketing Automation",
+        "duration": "March 15, 2025 - April 30, 2025"
+      },
+      {
+        "slug": "social-ai-automation",
+        "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
+        "featured": false,
+        "rating": 5,
+        "title": "Social Content AI Automation",
+        "category": "AI Content Automation",
+        "date": "March 15, 2025 - April 30, 2025",
+        "client": {
+          "name": "Private Client (France, Paris)",
+          "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
+        },
+        "tags": [
+          "AI Content Creation",
+          "Social Media Management",
+          "Scheduling",
+          "LinkedIn",
+          "X (Twitter)",
+          "Competitor Analysis",
           "Image generation",
           "Content Enhancement"
-          ],
-          "description": "Built an AI-powered content automation platform for LinkedIn and X (Twitter) that helps users generate posts, analyze competitors, and create lead magnets from a single dashboard.",
-          "objectives": [
-              "Built a full SaaS dashboard with Next.js and TypeScript for managing posts, tracking competitors, analyzing content performance, and generating new ideas.",
-              "Developed an n8n automation workflow to identify high-performing content formats, hooks, and engagement patterns through competitor analysis.",
-              "Implemented AI-powered generation for LinkedIn posts and X threads tailored to the user's positioning, niche, and target audience.",
-              "Automated lead magnet creation for assets such as checklists, frameworks, guides, and templates aligned with each content topic."
-          ],
-            "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
-          "image": [
-           "/project1.png"
-           
-          ],
-          "technologies": [
-            "Next.js",
-            "TypeScript",
-            "n8n Automation",
-            "AI Content Generation",
-            "LinkedIn API",
-            "X (Twitter) API"
-          ],
-          "video": "https://www.tella.tv/video/product-review-front-end-database-workflow-demo-brvw",
-          "liveUrl": "https://content-posting-bice.vercel.app/",
-          "domain": "AI Powered Linkedin and X (Twitter) Content Automation System",
-          "duration": "March 15, 2025 - April 30, 2025"
-        },
-        {
-          "slug": "linkedin-automation",
-          "platform": "SaaS",
-          "featured": true,
-          "rating": 5.0,
-          "title": "LinkedIn Automation Platform - AI Post Generation",
-          "category": "SaaS",
-          "date": "Jan 11 - Feb 16, 2026",
-          "tags": ["Frontend", "AI", "LinkedIn", "SaaS", "Featured", "Automation"],
-          "description": "Frontend platform for generating high-quality LinkedIn post drafts with AI-powered content creation, hashtag suggestions, and website link previews.",
-          "detailedDescription": "The LinkedIn Automation Platform is a streamlined frontend application designed to help professionals and businesses create engaging LinkedIn content effortlessly. The platform leverages advanced AI algorithms to generate compelling post drafts tailored to your industry, audience, and objectives. Users can instantly see suggested relevant hashtags for better reach and engagement, preview how their website links will appear in posts, and refine content before publishing. While this is a frontend-only platform without backend automation capabilities, it significantly reduces the time spent crafting the perfect LinkedIn post by providing intelligent suggestions and previews. The clean, intuitive interface makes it easy for anyone to create professional, engaging LinkedIn content that drives visibility and engagement.",
-          "objectives": [
-            "Generate AI-powered engaging post drafts tailored to user preferences and industry",
-            "Provide relevant hashtag suggestions to maximize post reach and engagement",
-            "Enable website link preview functionality for better post visualization",
-            "Create an intuitive frontend interface for seamless content creation workflow"
-          ],
-          "image": ["/linkedin/hero-section.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "FastAPI", "OpenAI Agent SDK", "Gemini Models", "GPT-4", "MySQL", "Redis", "Docker", "CI/CD", "Hostinger"],
-          "video": null,
-          "liveUrl": "https://linkedin-ui-lemon.vercel.app/"
-        },
-        {
-          "slug": "fronixtech-metaverse",
-          "platform": "Metaverse",
-          "featured": true,
-          "rating": 5.0,
-          "title": "FronixTech - Virtual Worlds & Metaverse Development Platform",
-          "category": "Metaverse",
-          "date": "Feb 1 - Feb 16, 2026",
-          "tags": ["Metaverse", "VR/AR", "3D", "Featured", "SaaS", "Automation"],
-          "description": "Comprehensive platform for building immersive virtual environments, metaverse ecosystems, and VR/AR experiences that transform brands into interactive digital realities.",
-          "detailedDescription": "FronixTech is a cutting-edge platform that engineers full virtual ecosystems, transforming traditional business concepts into living, interactive digital realities. The platform specializes in creating custom 3D spaces for global events, immersive brand showrooms, and scalable metaverse ecosystems. With expertise in VR/AR experience creation, FronixTech enables businesses to transcend geographical limits and physical constraints, building communities inside branded digital worlds. The platform has successfully created over 30,000 digital worlds with an impressive 82% retention rate, serving 120+ active project partners. FronixTech represents the infrastructure for the next generation of business, where events have no geographical limits, showrooms have no physical constraints, and communities form inside immersive branded experiences.",
-          "objectives": [
-            "Design and develop custom 3D virtual environments for global events and brand experiences",
-            "Build scalable metaverse ecosystems that position brands in tomorrow's digital economy",
-            "Create interactive VR/AR applications for marketing, training, and user engagement",
-            "Deliver immersive experiences with high user satisfaction and retention rates"
-          ],
-          "image": ["/fronix/Thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Three.js", "FastAPI", "Node.js", "Unity", "Unreal Engine", "WebXR", "Gemini Models", "Docker", "CI/CD", "Hostinger"],
-          "video": null,
-          "liveUrl": "https://fronix-tech.vercel.app/"
-        },
-        {
-          "slug": "finescope-dashboard",
-          "platform": "FinTech",
-          "featured": true,
-          "rating": 5.0,
-          "title": "Finescope – The Future of Smart Financial Management",
-          "category": "FinTech",
-          "date": "Live — Feb 2026",
-          "tags": ["Finescope", "FinTech", "SaaS", "Startup", "BusinessGrowth", "FinancialManagement", "DashboardDesign", "DataAnalytics", "Featured"],
-          "description": "A modern FinTech SaaS platform — real-time analytics, AI-powered insights, advanced reporting, and scalable financial intelligence for startups and next-gen businesses.",
-          "detailedDescription": "The future of smart financial management is Finescope. This platform is live and built to give businesses real-time financial intelligence and powerful insights without the complications. Finescope helps startups and teams easily see their financial health, follow growth, find opportunities, and make better decisions fast. With Finescope you get a clean dashboard experience. There are no distractions. You get clarity to track revenue, spending, and performance as it happens. Finescope is more than just a tool—it's a new standard for financial intelligence and analytics, driven by smart technology and simple design. Choose Finescope to manage your business with confidence and unlock smarter ways to grow. This is financial intelligence made accessible for everyone.",
-          "objectives": [
-            "Analyze financial performance in real-time",
-            "Track revenue and spending instantly",
-            "Monitor growth trends with precision",
-            "Generate advanced financial reports effortlessly",
-            "Make data-driven strategic decisions",
-            "Unlock AI-powered financial intelligence for businesses"
-          ],
-          "image": ["/finescope/first-thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Custom Dashboard UI", "Node.js", "AI APIs", "Real-Time Data Engines", "Vercel", "CI/CD", "Predictive Analytics"],
-          "video": null,
-          "liveUrl": "https://fine-scope.vercel.app/"
-        },
-        {
-          "slug": "shipx-smart-shipping",
-          "platform": "Logistics & SaaS",
-          "featured": true,
-          "rating": 5.0,
-          "title": "ShipX – Smart Shipping Made Simple",
-          "category": "Logistics & SaaS",
-          "date": "Live — Feb 2026",
-          "tags": ["ShipX", "Logistics", "SaaS", "Shipping", "SupplyChain", "RealTimeTracking", "Dashboard", "Ecommerce", "Featured"],
-          "description": "Revolutionary logistics platform: real-time tracking, smart analytics, cost-optimized delivery, and a seamless shipping dashboard experience for businesses of all sizes.",
-          "detailedDescription": "ShipX makes smart shipping simple. Our modern logistics platform gives you everything you need to track shipments in real time, manage deliveries efficiently, and keep your business in complete control. Get live visibility and powerful analytics for all your shipping operations in one easy-to-use dashboard. ShipX helps you optimize routes for cost and speed, manage all your shipments, and access 24/7 support—whether you're a small business or scaling up fast.",
-          "objectives": [
-            "Enable real-time shipment tracking and notifications",
-            "Provide businesses with smart logistics analytics",
-            "Optimize delivery routes for cost efficiency",
-            "Offer a seamless shipping dashboard and management tools",
-            "Guarantee on-time deliveries and 24/7 support",
-            "Empower businesses of all sizes to scale shipping operations"
-          ],
-          "image": ["/shipx/first-thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Modern Dashboard UI", "Node.js", "Smart APIs", "Real-Time Data & Dashboards", "Vercel", "CI/CD"],
-          "video": null,
-          "liveUrl": "https://shipx-jet.vercel.app/"
-        },
-        {
-          "slug": "nexaflow-smart-analytics",
-          "platform": "SaaS",
-          "featured": true,
-          "rating": 5.0,
-          "title": "NexaFlow - Smart Analytics SaaS Platform",
-          "category": "SaaS",
-          "date": "Completed - Feb 2026",
-          "tags": ["SaaS", "Analytics", "AI", "Dashboard", "Featured"],
-          "description": "AI-powered analytics platform providing real-time insights, customizable dashboards, and automated visualizations for smarter business decisions.",
-          "detailedDescription": "NexaFlow is an advanced Smart Analytics SaaS platform designed to empower businesses with actionable insights through intelligent data analysis and real-time visualization. By leveraging state-of-the-art AI algorithms, NexaFlow transforms complex data streams into intuitive, interactive dashboards, enabling organizations to monitor performance, identify trends, and uncover growth opportunities with ease. The platform features automated reporting, predictive analytics, and fully adaptive widgets, all within a responsive, elegant interface. Whether you're optimizing operations or driving strategic growth, NexaFlow streamlines analytics workflows and delivers clear, data-driven outcomes.",
-          "objectives": [
-            "Deliver real-time analytics with interactive, customizable dashboards",
-            "Empower organizations with AI-powered insights and predictive data analysis",
-            "Automate reporting and streamline data-driven decision making",
-            "Provide enterprise-grade scalability and seamless, responsive UX"
-          ],
-          "image": ["/smart-analytic/second-thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Node.js", "AI Services", "Vercel"],
-          "video": null,
-          "liveUrl": "https://nexa-flow-flame.vercel.app/"
-        },
-        {
-          "slug": "clarinova-ai-build-faster-scale-smarter",
-          "platform": "SaaS",
-          "featured": true,
-          "rating": 5.0,
-          "title": "ClariNova AI — Build Faster. Scale Smarter",
-          "category": "SaaS",
-          "date": "Completed - Feb 2026",
-          "tags": ["AI", "SaaS", "Automation", "Productivity", "Platform", "Featured"],
-          "description": "ClariNova AI supercharges development: streamline workflows, deploy AI features rapidly, and scale smarter with an all-in-one, robust SaaS platform.",
-          "detailedDescription": "ClariNova AI empowers teams and businesses to accelerate software development cycles by integrating powerful AI-driven tools, automation, and scalable infrastructure. The platform enables rapid prototyping and deployment of custom AI features, automates repetitive workflows, and delivers actionable insights for smarter product scaling and management. With a modern UI, seamless integrations, and robust security, ClariNova AI gives organizations the flexibility and intelligence they need to build, launch, and grow innovative products faster in today's competitive digital landscape.",
-          "objectives": [
-            "Accelerate development and deployment cycles with integrated AI tooling",
-            "Streamline team and business workflows for improved productivity",
-            "Enable rapid integration of custom AI features and automation",
-            "Facilitate smart scaling with operational insights and robust infrastructure"
-          ],
-          "image": ["/clarinova/first-thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Node.js", "Python", "AI Services", "Vercel"],
-          "video": null,
-          "liveUrl": "https://clarinova-ai.vercel.app/"
-        },
-        {
-          "slug": "chainex-crypto-platform",
-          "platform": "Crypto Exchange",
-          "featured": true,
-          "rating": 5.0,
-          "title": "Your Gateway to the Crypto World — Chainex",
-          "category": "Crypto Exchange",
-          "date": "Completed - Feb 2026",
-          "tags": ["Crypto", "Exchange", "Platform", "Featured"],
-          "description": "Best-in-class crypto platform for seamless trading — Chainex connects you to the global world of digital assets through a secure, modern, and user-friendly experience.",
-          "detailedDescription": "Chainex delivers a cutting-edge experience for cryptocurrency users, from beginners to experts. With a sleek interface, powerful trading dashboard, and instant accessibility, Chainex redefines what it means to interact with digital assets. Enjoy real-time market insights, secure transactions, and intuitive tools to manage your portfolio with confidence. Chainex's platform ensures high performance and reliability, complete with robust authentication and a rich set of features—making it the ultimate place to explore, invest, and grow in the crypto world. All this, wrapped in beautiful design and fluid navigation, empowers you to unlock your crypto journey with ease and trust.",
-          "objectives": [
-            "Deliver a secure, intuitive gateway for trading and managing cryptocurrencies",
-            "Create a seamless onboarding experience for both new and advanced users",
-            "Present clear market information and portfolio management in a beautiful UI",
-            "Enable effortless transactions, strong security, and robust performance"
-          ],
-          "image": ["/chainex/thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Node.js", "WebSockets", "JWT", "2FA", "Vercel"],
-          "video": null,
-          "liveUrl": "https://chainex-xi.vercel.app/"
-        },
-        {
-          "slug": "one-projects-learning",
-          "platform": "EdTech",
-          "featured": true,
-          "rating": 5.0,
-          "title": "Developer Learning Platform",
-          "category": "EdTech",
-          "date": "Ongoing Development - Started Dec 2025",
-          "tags": ["EdTech", "Platform", "AI", "Featured"],
-          "description": "Modern developer learning platform with authentication system, clean UI/UX, and AI-powered learning experiences for real-world development workflows.",
-          "detailedDescription": "One Projects is an innovative Developer Learning Platform designed for modern developers seeking to enhance their skills through practical, real-world development workflows. The platform focuses on clean and intuitive UI/UX, scalable and maintainable architecture, and AI-powered learning experiences that adapt to individual learning styles and goals. Currently featuring a fully functional authentication system, the platform represents the first major milestone in a comprehensive learning ecosystem. Built in public with transparency and continuous improvement, One Projects demonstrates best practices in modern web development, including Next.js app router patterns, FastAPI backend architecture, and responsive design principles. The platform aims to provide developers with hands-on learning experiences, project-based tutorials, and AI-assisted code reviews and suggestions.",
-          "objectives": [
-            "Build a platform focused on clean, intuitive UI/UX for optimal learning experience",
-            "Implement real-world development workflows and best practices in platform architecture",
-            "Create scalable and maintainable codebase demonstrating modern development patterns",
-            "Integrate AI-powered learning experiences to personalize and enhance skill development"
-          ],
-          "image": ["/platform/Thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "FastAPI", "Gemini Models", "OpenAI Agent SDK", "NextAuth", "JWT", "Docker", "CI/CD", "Hostinger"],
-          "video": null,
-          "liveUrl": "https://dev-learning-platform.vercel.app/"
-        },
-        {
-          "slug": "financeflow-dashboard",
-          "platform": "FinTech",
-          "featured": true,
-          "rating": 5.0,
-          "title": "FinanceFlow - Financial Intelligence Dashboard",
-          "category": "FinTech",
-          "date": "Completed - Feb 2026",
-          "tags": ["FinTech", "Dashboard", "UI/UX", "Featured"],
-          "description": "Premium dark-themed financial analytics dashboard with clean KPIs, interactive charts, and enterprise-ready layout for professional financial products.",
-          "detailedDescription": "FinanceFlow is a sophisticated financial analytics dashboard, purpose-built to deliver premium financial intelligence and an elegant user experience. The platform features a sleek dark UI with a finance-centric ethos, making complex data both accessible and visually appealing. Users benefit from crisp KPI cards (balance, income, expenses, cash flow), interactive charts, and clear category views powered by modern frontend technologies. Emphasis is placed on clarity, usability, and a strong visual hierarchy to empower financial professionals with at-a-glance insights. The enterprise-ready layout is fully responsive and crafted for demanding fintech use cases, demonstrating just how effective design elevates trust and product value.",
-          "objectives": [
-            "Design a premium dark-themed dashboard UI optimized for financial data visualization",
-            "Implement clear KPI displays for balance, income, expenses, and cash flow metrics",
-            "Create interactive charts and category breakdowns for comprehensive financial analysis",
-            "Deliver an enterprise-ready, fully responsive layout for professional financial products"
-          ],
-          "image": ["/finance/Thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Chart.js", "Recharts", "Custom Design System", "Vercel", "CI/CD"],
-          "video": null,
-          "liveUrl": "https://finance-flow-ruby.vercel.app/"
-        },
-        {
-          "slug": "ui-design-portfolio",
-          "platform": "UI/UX",
-          "featured": true,
-          "rating": 5.0,
-          "title": "UI Design Portfolio - Modern Component Showcase",
-          "category": "UI/UX",
-          "date": "Completed - Dec 2025",
-          "tags": ["UI/UX", "Design", "Portfolio", "Featured"],
-          "description": "Clean and modern UI portfolio showcasing design sense, layout skills, and component structure with pixel-perfect layouts and real-world product aesthetics.",
-          "detailedDescription": "This UI Design Portfolio is a carefully crafted showcase project created to demonstrate professional design capabilities, modern layout techniques, and component-based architecture. The project emphasizes clean layouts, modern color combinations, user-friendly design principles, and responsive structure that adapts seamlessly across all devices. Every component is designed with attention to detail, featuring pixel-perfect layouts that reflect real-world product quality and usability standards. The portfolio showcases expertise in UI/UX design principles, modern web UI concepts, and the ability to create professional landing pages, dashboards, and SaaS interfaces. The project demonstrates that good UI design is not just about visual appeal, but about clarity, usability, and creating intuitive user experiences.",
-          "objectives": [
-            "Showcase modern UI/UX design principles and component-based architecture",
-            "Demonstrate clean layouts with modern color combinations and typography",
-            "Create pixel-perfect, responsive designs that work across all devices",
-            "Highlight ability to design professional landing pages, dashboards, and SaaS UI"
-          ],
-          "image": ["/portfolio-image/Thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Figma", "Custom Components", "Vercel"],
-          "video": null
-        },
-        {
-          "slug": "crypto-landing-page",
-          "platform": "FinTech",
-          "featured": false,
-          "rating": 5.0,
-          "title": "Crypto Platform Landing Page - UI Concept",
-          "category": "FinTech",
-          "date": "UI Concept - Jan 2026",
-          "tags": ["Crypto", "Landing Page", "UI/UX", "FinTech"],
-          "description": "Clean and modern landing page UI for crypto-based platform showcasing clarity, trust, and smooth layout optimized for crypto-focused audiences.",
-          "detailedDescription": "This Crypto Platform Landing Page is a meticulously designed UI/UX showcase created to demonstrate expertise in fintech and crypto interface design. The landing page features a modern and minimal design philosophy with a clear value proposition that immediately communicates the platform's benefits to visitors. The smooth layout is specifically optimized for crypto-focused audiences, incorporating visual elements that build trust and credibility in the cryptocurrency space. Every design decision prioritizes clarity and user trust, essential elements for financial and crypto platforms where users need confidence in the service. The clean interface uses strategic whitespace, modern typography, and a carefully selected color palette to create a professional, trustworthy appearance.",
-          "objectives": [
-            "Design modern and minimal landing page optimized for crypto audiences",
-            "Create clear value proposition that builds trust and credibility",
-            "Implement smooth layout with strategic use of whitespace and typography",
-            "Showcase expertise in fintech and crypto UI/UX design concepts"
-          ],
-          "image": ["/crypto/Thumbnail.png"],
-          "technologies": ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-          "video": null,
-          "liveUrl": "https://crypto-coin-puce-pi.vercel.app/"
-        }
+        ],
+        "description": "Built an AI-powered content automation platform for LinkedIn and X (Twitter) that helps users generate posts, analyze competitors, and create lead magnets from a single dashboard.",
+        "objectives": [
+          "Built a full SaaS dashboard with Next.js and TypeScript for managing posts, tracking competitors, analyzing content performance, and generating new ideas.",
+          "Developed an n8n automation workflow to identify high-performing content formats, hooks, and engagement patterns through competitor analysis.",
+          "Implemented AI-powered generation for LinkedIn posts and X threads tailored to the user's positioning, niche, and target audience.",
+          "Automated lead magnet creation for assets such as checklists, frameworks, guides, and templates aligned with each content topic."
+        ],
+        "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
+        "image": [
+          "/project1.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "n8n Automation",
+          "AI Content Generation",
+          "LinkedIn API",
+          "X (Twitter) API"
+        ],
+        "video": "https://www.loom.com/embed/11bafce727ed479c956ffe914be0bb17",
+        "liveUrl": "https://content-posting-bice.vercel.app/",
+        "domain": "AI Powered Linkedin and X (Twitter) Content Automation System",
+        "duration": "March 15, 2025 - April 30, 2025"
+      },
+      {
+        "slug": "linkedin-automation",
+        "platform": "SaaS",
+        "featured": true,
+        "rating": 5,
+        "title": "LinkedIn Automation Platform - AI Post Generation",
+        "category": "SaaS",
+        "date": "Jan 11 - Feb 16, 2026",
+        "tags": [
+          "Frontend",
+          "AI",
+          "LinkedIn",
+          "SaaS",
+          "Featured",
+          "Automation"
+        ],
+        "description": "Frontend platform for generating high-quality LinkedIn post drafts with AI-powered content creation, hashtag suggestions, and website link previews.",
+        "detailedDescription": "The LinkedIn Automation Platform is a streamlined frontend application designed to help professionals and businesses create engaging LinkedIn content effortlessly. The platform leverages advanced AI algorithms to generate compelling post drafts tailored to your industry, audience, and objectives. Users can instantly see suggested relevant hashtags for better reach and engagement, preview how their website links will appear in posts, and refine content before publishing. While this is a frontend-only platform without backend automation capabilities, it significantly reduces the time spent crafting the perfect LinkedIn post by providing intelligent suggestions and previews. The clean, intuitive interface makes it easy for anyone to create professional, engaging LinkedIn content that drives visibility and engagement.",
+        "objectives": [
+          "Generate AI-powered engaging post drafts tailored to user preferences and industry",
+          "Provide relevant hashtag suggestions to maximize post reach and engagement",
+          "Enable website link preview functionality for better post visualization",
+          "Create an intuitive frontend interface for seamless content creation workflow"
+        ],
+        "image": [
+          "/linkedin/hero-section.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "FastAPI",
+          "OpenAI Agent SDK",
+          "Gemini Models",
+          "GPT-4",
+          "MySQL",
+          "Redis",
+          "Docker",
+          "CI/CD",
+          "Hostinger"
+        ],
+        "video": null,
+        "liveUrl": "https://linkedin-ui-lemon.vercel.app/"
+      }
+    ],
+    "archivedItems": [
+      {
+        "slug": "fronixtech-metaverse",
+        "platform": "Metaverse",
+        "featured": true,
+        "rating": 5,
+        "title": "FronixTech - Virtual Worlds & Metaverse Development Platform",
+        "category": "Metaverse",
+        "date": "Feb 1 - Feb 16, 2026",
+        "tags": [
+          "Metaverse",
+          "VR/AR",
+          "3D",
+          "Featured",
+          "SaaS",
+          "Automation"
+        ],
+        "description": "Comprehensive platform for building immersive virtual environments, metaverse ecosystems, and VR/AR experiences that transform brands into interactive digital realities.",
+        "detailedDescription": "FronixTech is a cutting-edge platform that engineers full virtual ecosystems, transforming traditional business concepts into living, interactive digital realities. The platform specializes in creating custom 3D spaces for global events, immersive brand showrooms, and scalable metaverse ecosystems. With expertise in VR/AR experience creation, FronixTech enables businesses to transcend geographical limits and physical constraints, building communities inside branded digital worlds. The platform has successfully created over 30,000 digital worlds with an impressive 82% retention rate, serving 120+ active project partners. FronixTech represents the infrastructure for the next generation of business, where events have no geographical limits, showrooms have no physical constraints, and communities form inside immersive branded experiences.",
+        "objectives": [
+          "Design and develop custom 3D virtual environments for global events and brand experiences",
+          "Build scalable metaverse ecosystems that position brands in tomorrow's digital economy",
+          "Create interactive VR/AR applications for marketing, training, and user engagement",
+          "Deliver immersive experiences with high user satisfaction and retention rates"
+        ],
+        "image": [
+          "/fronix/Thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Three.js",
+          "FastAPI",
+          "Node.js",
+          "Unity",
+          "Unreal Engine",
+          "WebXR",
+          "Gemini Models",
+          "Docker",
+          "CI/CD",
+          "Hostinger"
+        ],
+        "video": null,
+        "liveUrl": "https://fronix-tech.vercel.app/"
+      },
+      {
+        "slug": "finescope-dashboard",
+        "platform": "FinTech",
+        "featured": true,
+        "rating": 5,
+        "title": "Finescope – The Future of Smart Financial Management",
+        "category": "FinTech",
+        "date": "Live — Feb 2026",
+        "tags": [
+          "Finescope",
+          "FinTech",
+          "SaaS",
+          "Startup",
+          "BusinessGrowth",
+          "FinancialManagement",
+          "DashboardDesign",
+          "DataAnalytics",
+          "Featured"
+        ],
+        "description": "A modern FinTech SaaS platform — real-time analytics, AI-powered insights, advanced reporting, and scalable financial intelligence for startups and next-gen businesses.",
+        "detailedDescription": "The future of smart financial management is Finescope. This platform is live and built to give businesses real-time financial intelligence and powerful insights without the complications. Finescope helps startups and teams easily see their financial health, follow growth, find opportunities, and make better decisions fast. With Finescope you get a clean dashboard experience. There are no distractions. You get clarity to track revenue, spending, and performance as it happens. Finescope is more than just a tool—it's a new standard for financial intelligence and analytics, driven by smart technology and simple design. Choose Finescope to manage your business with confidence and unlock smarter ways to grow. This is financial intelligence made accessible for everyone.",
+        "objectives": [
+          "Analyze financial performance in real-time",
+          "Track revenue and spending instantly",
+          "Monitor growth trends with precision",
+          "Generate advanced financial reports effortlessly",
+          "Make data-driven strategic decisions",
+          "Unlock AI-powered financial intelligence for businesses"
+        ],
+        "image": [
+          "/finescope/first-thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Custom Dashboard UI",
+          "Node.js",
+          "AI APIs",
+          "Real-Time Data Engines",
+          "Vercel",
+          "CI/CD",
+          "Predictive Analytics"
+        ],
+        "video": null,
+        "liveUrl": "https://fine-scope.vercel.app/"
+      },
+      {
+        "slug": "shipx-smart-shipping",
+        "platform": "Logistics & SaaS",
+        "featured": true,
+        "rating": 5,
+        "title": "ShipX – Smart Shipping Made Simple",
+        "category": "Logistics & SaaS",
+        "date": "Live — Feb 2026",
+        "tags": [
+          "ShipX",
+          "Logistics",
+          "SaaS",
+          "Shipping",
+          "SupplyChain",
+          "RealTimeTracking",
+          "Dashboard",
+          "Ecommerce",
+          "Featured"
+        ],
+        "description": "Revolutionary logistics platform: real-time tracking, smart analytics, cost-optimized delivery, and a seamless shipping dashboard experience for businesses of all sizes.",
+        "detailedDescription": "ShipX makes smart shipping simple. Our modern logistics platform gives you everything you need to track shipments in real time, manage deliveries efficiently, and keep your business in complete control. Get live visibility and powerful analytics for all your shipping operations in one easy-to-use dashboard. ShipX helps you optimize routes for cost and speed, manage all your shipments, and access 24/7 support—whether you're a small business or scaling up fast.",
+        "objectives": [
+          "Enable real-time shipment tracking and notifications",
+          "Provide businesses with smart logistics analytics",
+          "Optimize delivery routes for cost efficiency",
+          "Offer a seamless shipping dashboard and management tools",
+          "Guarantee on-time deliveries and 24/7 support",
+          "Empower businesses of all sizes to scale shipping operations"
+        ],
+        "image": [
+          "/shipx/first-thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Modern Dashboard UI",
+          "Node.js",
+          "Smart APIs",
+          "Real-Time Data & Dashboards",
+          "Vercel",
+          "CI/CD"
+        ],
+        "video": null,
+        "liveUrl": "https://shipx-jet.vercel.app/"
+      },
+      {
+        "slug": "nexaflow-smart-analytics",
+        "platform": "SaaS",
+        "featured": true,
+        "rating": 5,
+        "title": "NexaFlow - Smart Analytics SaaS Platform",
+        "category": "SaaS",
+        "date": "Completed - Feb 2026",
+        "tags": [
+          "SaaS",
+          "Analytics",
+          "AI",
+          "Dashboard",
+          "Featured"
+        ],
+        "description": "AI-powered analytics platform providing real-time insights, customizable dashboards, and automated visualizations for smarter business decisions.",
+        "detailedDescription": "NexaFlow is an advanced Smart Analytics SaaS platform designed to empower businesses with actionable insights through intelligent data analysis and real-time visualization. By leveraging state-of-the-art AI algorithms, NexaFlow transforms complex data streams into intuitive, interactive dashboards, enabling organizations to monitor performance, identify trends, and uncover growth opportunities with ease. The platform features automated reporting, predictive analytics, and fully adaptive widgets, all within a responsive, elegant interface. Whether you're optimizing operations or driving strategic growth, NexaFlow streamlines analytics workflows and delivers clear, data-driven outcomes.",
+        "objectives": [
+          "Deliver real-time analytics with interactive, customizable dashboards",
+          "Empower organizations with AI-powered insights and predictive data analysis",
+          "Automate reporting and streamline data-driven decision making",
+          "Provide enterprise-grade scalability and seamless, responsive UX"
+        ],
+        "image": [
+          "/smart-analytic/second-thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "AI Services",
+          "Vercel"
+        ],
+        "video": null,
+        "liveUrl": "https://nexa-flow-flame.vercel.app/"
+      },
+      {
+        "slug": "clarinova-ai-build-faster-scale-smarter",
+        "platform": "SaaS",
+        "featured": true,
+        "rating": 5,
+        "title": "ClariNova AI — Build Faster. Scale Smarter",
+        "category": "SaaS",
+        "date": "Completed - Feb 2026",
+        "tags": [
+          "AI",
+          "SaaS",
+          "Automation",
+          "Productivity",
+          "Platform",
+          "Featured"
+        ],
+        "description": "ClariNova AI supercharges development: streamline workflows, deploy AI features rapidly, and scale smarter with an all-in-one, robust SaaS platform.",
+        "detailedDescription": "ClariNova AI empowers teams and businesses to accelerate software development cycles by integrating powerful AI-driven tools, automation, and scalable infrastructure. The platform enables rapid prototyping and deployment of custom AI features, automates repetitive workflows, and delivers actionable insights for smarter product scaling and management. With a modern UI, seamless integrations, and robust security, ClariNova AI gives organizations the flexibility and intelligence they need to build, launch, and grow innovative products faster in today's competitive digital landscape.",
+        "objectives": [
+          "Accelerate development and deployment cycles with integrated AI tooling",
+          "Streamline team and business workflows for improved productivity",
+          "Enable rapid integration of custom AI features and automation",
+          "Facilitate smart scaling with operational insights and robust infrastructure"
+        ],
+        "image": [
+          "/clarinova/first-thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "Python",
+          "AI Services",
+          "Vercel"
+        ],
+        "video": null,
+        "liveUrl": "https://clarinova-ai.vercel.app/"
+      },
+      {
+        "slug": "chainex-crypto-platform",
+        "platform": "Crypto Exchange",
+        "featured": true,
+        "rating": 5,
+        "title": "Your Gateway to the Crypto World — Chainex",
+        "category": "Crypto Exchange",
+        "date": "Completed - Feb 2026",
+        "tags": [
+          "Crypto",
+          "Exchange",
+          "Platform",
+          "Featured"
+        ],
+        "description": "Best-in-class crypto platform for seamless trading — Chainex connects you to the global world of digital assets through a secure, modern, and user-friendly experience.",
+        "detailedDescription": "Chainex delivers a cutting-edge experience for cryptocurrency users, from beginners to experts. With a sleek interface, powerful trading dashboard, and instant accessibility, Chainex redefines what it means to interact with digital assets. Enjoy real-time market insights, secure transactions, and intuitive tools to manage your portfolio with confidence. Chainex's platform ensures high performance and reliability, complete with robust authentication and a rich set of features—making it the ultimate place to explore, invest, and grow in the crypto world. All this, wrapped in beautiful design and fluid navigation, empowers you to unlock your crypto journey with ease and trust.",
+        "objectives": [
+          "Deliver a secure, intuitive gateway for trading and managing cryptocurrencies",
+          "Create a seamless onboarding experience for both new and advanced users",
+          "Present clear market information and portfolio management in a beautiful UI",
+          "Enable effortless transactions, strong security, and robust performance"
+        ],
+        "image": [
+          "/chainex/thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Node.js",
+          "WebSockets",
+          "JWT",
+          "2FA",
+          "Vercel"
+        ],
+        "video": null,
+        "liveUrl": "https://chainex-xi.vercel.app/"
+      },
+      {
+        "slug": "one-projects-learning",
+        "platform": "EdTech",
+        "featured": true,
+        "rating": 5,
+        "title": "Developer Learning Platform",
+        "category": "EdTech",
+        "date": "Ongoing Development - Started Dec 2025",
+        "tags": [
+          "EdTech",
+          "Platform",
+          "AI",
+          "Featured"
+        ],
+        "description": "Modern developer learning platform with authentication system, clean UI/UX, and AI-powered learning experiences for real-world development workflows.",
+        "detailedDescription": "One Projects is an innovative Developer Learning Platform designed for modern developers seeking to enhance their skills through practical, real-world development workflows. The platform focuses on clean and intuitive UI/UX, scalable and maintainable architecture, and AI-powered learning experiences that adapt to individual learning styles and goals. Currently featuring a fully functional authentication system, the platform represents the first major milestone in a comprehensive learning ecosystem. Built in public with transparency and continuous improvement, One Projects demonstrates best practices in modern web development, including Next.js app router patterns, FastAPI backend architecture, and responsive design principles. The platform aims to provide developers with hands-on learning experiences, project-based tutorials, and AI-assisted code reviews and suggestions.",
+        "objectives": [
+          "Build a platform focused on clean, intuitive UI/UX for optimal learning experience",
+          "Implement real-world development workflows and best practices in platform architecture",
+          "Create scalable and maintainable codebase demonstrating modern development patterns",
+          "Integrate AI-powered learning experiences to personalize and enhance skill development"
+        ],
+        "image": [
+          "/platform/Thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "FastAPI",
+          "Gemini Models",
+          "OpenAI Agent SDK",
+          "NextAuth",
+          "JWT",
+          "Docker",
+          "CI/CD",
+          "Hostinger"
+        ],
+        "video": null,
+        "liveUrl": "https://dev-learning-platform.vercel.app/"
+      },
+      {
+        "slug": "financeflow-dashboard",
+        "platform": "FinTech",
+        "featured": true,
+        "rating": 5,
+        "title": "FinanceFlow - Financial Intelligence Dashboard",
+        "category": "FinTech",
+        "date": "Completed - Feb 2026",
+        "tags": [
+          "FinTech",
+          "Dashboard",
+          "UI/UX",
+          "Featured"
+        ],
+        "description": "Premium dark-themed financial analytics dashboard with clean KPIs, interactive charts, and enterprise-ready layout for professional financial products.",
+        "detailedDescription": "FinanceFlow is a sophisticated financial analytics dashboard, purpose-built to deliver premium financial intelligence and an elegant user experience. The platform features a sleek dark UI with a finance-centric ethos, making complex data both accessible and visually appealing. Users benefit from crisp KPI cards (balance, income, expenses, cash flow), interactive charts, and clear category views powered by modern frontend technologies. Emphasis is placed on clarity, usability, and a strong visual hierarchy to empower financial professionals with at-a-glance insights. The enterprise-ready layout is fully responsive and crafted for demanding fintech use cases, demonstrating just how effective design elevates trust and product value.",
+        "objectives": [
+          "Design a premium dark-themed dashboard UI optimized for financial data visualization",
+          "Implement clear KPI displays for balance, income, expenses, and cash flow metrics",
+          "Create interactive charts and category breakdowns for comprehensive financial analysis",
+          "Deliver an enterprise-ready, fully responsive layout for professional financial products"
+        ],
+        "image": [
+          "/finance/Thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Chart.js",
+          "Recharts",
+          "Custom Design System",
+          "Vercel",
+          "CI/CD"
+        ],
+        "video": null,
+        "liveUrl": "https://finance-flow-ruby.vercel.app/"
+      },
+      {
+        "slug": "ui-design-portfolio",
+        "platform": "UI/UX",
+        "featured": true,
+        "rating": 5,
+        "title": "UI Design Portfolio - Modern Component Showcase",
+        "category": "UI/UX",
+        "date": "Completed - Dec 2025",
+        "tags": [
+          "UI/UX",
+          "Design",
+          "Portfolio",
+          "Featured"
+        ],
+        "description": "Clean and modern UI portfolio showcasing design sense, layout skills, and component structure with pixel-perfect layouts and real-world product aesthetics.",
+        "detailedDescription": "This UI Design Portfolio is a carefully crafted showcase project created to demonstrate professional design capabilities, modern layout techniques, and component-based architecture. The project emphasizes clean layouts, modern color combinations, user-friendly design principles, and responsive structure that adapts seamlessly across all devices. Every component is designed with attention to detail, featuring pixel-perfect layouts that reflect real-world product quality and usability standards. The portfolio showcases expertise in UI/UX design principles, modern web UI concepts, and the ability to create professional landing pages, dashboards, and SaaS interfaces. The project demonstrates that good UI design is not just about visual appeal, but about clarity, usability, and creating intuitive user experiences.",
+        "objectives": [
+          "Showcase modern UI/UX design principles and component-based architecture",
+          "Demonstrate clean layouts with modern color combinations and typography",
+          "Create pixel-perfect, responsive designs that work across all devices",
+          "Highlight ability to design professional landing pages, dashboards, and SaaS UI"
+        ],
+        "image": [
+          "/portfolio-image/Thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Figma",
+          "Custom Components",
+          "Vercel"
+        ],
+        "video": null
+      },
+      {
+        "slug": "crypto-landing-page",
+        "platform": "FinTech",
+        "featured": false,
+        "rating": 5,
+        "title": "Crypto Platform Landing Page - UI Concept",
+        "category": "FinTech",
+        "date": "UI Concept - Jan 2026",
+        "tags": [
+          "Crypto",
+          "Landing Page",
+          "UI/UX",
+          "FinTech"
+        ],
+        "description": "Clean and modern landing page UI for crypto-based platform showcasing clarity, trust, and smooth layout optimized for crypto-focused audiences.",
+        "detailedDescription": "This Crypto Platform Landing Page is a meticulously designed UI/UX showcase created to demonstrate expertise in fintech and crypto interface design. The landing page features a modern and minimal design philosophy with a clear value proposition that immediately communicates the platform's benefits to visitors. The smooth layout is specifically optimized for crypto-focused audiences, incorporating visual elements that build trust and credibility in the cryptocurrency space. Every design decision prioritizes clarity and user trust, essential elements for financial and crypto platforms where users need confidence in the service. The clean interface uses strategic whitespace, modern typography, and a carefully selected color palette to create a professional, trustworthy appearance.",
+        "objectives": [
+          "Design modern and minimal landing page optimized for crypto audiences",
+          "Create clear value proposition that builds trust and credibility",
+          "Implement smooth layout with strategic use of whitespace and typography",
+          "Showcase expertise in fintech and crypto UI/UX design concepts"
+        ],
+        "image": [
+          "/crypto/Thumbnail.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "Tailwind CSS",
+          "Framer Motion",
+          "Vercel"
+        ],
+        "video": null,
+        "liveUrl": "https://crypto-coin-puce-pi.vercel.app/"
+      }
     ]
   },
   "certifications": [
