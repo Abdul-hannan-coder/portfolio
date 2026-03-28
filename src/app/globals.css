@@ -87,4 +87,18 @@ body {
 }
 .section-gap { margin-bottom: 6rem; }
 
-/* Removed @layer base to prevent shadcn errors with raw HTML classes */
+/* Custom sleek scrollbar for image galleries */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}

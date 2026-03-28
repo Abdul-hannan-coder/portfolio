@@ -172,14 +172,15 @@
           "feedback": "Outstanding work building out the entire funnel structure and automating the complex lead routing logic."
         },
         "tags": [
-          "ghl-integration",
+          "GoHighLevel",
           "lead-routing",
           "automation-workflow",
           "form-submission",
           "crm-integration",
           "conversational-ai",
           "landing-page",
-          "sales-funnel"
+          "sales-funnel",
+          "SaaS"
         ],
         "description": "Multi-stage sales funnel with lead capture, automated routing, AI-powered follow-up workflows, and CRM integration built on GHL with Loveable frontend components.",
         "detailedDescription": "A complete lead generation and management funnel built with Loveable (UI/component design) and GoHighLevel (GHL) automation platform. Features include: landing page with lead capture forms, real-time form submission handling, automated lead distribution workflows, AI-powered response automation, lead scoring system, follow-up sequence automation, database integration, and conversion tracking. Implementation includes responsive design, form validation, webhook integration, and multi-stage funnel automation sequences.",
@@ -375,7 +376,8 @@
           "X (Twitter)",
           "Competitor Analysis",
           "Image generation",
-          "Content Enhancement"
+          "Content Enhancement",
+          "AI"
         ],
         "description": "Built an AI-powered content automation platform for LinkedIn and X (Twitter) that helps users generate posts, analyze competitors, and create lead magnets from a single dashboard.",
         "objectives": [

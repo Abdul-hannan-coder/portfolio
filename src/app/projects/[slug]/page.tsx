@@ -31,6 +31,14 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
       <section className="bg-surface-container-low rounded-xl p-8 lg:p-12 mb-8 relative overflow-hidden flex flex-col gap-8">
         <div className="relative z-10 flex flex-col lg:flex-row gap-8 justify-between items-start">
           <div className="flex-1 max-w-3xl">
+            <Link 
+              href="/" 
+              className="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-label text-sm mb-6 group"
+            >
+              <span className="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
+              Back to Projects
+            </Link>
+
             <div className="flex gap-3 mb-4 flex-wrap">
               <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">
                 {project.category}
