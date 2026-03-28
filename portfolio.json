@@ -62,7 +62,29 @@
         "Vercel",
         "Cloud Deployment (AWS, Oracle Cloud, Azure)",
         "Collaboration and Communication"
-      ]
+      ],
+      "company": "Postsiva.com"
+    },
+    {
+      "type": "work",
+      "icon": "work",
+      "iconColor": "blue",
+      "title": "Freelance Developer & Automation Expert",
+      "location": "Remote (Global Clients / Upwork / Fiverr)",
+      "period": "2023 - Present",
+      "description": [
+        "Architected and delivered custom software solutions, SaaS products, and high-converting marketing funnels for numerous international clients.",
+        "Integrated intelligent AI automations using n8n and GoHighLevel to overhaul client lead generation and cut down customer support workloads.",
+        "Developed highly responsive, beautiful frontend architectures using Next.js, React, and Tailwind CSS tailored closely to client expectations."
+      ],
+      "skills": [
+        "Next.js",
+        "Tailwind CSS",
+        "GoHighLevel",
+        "Automation Strategies",
+        "Client Communication"
+      ],
+      "company": "Freelance"
     },
     {
       "type": "education",

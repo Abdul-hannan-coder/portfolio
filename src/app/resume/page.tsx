@@ -57,7 +57,10 @@ export default function Resume() {
                       <h3 className="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">
                         {work.title}
                       </h3>
-                      <p className="font-label text-primary/80 text-sm mb-4">{work.location}</p>
+                      {work.company && (
+                        <div className="font-headline text-primary font-semibold text-lg mt-1 mb-1">{work.company}</div>
+                      )}
+                      <p className="font-label text-on-surface-variant/80 text-sm mb-4 border-l-2 border-primary/30 pl-3 py-1 bg-surface-container/30">{work.location}</p>
                       <div className="text-on-surface-variant leading-relaxed text-sm space-y-2">
                         {work.description.map((desc, i) => (
                           <p key={i}>• {desc}</p>

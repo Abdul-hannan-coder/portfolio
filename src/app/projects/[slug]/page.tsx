@@ -46,6 +46,13 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
               <span className="px-3 py-1 bg-surface-container-highest text-on-surface-variant rounded-full text-xs font-label">
                 {project.date}
               </span>
+              {/* Optional Company / Client rendering */}
+              {((project as any).company || (project.client && project.client.name)) && (
+                <span className="px-3 py-1 border border-outline-variant/30 text-on-surface-variant rounded-full text-xs font-label flex items-center gap-1">
+                  <span className="material-symbols-outlined text-[14px]">domain</span>
+                  {(project as any).company || project.client?.name}
+                </span>
+              )}
             </div>
             
             <h1 className="font-headline text-4xl lg:text-5xl font-bold tracking-tight mb-4 leading-tight">
