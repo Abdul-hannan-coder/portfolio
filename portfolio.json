@@ -310,14 +310,14 @@
         ],
         "detailedDescription": "Facebook Postsiva is an AI-powered platform designed to help users create and schedule engaging content for their Facebook pages. The platform leverages advanced AI algorithms to generate content based on user preferences and trends, ensuring maximum engagement. Users can easily schedule posts, manage their content calendar, and track performance metrics. The intuitive interface and seamless integration with Facebook API make it a powerful tool for social media management.",
         "image": [
-          "https://i.ibb.co/tTmWPZLp/Whats-App-Image-2026-02-13-at-10-39-27-PM-3.jpg",
-          "https://i.ibb.co/4RSYfKrX/Whats-App-Image-2026-02-13-at-10-39-39-PM-1.jpg",
-          "https://i.ibb.co/WN4jrFw3/Whats-App-Image-2026-02-13-at-10-39-27-PM-5.jpg",
-          "https://i.ibb.co/1WNdHXC/Whats-App-Image-2026-02-13-at-10-39-27-PM-4.jpg",
-          "https://i.ibb.co/Tx76B784/Whats-App-Image-2026-02-13-at-10-39-39-PM.jpg",
-          "https://i.ibb.co/0yKsnP99/Whats-App-Image-2026-02-13-at-10-39-27-PM-2.jpg",
-          "https://i.ibb.co/PsYn3pn0/Whats-App-Image-2026-02-13-at-10-39-27-PM.jpg",
-          "https://i.ibb.co/8g6qCCV1/Whats-App-Image-2026-02-13-at-10-39-27-PM-1.jpg"
+          "/facebook-postsiva/post3.jpg",
+          "/facebook-postsiva/post8.jpg",
+          "/facebook-postsiva/post5.jpg",
+          "/facebook-postsiva/post4.jpg",
+          "/facebook-postsiva/post7.jpg",
+          "/facebook-postsiva/post2.jpg",
+          "/facebook-postsiva/post6.jpg",
+          "/facebook-postsiva/post1.jpg"
         ],
         "technologies": [
           "Fastapi",
@@ -363,8 +363,8 @@
         "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
         "image": [
           "/thumbnails/listcatcher_yellow.png",
-          "https://i.ibb.co/chKhZ2Cr/screencapture-listcatcher-2026-02-17-22-48-21.png",
-          "https://i.ibb.co/mVXHL25Z/screencapture-listcatcher-book-appointment-2026-02-17-22-48-52.png"
+          "/funnels/listcatcher1.png",
+          "/funnels/listcatcher2.png"
         ],
         "technologies": [
           "Gohighlevel",
@@ -871,7 +871,7 @@
       "credentialId": "UC-XXXXXXXX",
       "icon": "verified",
       "iconColor": "blue",
-      "image": "https://i.ibb.co/FkfFYKxN/Ai-Essentials-page-0001.jpg",
+      "image": "/certificates/ai-essentials.jpg",
       "skills": [
         "Artificial Intelligence",
         "Machine Learning",
@@ -888,7 +888,7 @@
       "credentialId": "AWS-SAA-XXXXXXXX",
       "icon": "cloud",
       "iconColor": "orange",
-      "image": "https://i.ibb.co/PdSQHQS/Introduction-to-Front-End-Development-page-0001.jpg",
+      "image": "/certificates/frontend.jpg",
       "skills": [
         "HTML",
         "CSS",
@@ -905,7 +905,7 @@
       "credentialId": "GHL-XXXXXXXX",
       "icon": "autorenew",
       "iconColor": "green",
-      "image": "https://i.ibb.co/vxKg41Pc/certificate-bc240410806aha-vu-edu-pk-2a826796-73b5-4e40-b226-74153d8a8b1b-page-0001.jpg",
+      "image": "/certificates/diploma.jpg",
       "skills": [
         "C++ Programming",
         "Object-Oriented Programming",
