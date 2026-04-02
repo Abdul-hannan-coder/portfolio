@@ -6,11 +6,13 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-sans",
   subsets: ["latin"],
+  display: "block",
 });
 
 const manrope = Manrope({
   variable: "--font-mono", // Using as the secondary font
   subsets: ["latin"],
+  display: "block",
 });
 
 export const metadata: Metadata = {
