@@ -423,7 +423,9 @@
         "video": "https://www.loom.com/embed/1b996ae2dcb44d12b72c56ec25b174b7",
         "domain": "AI & E-commerce Automation",
         "duration": "April 2026"
-      },
+      }
+    ],
+    "archivedItems": [
       {
         "slug": "facebook-postsiva",
         "platform": "SAAS",
@@ -518,9 +520,7 @@
         ],
         "video": null,
         "liveUrl": "https://linkedin-ui-lemon.vercel.app/"
-      }
-    ],
-    "archivedItems": [
+      },
       {
         "slug": "fronixtech-metaverse",
         "platform": "Metaverse",
