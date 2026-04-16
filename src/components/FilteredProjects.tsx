@@ -41,29 +41,29 @@ export default function FilteredProjects() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-6">
         {filteredProjects.map((project, index) => (
           <article
             key={project.slug}
-            className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500 md:min-h-[260px]"
+            className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500"
           >
-            <div className="w-full md:w-1/2 shrink-0 aspect-video md:aspect-auto relative overflow-hidden">
+            <div className="w-full md:w-[45%] lg:w-2/5 shrink-0 aspect-[16/10] md:aspect-auto relative overflow-hidden">
               <Link href={`/projects/${project.slug}`} className="absolute inset-0 block w-full h-full">
                 <Image
                   fill
                   priority={index === 0 || index === 1}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   alt={project.title}
-                  className="project-image object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  className="project-image object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   src={project.image[0] || "/profile-nano.png"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>
               </Link>
             </div>
-            <div className="p-6 lg:p-10 flex flex-col flex-1 justify-center relative">
-              <div className="flex justify-between items-start mb-4 gap-4">
+            <div className="p-5 lg:p-8 flex flex-col flex-1 justify-center relative">
+              <div className="flex justify-between items-start mb-3 gap-4">
                 <Link href={`/projects/${project.slug}`} className="hover:underline flex-1">
-                  <h4 className="font-headline text-xl lg:text-2xl font-bold group-hover:text-primary transition-colors">
+                  <h4 className="font-headline text-lg lg:text-xl font-bold group-hover:text-primary transition-colors">
                     {project.title}
                   </h4>
                 </Link>
@@ -79,7 +79,7 @@ export default function FilteredProjects() {
                   )}
                 </div>
               </div>
-              <p className="text-base text-on-surface-variant font-label mb-8 line-clamp-3">
+              <p className="text-sm text-on-surface-variant font-label mb-5 line-clamp-2">
                 {project.description}
               </p>
               <div className="mt-auto flex flex-col sm:flex-row sm:items-center justify-between gap-6">
