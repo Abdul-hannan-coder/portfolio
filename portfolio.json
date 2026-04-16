@@ -235,6 +235,50 @@
         "duration": "Live"
       },
       {
+        "slug": "Gohighlevel",
+        "platform": "Private Clients",
+        "featured": false,
+        "rating": 4.5,
+        "title": "Gohighlevel Funnel & Automations",
+        "category": "Gohighlevel Platform for Marketing Automation",
+        "date": "March 15, 2025 - April 30, 2025",
+        "client": {
+          "name": "Private Client (United States, California)",
+          "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
+        },
+        "tags": [
+          "Gohighlevel",
+          "Marketing Automation",
+          "Funnel Setup",
+          "Community Building",
+          "Lead Generation"
+        ],
+        "description": "This project involved setting up a comprehensive marketing funnel and community on the Gohighlevel platform for a private client. The goal was to create an effective lead generation system and build a thriving community around the client's brand. The project included designing and implementing various automations to streamline marketing efforts and enhance customer engagement.",
+        "objectives": [
+          "Design and implement a marketing funnel using Gohighlevel to capture and nurture leads.",
+          "Set up a community platform to engage with customers and build brand loyalty.",
+          "Create automations to streamline marketing processes and improve efficiency.",
+          "Integrate the funnel and community with existing marketing tools for seamless operation."
+        ],
+        "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
+        "image": [
+          "/thumbnails/listcatcher_yellow.png",
+          "/funnels/listcatcher1.png",
+          "/funnels/listcatcher2.png"
+        ],
+        "technologies": [
+          "Gohighlevel",
+          "Marketing Automation",
+          "Funnel Setup",
+          "Community Building",
+          "Lead Generation"
+        ],
+        "video": "https://www.loom.com/embed/87ef3d2e66f84e7392f2003e10899358",
+        "liveUrl": "https://listcatcher.com",
+        "domain": "Gohighlevel Platform for Marketing Automation",
+        "duration": "March 15, 2025 - April 30, 2025"
+      },
+      {
         "slug": "laptop-station-ai-assistant",
         "platform": "E-commerce & AI Automation",
         "featured": true,
@@ -281,6 +325,104 @@
         "liveUrl": "https://laptopstation-chatbot.vercel.app/",
         "domain": "E-commerce & AI Automation",
         "duration": "Live"
+      },
+      {
+        "slug": "social-ai-automation",
+        "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
+        "featured": false,
+        "rating": 5,
+        "title": "Social Content AI Automation",
+        "category": "AI Content Automation",
+        "date": "March 15, 2025 - April 30, 2025",
+        "client": {
+          "name": "Private Client (France, Paris)",
+          "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
+        },
+        "tags": [
+          "AI Content Creation",
+          "Social Media Management",
+          "Scheduling",
+          "LinkedIn",
+          "X (Twitter)",
+          "Competitor Analysis",
+          "Image generation",
+          "Content Enhancement",
+          "AI"
+        ],
+        "description": "Built an AI-powered content automation platform for LinkedIn and X (Twitter) that helps users generate posts, analyze competitors, and create lead magnets from a single dashboard.",
+        "objectives": [
+          "Built a full SaaS dashboard with Next.js and TypeScript for managing posts, tracking competitors, analyzing content performance, and generating new ideas.",
+          "Developed an n8n automation workflow to identify high-performing content formats, hooks, and engagement patterns through competitor analysis.",
+          "Implemented AI-powered generation for LinkedIn posts and X threads tailored to the user's positioning, niche, and target audience.",
+          "Automated lead magnet creation for assets such as checklists, frameworks, guides, and templates aligned with each content topic."
+        ],
+        "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
+        "image": [
+          "/project1.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "n8n Automation",
+          "AI Content Generation",
+          "LinkedIn API",
+          "X (Twitter) API"
+        ],
+        "video": "https://www.loom.com/embed/11bafce727ed479c956ffe914be0bb17",
+        "liveUrl": "https://content-posting-bice.vercel.app/",
+        "domain": "AI Powered Linkedin and X (Twitter) Content Automation System",
+        "duration": "March 15, 2025 - April 30, 2025"
+      },
+      {
+        "slug": "sheeen-store-instagram-automation",
+        "platform": "AI & E-commerce Automation",
+        "featured": true,
+        "rating": 5,
+        "title": "Sheeen.store — Automated Instagram Post Workflow",
+        "category": "AI Content Automation",
+        "date": "April 2026",
+        "client": {
+          "name": "Sheeen.store (Fashion Brand)",
+          "feedback": "The automation completely removed manual content work from our plate. Every post looks premium and goes out on schedule — it's like having a full-time social media team on autopilot."
+        },
+        "tags": [
+          "n8n",
+          "AI Automation",
+          "Instagram",
+          "Shopify",
+          "Gemini",
+          "Content Generation",
+          "Image Generation",
+          "E-commerce",
+          "Social Media"
+        ],
+        "description": "A fully automated end-to-end Instagram posting system for a fashion brand — from Shopify product selection to AI-generated captions & premium fashion ads, published automatically 4× per week.",
+        "detailedDescription": "Built a complete zero-touch Instagram content pipeline for Sheeen.store, a fashion e-commerce brand on Shopify. The n8n workflow triggers automatically 4× per week, fetches all published products from Shopify, filters out excluded categories (hoodies & sweatshirts), and randomly selects a valid product. It intelligently picks the best product view (back image for prints, front otherwise). Two parallel AI branches then kick in: one generates an engaging Instagram caption with emojis, CTAs, and brand + dynamic hashtags via a Gemini AI Agent, while the other asks Gemini to suggest a realistic photoshoot scene. The product image and brand logo are downloaded, merged, and sent to Gemini's image-edit model (gemini-3-pro-image-preview) which creates a premium 1:1 cinematic fashion ad with logo overlay, scene context, and headline text. The final image is uploaded to cloud storage via a presigned S3 URL through Zernio, and the post (image + caption) is published to Instagram automatically via the Zernio API.",
+        "objectives": [
+          "Automate Instagram posting 4× per week with zero manual intervention",
+          "Fetch and filter Shopify products dynamically to select featured items",
+          "Generate AI-powered Instagram captions with emojis, CTAs, and smart hashtags",
+          "Create premium cinematic fashion ad images using Gemini image editing",
+          "Overlay brand logo and headline text on AI-generated photoshoot scenes",
+          "Upload and publish posts automatically via Zernio's Instagram API integration"
+        ],
+        "image": [
+          "/sheeen-store/thumbnail.png"
+        ],
+        "technologies": [
+          "n8n",
+          "Gemini AI (2.5 Pro + Image Edit)",
+          "Shopify API",
+          "Zernio API",
+          "Instagram Graph API",
+          "Google Drive API",
+          "AWS S3 (Presigned URLs)",
+          "AI Image Generation",
+          "Workflow Automation"
+        ],
+        "video": "https://www.loom.com/embed/1b996ae2dcb44d12b72c56ec25b174b7",
+        "domain": "AI & E-commerce Automation",
+        "duration": "April 2026"
       },
       {
         "slug": "facebook-postsiva",
@@ -335,97 +477,6 @@
         "duration": "May 28, 2025 - Feb 9, 2026"
       },
       {
-        "slug": "Gohighlevel",
-        "platform": "Private Clients",
-        "featured": false,
-        "rating": 4.5,
-        "title": "Gohighlevel Funnel & Automations",
-        "category": "Gohighlevel Platform for Marketing Automation",
-        "date": "March 15, 2025 - April 30, 2025",
-        "client": {
-          "name": "Private Client (United States, California)",
-          "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
-        },
-        "tags": [
-          "Gohighlevel",
-          "Marketing Automation",
-          "Funnel Setup",
-          "Community Building",
-          "Lead Generation"
-        ],
-        "description": "This project involved setting up a comprehensive marketing funnel and community on the Gohighlevel platform for a private client. The goal was to create an effective lead generation system and build a thriving community around the client's brand. The project included designing and implementing various automations to streamline marketing efforts and enhance customer engagement.",
-        "objectives": [
-          "Design and implement a marketing funnel using Gohighlevel to capture and nurture leads.",
-          "Set up a community platform to engage with customers and build brand loyalty.",
-          "Create automations to streamline marketing processes and improve efficiency.",
-          "Integrate the funnel and community with existing marketing tools for seamless operation."
-        ],
-        "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
-        "image": [
-          "/thumbnails/listcatcher_yellow.png",
-          "/funnels/listcatcher1.png",
-          "/funnels/listcatcher2.png"
-        ],
-        "technologies": [
-          "Gohighlevel",
-          "Marketing Automation",
-          "Funnel Setup",
-          "Community Building",
-          "Lead Generation"
-        ],
-        "video": "https://www.loom.com/embed/87ef3d2e66f84e7392f2003e10899358",
-        "liveUrl": "https://listcatcher.com",
-        "domain": "Gohighlevel Platform for Marketing Automation",
-        "duration": "March 15, 2025 - April 30, 2025"
-      },
-      {
-        "slug": "social-ai-automation",
-        "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
-        "featured": false,
-        "rating": 5,
-        "title": "Social Content AI Automation",
-        "category": "AI Content Automation",
-        "date": "March 15, 2025 - April 30, 2025",
-        "client": {
-          "name": "Private Client (France, Paris)",
-          "feedback": "Excellent work! The funnel and community setup exceeded our expectations, and the automations have significantly improved our marketing efforts. Highly recommend!"
-        },
-        "tags": [
-          "AI Content Creation",
-          "Social Media Management",
-          "Scheduling",
-          "LinkedIn",
-          "X (Twitter)",
-          "Competitor Analysis",
-          "Image generation",
-          "Content Enhancement",
-          "AI"
-        ],
-        "description": "Built an AI-powered content automation platform for LinkedIn and X (Twitter) that helps users generate posts, analyze competitors, and create lead magnets from a single dashboard.",
-        "objectives": [
-          "Built a full SaaS dashboard with Next.js and TypeScript for managing posts, tracking competitors, analyzing content performance, and generating new ideas.",
-          "Developed an n8n automation workflow to identify high-performing content formats, hooks, and engagement patterns through competitor analysis.",
-          "Implemented AI-powered generation for LinkedIn posts and X threads tailored to the user's positioning, niche, and target audience.",
-          "Automated lead magnet creation for assets such as checklists, frameworks, guides, and templates aligned with each content topic."
-        ],
-        "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
-        "image": [
-          "/project1.png"
-        ],
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "n8n Automation",
-          "AI Content Generation",
-          "LinkedIn API",
-          "X (Twitter) API"
-        ],
-        "video": "https://www.loom.com/embed/11bafce727ed479c956ffe914be0bb17",
-        "liveUrl": "https://content-posting-bice.vercel.app/",
-        "domain": "AI Powered Linkedin and X (Twitter) Content Automation System",
-        "duration": "March 15, 2025 - April 30, 2025"
-      },
-      {
         "slug": "linkedin-automation",
         "platform": "SaaS",
         "featured": true,
@@ -467,57 +518,6 @@
         ],
         "video": null,
         "liveUrl": "https://linkedin-ui-lemon.vercel.app/"
-      },
-      {
-        "slug": "sheeen-store-instagram-automation",
-        "platform": "AI & E-commerce Automation",
-        "featured": true,
-        "rating": 5,
-        "title": "Sheeen.store — Automated Instagram Post Workflow",
-        "category": "AI Content Automation",
-        "date": "April 2026",
-        "client": {
-          "name": "Sheeen.store (Fashion Brand)",
-          "feedback": "The automation completely removed manual content work from our plate. Every post looks premium and goes out on schedule — it's like having a full-time social media team on autopilot."
-        },
-        "tags": [
-          "n8n",
-          "AI Automation",
-          "Instagram",
-          "Shopify",
-          "Gemini",
-          "Content Generation",
-          "Image Generation",
-          "E-commerce",
-          "Social Media"
-        ],
-        "description": "A fully automated end-to-end Instagram posting system for a fashion brand — from Shopify product selection to AI-generated captions & premium fashion ads, published automatically 4× per week.",
-        "detailedDescription": "Built a complete zero-touch Instagram content pipeline for Sheeen.store, a fashion e-commerce brand on Shopify. The n8n workflow triggers automatically 4× per week, fetches all published products from Shopify, filters out excluded categories (hoodies & sweatshirts), and randomly selects a valid product. It intelligently picks the best product view (back image for prints, front otherwise). Two parallel AI branches then kick in: one generates an engaging Instagram caption with emojis, CTAs, and brand + dynamic hashtags via a Gemini AI Agent, while the other asks Gemini to suggest a realistic photoshoot scene. The product image and brand logo are downloaded, merged, and sent to Gemini's image-edit model (gemini-3-pro-image-preview) which creates a premium 1:1 cinematic fashion ad with logo overlay, scene context, and headline text. The final image is uploaded to cloud storage via a presigned S3 URL through Zernio, and the post (image + caption) is published to Instagram automatically via the Zernio API.",
-        "objectives": [
-          "Automate Instagram posting 4× per week with zero manual intervention",
-          "Fetch and filter Shopify products dynamically to select featured items",
-          "Generate AI-powered Instagram captions with emojis, CTAs, and smart hashtags",
-          "Create premium cinematic fashion ad images using Gemini image editing",
-          "Overlay brand logo and headline text on AI-generated photoshoot scenes",
-          "Upload and publish posts automatically via Zernio's Instagram API integration"
-        ],
-        "image": [
-          "/sheeen-store/thumbnail.png"
-        ],
-        "technologies": [
-          "n8n",
-          "Gemini AI (2.5 Pro + Image Edit)",
-          "Shopify API",
-          "Zernio API",
-          "Instagram Graph API",
-          "Google Drive API",
-          "AWS S3 (Presigned URLs)",
-          "AI Image Generation",
-          "Workflow Automation"
-        ],
-        "video": "https://www.loom.com/embed/1b996ae2dcb44d12b72c56ec25b174b7",
-        "domain": "AI & E-commerce Automation",
-        "duration": "April 2026"
       }
     ],
     "archivedItems": [
