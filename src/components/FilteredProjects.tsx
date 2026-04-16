@@ -47,14 +47,14 @@ export default function FilteredProjects() {
             key={project.slug}
             className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500 md:min-h-[260px]"
           >
-            <div className="w-full md:w-1/2 shrink-0 aspect-video md:aspect-auto relative overflow-hidden bg-surface-container-high">
+            <div className="w-full md:w-1/2 shrink-0 aspect-video md:aspect-auto relative overflow-hidden">
               <Link href={`/projects/${project.slug}`} className="absolute inset-0 block w-full h-full">
                 <Image
                   fill
                   priority={index === 0 || index === 1}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   alt={project.title}
-                  className="project-image object-contain transition-transform duration-700 group-hover:scale-105"
+                  className="project-image object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   src={project.image[0] || "/profile-nano.png"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>
@@ -63,7 +63,7 @@ export default function FilteredProjects() {
             <div className="p-6 lg:p-10 flex flex-col flex-1 justify-center relative">
               <div className="flex justify-between items-start mb-4 gap-4">
                 <Link href={`/projects/${project.slug}`} className="hover:underline flex-1">
-                  <h4 className="font-headline text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors line-clamp-2">
+                  <h4 className="font-headline text-xl lg:text-2xl font-bold group-hover:text-primary transition-colors">
                     {project.title}
                   </h4>
                 </Link>
