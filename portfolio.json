@@ -467,6 +467,57 @@
         ],
         "video": null,
         "liveUrl": "https://linkedin-ui-lemon.vercel.app/"
+      },
+      {
+        "slug": "sheeen-store-instagram-automation",
+        "platform": "AI & E-commerce Automation",
+        "featured": true,
+        "rating": 5,
+        "title": "Sheeen.store — Automated Instagram Post Workflow",
+        "category": "AI Content Automation",
+        "date": "April 2026",
+        "client": {
+          "name": "Sheeen.store (Fashion Brand)",
+          "feedback": "The automation completely removed manual content work from our plate. Every post looks premium and goes out on schedule — it's like having a full-time social media team on autopilot."
+        },
+        "tags": [
+          "n8n",
+          "AI Automation",
+          "Instagram",
+          "Shopify",
+          "Gemini",
+          "Content Generation",
+          "Image Generation",
+          "E-commerce",
+          "Social Media"
+        ],
+        "description": "A fully automated end-to-end Instagram posting system for a fashion brand — from Shopify product selection to AI-generated captions & premium fashion ads, published automatically 4× per week.",
+        "detailedDescription": "Built a complete zero-touch Instagram content pipeline for Sheeen.store, a fashion e-commerce brand on Shopify. The n8n workflow triggers automatically 4× per week, fetches all published products from Shopify, filters out excluded categories (hoodies & sweatshirts), and randomly selects a valid product. It intelligently picks the best product view (back image for prints, front otherwise). Two parallel AI branches then kick in: one generates an engaging Instagram caption with emojis, CTAs, and brand + dynamic hashtags via a Gemini AI Agent, while the other asks Gemini to suggest a realistic photoshoot scene. The product image and brand logo are downloaded, merged, and sent to Gemini's image-edit model (gemini-3-pro-image-preview) which creates a premium 1:1 cinematic fashion ad with logo overlay, scene context, and headline text. The final image is uploaded to cloud storage via a presigned S3 URL through Zernio, and the post (image + caption) is published to Instagram automatically via the Zernio API.",
+        "objectives": [
+          "Automate Instagram posting 4× per week with zero manual intervention",
+          "Fetch and filter Shopify products dynamically to select featured items",
+          "Generate AI-powered Instagram captions with emojis, CTAs, and smart hashtags",
+          "Create premium cinematic fashion ad images using Gemini image editing",
+          "Overlay brand logo and headline text on AI-generated photoshoot scenes",
+          "Upload and publish posts automatically via Zernio's Instagram API integration"
+        ],
+        "image": [
+          "/sheeen-store/thumbnail.png"
+        ],
+        "technologies": [
+          "n8n",
+          "Gemini AI (2.5 Pro + Image Edit)",
+          "Shopify API",
+          "Zernio API",
+          "Instagram Graph API",
+          "Google Drive API",
+          "AWS S3 (Presigned URLs)",
+          "AI Image Generation",
+          "Workflow Automation"
+        ],
+        "video": "https://www.loom.com/embed/1b996ae2dcb44d12b72c56ec25b174b7",
+        "domain": "AI & E-commerce Automation",
+        "duration": "April 2026"
       }
     ],
     "archivedItems": [
