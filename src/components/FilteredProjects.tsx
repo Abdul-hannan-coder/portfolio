@@ -45,16 +45,16 @@ export default function FilteredProjects() {
         {filteredProjects.map((project, index) => (
           <article
             key={project.slug}
-            className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500"
+            className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500 md:min-h-[320px]"
           >
-            <div className="w-full md:w-[45%] lg:w-2/5 shrink-0 aspect-video md:aspect-auto relative overflow-hidden">
+            <div className="w-full md:w-1/2 shrink-0 aspect-video md:aspect-auto relative overflow-hidden">
               <Link href={`/projects/${project.slug}`} className="absolute inset-0 block w-full h-full">
                 <Image
                   fill
                   priority={index === 0 || index === 1}
                   sizes="(max-width: 768px) 100vw, 50vw"
                   alt={project.title}
-                  className="project-image object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  className="project-image object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   src={project.image[0] || "/profile-nano.png"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>

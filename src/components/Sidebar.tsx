@@ -56,9 +56,9 @@ export default function Sidebar() {
         transition={{ type: "spring", bounce: 0, duration: 0.5 }}
         className={`
           fixed lg:!transform-none lg:sticky top-0 lg:top-12 
-          left-0 h-screen lg:h-[calc(100vh-6rem)]
+          left-0 h-screen lg:h-fit lg:max-h-[calc(100vh-6rem)]
           w-80 bg-surface-container-low lg:rounded-xl p-6 
-          overflow-y-auto z-50 lg:z-40 border-r lg:border-none border-outline-variant/20
+          overflow-hidden z-50 lg:z-40 border-r lg:border-none border-outline-variant/20
           flex flex-col [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]
         `}
       >
