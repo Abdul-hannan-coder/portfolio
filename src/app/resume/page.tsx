@@ -15,7 +15,7 @@ export default function Resume() {
   const education = timeline.filter(item => item.type === "education");
 
   // Extract unique skills
-  const allSkills = Array.from(new Set(timeline.flatMap(item => item.skills))).slice(0, 6); // Take up to 6 skills to match layout
+  const allSkills = Array.from(new Set(timeline.flatMap(item => item.skills)));
 
   // Map to arbitrary percentages for layout consistency
   const skillPercentages = [95, 92, 90, 88, 85, 80];

@@ -1,11 +1,10 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, ReactNode } from "react";
 import {
   Cloud,
   Users,
-  Workflow,
   Target,
   Code2
 } from "lucide-react";
@@ -37,20 +36,68 @@ const SvgDocker = () => (
   </svg>
 )
 
-import { ReactNode } from "react";
+const SvgZapier = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.996.002c-6.627 0-12 5.374-12 12.001 0 6.626 5.373 12 12 12s12-5.374 12-12C23.996 5.376 18.623.002 11.996.002zm2.843 16.59H8.614l3.195-4.407H8.614l5.127-7.778-1.54 4.407h3.194l-5.127 7.778z" fill="#FF4A00"/></svg>
+);
+
+const SvgWordpress = () => (
+  <svg viewBox="0 0 24 24" fill="#21759b" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.34c-.5 1.117-.78 2.354-.78 3.66zm10.713-7.076c1.388 0 2.56.44 3.134 1.14.61.745.895 1.76.895 2.87 0 1.25-.436 2.65-1.096 4.316l-3.328 8.44c3.486-1.53 5.952-5.015 5.952-9.1 0-5.522-4.477-10-10-10-1.72 0-3.344.436-4.78 1.196L7.495 8.94c.307-.05.58-.088.75-.088 1.066 0 2.707.13 2.707.13.43.03.504-.622.062-.676 0 0-.674-.085-1.425-.11l4.088-11.66c.21.6.452 1.344.646 2.036l2.133-6.244c.485-1.393.75-2.222.75-2.222.428.028.5.674.062.674 0 0-1.492.106-2.585.106zM12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0z"/>
+  </svg>
+);
+
+const SvgShopify = () => (
+  <svg viewBox="0 0 24 24" fill="#95bf47" width="24" height="24">
+    <path d="M21 7.228C21 7.228 17.502.43 17.382.203c-0.122-0.229-0.54-0.18-0.54-0.18l-5.617 1.838 1.488-1.523S12.87-0.038 12.518.003L1.516 1.455c-0.34.02-0.45.242-0.45.242s-1.026 2.012-1.026 2.21v16.142c0 0.2.146.48.33.626l5.72 4.619c0.182.146.48.243.66.19l14.1-4c0.182-.05.15-0.34.15-0.34V7.228z"/>
+  </svg>
+);
+
+const SvgTwilio = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.8 17.4c-1.988 0-3.6-1.612-3.6-3.6s1.612-3.6 3.6-3.6 3.6 1.612 3.6 3.6-1.612 3.6-3.6 3.6zm0-7.2c-1.988 0-3.6-1.612-3.6-3.6 0-1.988 1.612-3.6 3.6-3.6s3.6 1.612 3.6 3.6c0 1.988-1.612 3.6-3.6 3.6zm7.2 7.2c-1.988 0-3.6-1.612-3.6-3.6s1.612-3.6 3.6-3.6 3.6 1.612 3.6 3.6-1.612 3.6-3.6 3.6zm0-7.2c-1.988 0-3.6-1.612-3.6-3.6 0-1.988 1.612-3.6 3.6-3.6s3.6 1.612 3.6 3.6c0 1.988-1.612 3.6-3.6 3.6z" fill="#F22F46"/>
+  </svg>
+);
+
+const SvgN8n = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#EA4335" d="M17.4 4c-1.6 0-3 .7-3.9 1.8-1-1.1-2.4-1.8-3.9-1.8C6.5 4 4 6.5 4 9.6v4.8C4 17.5 6.5 20 9.6 20c1.6 0 3-.7 3.9-1.8 1 1.1 2.4 1.8 3.9 1.8 3.1 0 5.6-2.5 5.6-5.6V9.6C23 6.5 20.5 4 17.4 4zm-7.8 7.2c0-1.3 1.1-2.4 2.4-2.4s2.4 1.1 2.4 2.4v1.6c0 1.3-1.1 2.4-2.4 2.4s-2.4-1.1-2.4-2.4v-1.6z"/>
+  </svg>
+);
+
+const SvgMake = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="11" fill="#7136FF"/>
+    <circle cx="12" cy="12" r="3.5" fill="#FFF"/>
+  </svg>
+);
+
+const SvgVapi = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#2D19FF" d="M4 2v20h4V12l4 10 4-10v10h4V2L12 19z"/>
+  </svg>
+);
+
+const SvgRetell = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+    <rect width="24" height="24" rx="6" fill="#FF2D55"/>
+    <text x="12" y="16" fontFamily="sans-serif" fontSize="14" fontWeight="bold" fill="white" textAnchor="middle">R</text>
+  </svg>
+);
 
 const SvgGenericCode = () => <Code2 size={24} className="text-primary" />;
-
-interface Skill {
-  name: string;
-  icon: ReactNode;
-}
 
 const skillMap: Record<string, ReactNode> = {
   "Next.js": <SvgNextjs />,
   "React": <SvgReact />,
   "Gohighlevel Automation": <Target size={24} className="text-[#00C2FF]" />,
-  "N8N , Make , Zapier Automation": <Workflow size={24} className="text-[#FF6B6B]" />,
+  "n8n": <SvgN8n />,
+  "Make": <SvgMake />,
+  "Zapier": <SvgZapier />,
+  "Vapi": <SvgVapi />,
+  "Retell.ai": <SvgRetell />,
+  "Twilio": <SvgTwilio />,
+  "Shopify": <SvgShopify />,
+  "WordPress": <SvgWordpress />,
   "Redux": <SvgRedux />,
   "Tailwind CSS": <SvgTailwind />,
   "Docker": <SvgDocker />,
@@ -76,7 +123,7 @@ export default function SkillsSection({
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.08,
+        staggerChildren: 0.06,
       },
     },
   };
@@ -138,9 +185,9 @@ export default function SkillsSection({
         </div>
       </div>
 
-      {/* Skills Grid */}
+      {/* Skills Flex-Wrap Row Layout */}
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        className="flex flex-wrap gap-4"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -152,13 +199,13 @@ export default function SkillsSection({
             <motion.div
               key={index}
               variants={cardVariants}
-              whileHover={{ scale: 1.03, y: -4 }}
-              className="skill-badge-card group flex items-center gap-4 p-4 rounded-2xl"
+              whileHover={{ scale: 1.03, y: -2 }}
+              className="skill-badge-card group flex items-center gap-4 p-4 pr-6 rounded-2xl"
             >
-              <div className="skill-icon-box flex-shrink-0 w-14 h-14 flex items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110">
+              <div className="skill-icon-box flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 shadow-inner">
                 {icon}
               </div>
-              <span className="font-label text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors duration-300 leading-snug">
+              <span className="font-label text-[14px] font-bold text-on-surface group-hover:text-primary transition-colors duration-300 leading-snug whitespace-nowrap">
                 {skill}
               </span>
             </motion.div>
