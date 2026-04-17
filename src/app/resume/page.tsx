@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SkillsSection from "@/components/SkillsSection";
 import portfolioData from "../../../portfolio.json";
 import type { Metadata } from "next";
 
@@ -108,37 +109,7 @@ export default function Resume() {
           </div>
 
           {/* Skills Section */}
-          <div className="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] ghost-border">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-              <div>
-                <h2 className="font-headline text-4xl font-bold mb-2">My Skills</h2>
-                <p className="text-on-surface-variant font-label max-w-md">
-                  The technical arsenal refined through years of continuous learning and rigorous project delivery.
-                </p>
-              </div>
-              <div className="flex gap-2">
-                <span className="px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold font-label uppercase">
-                  Expertise
-                </span>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
-              {allSkills.map((skill, index) => {
-                const percentage = skillPercentages[index] || 85;
-                return (
-                  <div key={index} className="space-y-3">
-                    <div className="flex justify-between items-center px-1">
-                      <span className="font-label font-bold text-on-surface line-clamp-1 pr-4" title={skill}>{skill}</span>
-                      <span className="font-label text-xs text-primary">{percentage}%</span>
-                    </div>
-                    <div className="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
-                      <div className="h-full gold-gradient-bg shadow-[0_0_10px_rgba(255,237,195,0.3)] bg-primary" style={{ width: `${percentage}%` }}></div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+          <SkillsSection skills={allSkills} percentages={skillPercentages} />
         </section>
 
         <Footer />
