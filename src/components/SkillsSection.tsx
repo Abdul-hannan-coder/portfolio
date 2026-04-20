@@ -187,12 +187,12 @@ export default function SkillsSection({
 
       {/* Skills Flex-Wrap Row Layout */}
       <motion.div
-        className="flex flex-wrap gap-4"
+        className="flex flex-wrap gap-3 sm:gap-4"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {skills.map((skill, index) => {
+        {skills.filter(skill => skill in skillMap).map((skill, index) => {
           const icon = getIcon(skill);
 
           return (

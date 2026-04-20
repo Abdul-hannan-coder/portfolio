@@ -24,7 +24,7 @@ export default function Resume() {
     <main className="flex-1 flex flex-col">
       <div className="max-w-6xl mx-auto w-full">
         {/* Header with Tabs Navigation */}
-        <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">
+        <header className="flex justify-between items-center mb-8 md:mb-16 mt-20 lg:mt-8">
           <Navigation />
           <div className="hidden md:flex items-center">
             <button className="primary-gradient-bg px-6 py-2 rounded-full text-on-primary font-label text-sm font-bold shadow-lg shadow-primary-container/10">
@@ -35,16 +35,16 @@ export default function Resume() {
 
         {/* Canvas Area */}
         <section className="flex-1 pb-16 w-full">
-          <div className="mb-20">
-            <h1 className="font-headline text-5xl lg:text-7xl font-extrabold tracking-tighter mb-4">
+          <div className="mb-10 md:mb-20">
+            <h1 className="font-headline text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tighter mb-4">
               The <span className="gold-gradient-text">Architectural</span> Ledger.
             </h1>
-            <p className="text-on-surface-variant text-xl max-w-2xl font-light leading-relaxed">
+            <p className="text-on-surface-variant text-base sm:text-xl max-w-2xl font-light leading-relaxed">
               A chronicle of professional evolution, technical mastery, and the transformation of logic into digital artistry.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 mb-12 md:mb-24">
             {/* Experience Section */}
             <div>
               <div className="flex items-center gap-4 mb-10">
@@ -89,7 +89,7 @@ export default function Resume() {
               </div>
               <div className="space-y-12">
                 {education.map((edu, index) => (
-                  <div key={index} className="bg-surface-container-low p-8 rounded-2xl ghost-border hover:bg-surface-container transition-all">
+                  <div key={index} className="bg-surface-container-low p-5 sm:p-8 rounded-2xl ghost-border hover:bg-surface-container transition-all">
                     <span className="font-label text-xs uppercase tracking-[0.2em] text-on-secondary-container block mb-3">
                       {edu.period}
                     </span>
