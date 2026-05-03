@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Manrope } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import "./globals.css";
@@ -68,6 +69,16 @@ export default function RootLayout({
       >
         <Sidebar />
         {children}
+        <Script
+          src="https://beta.leadconnectorhq.com/loader.js"
+          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="69f78d19a4b26cb299f2eea9"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://link.msgsndr.com/js/external-tracking.js"
+          data-tracking-id="tk_5ce1086163a34470be0c7123a835c464"
+        />
       </body>
     </html>
   );
