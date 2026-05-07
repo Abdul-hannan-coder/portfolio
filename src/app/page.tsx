@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative z-10">
           <div className="max-w-2xl">
             <h2 className="font-headline text-4xl lg:text-5xl font-bold tracking-tight mb-4 leading-tight">
-              Frontend Engineering & <span className="text-primary italic">Automation</span>
+              AI Automation & <span className="text-primary italic">Gohighlevel Expert</span>
             </h2>
             <p className="text-on-surface-variant font-label leading-relaxed">
               {personal.subtitle}
