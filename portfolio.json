@@ -223,7 +223,10 @@
         ],
         "image": [
           "/stopfindingleads/thumbnail.png",
-          "/stopfindingleads/funnel1.png"
+          "/stopfindingleads/funnel1.png",
+          "/stopfindingleads/s1.jpeg",
+          "/stopfindingleads/s2.jpeg",
+          "/stopfindingleads/s3.jpeg"
         ],
         "technologies": [
           "GoHighLevel (GHL)",
@@ -271,7 +274,11 @@
         "image": [
           "/thumbnails/listcatcher_yellow.png",
           "/funnels/listcatcher1.png",
-          "/funnels/listcatcher2.png"
+          "/funnels/listcatcher2.png",
+          "/listcatcher/l1.jpeg",
+          "/listcatcher/l2.jpeg",
+          "/listcatcher/l3.jpeg",
+          "/listcatcher/l4.jpeg"
         ],
         "technologies": [
           "Gohighlevel",
@@ -430,6 +437,67 @@
         "video": "https://www.loom.com/embed/1b996ae2dcb44d12b72c56ec25b174b7",
         "domain": "AI & E-commerce Automation",
         "duration": "April 2026"
+      },
+      {
+        "slug": "innoclan-ai-marketing-architecture",
+        "platform": "AI Marketing & Automation",
+        "featured": true,
+        "rating": 5,
+        "title": "Innoclan - AI-Driven Marketing Architecture for Payroll Newsletter",
+        "category": "AI Marketing Automation",
+        "date": "Live",
+        "client": {
+          "name": "Calan (Payroll & Finance Industry)",
+          "feedback": "The entire marketing pipeline is now fully automated. From content discovery to newsletter delivery, everything runs seamlessly without manual intervention. This has transformed our content strategy."
+        },
+        "tags": [
+          "n8n",
+          "AI Automation",
+          "Content Scraping",
+          "Supabase",
+          "Newsletter Automation",
+          "Brevo",
+          "Marketing Pipeline",
+          "B2B Dashboard",
+          "Email Marketing"
+        ],
+        "description": "Comprehensive AI-driven marketing pipeline featuring automated content scraping, intelligent article curation, AI-generated newsletters, custom B2B dashboard, and automated email delivery orchestrated through advanced n8n workflows.",
+        "detailedDescription": "Built a complete end-to-end AI marketing architecture for Calan's payroll-focused newsletter. The system automatically scrapes content from CFO-focused sources (CFO.com, DAF Mag, Option Finance), applies thematic filtering to exclude irrelevant topics (crypto, trading, pure macro), and performs intelligent article deduplication with auto-tagging for categories like payroll, compliance, AI, and automation. Non-English articles are automatically translated. The Supabase database maintains a structured schema for articles, newsletters, contacts, and send logs. AI generates contextual editorial intros and article summaries, outputting send-ready responsive HTML newsletters. The custom web interface allows browsing, filtering, and reviewing articles with newsletter preview capabilities (rendered and raw HTML). Contact management includes tag-based segmentation, enabling targeted newsletter distribution. The entire workflow is orchestrated through n8n with on-demand or scheduled generation, integrated with Brevo for reliable email delivery and comprehensive send tracking.",
+        "objectives": [
+          "Automate content discovery and curation from multiple finance and CFO-focused sources",
+          "Implement intelligent filtering, deduplication, and auto-tagging for relevant payroll content",
+          "Build scalable Supabase database architecture for articles, newsletters, contacts, and logs",
+          "Generate AI-powered newsletters with contextual intros and summaries in responsive HTML",
+          "Develop custom B2B dashboard for content management and newsletter operations",
+          "Enable tag-based contact segmentation and targeted email distribution via Brevo",
+          "Orchestrate complete marketing pipeline through advanced n8n automation workflows"
+        ],
+        "image": [
+          "/innoclan/i1.jpeg",
+          "/innoclan/i2.jpeg",
+          "/innoclan/i3.jpeg",
+          "/innoclan/i4.jpeg",
+          "/innoclan/i5.jpeg",
+          "/innoclan/i6.jpeg",
+          "/innoclan/i7.jpeg"
+        ],
+        "technologies": [
+          "n8n",
+          "Supabase",
+          "AI Content Generation",
+          "Brevo Email API",
+          "Web Scraping",
+          "Auto Translation",
+          "Next.js",
+          "TypeScript",
+          "Responsive HTML Email",
+          "Tag-based Segmentation",
+          "Workflow Automation"
+        ],
+        "video": "https://www.loom.com/embed/your-video-id-here",
+        "liveUrl": "https://innoclan-dashboard.vercel.app/",
+        "domain": "AI Marketing & Automation",
+        "duration": "Live"
       }
     ],
     "archivedItems": [
