@@ -4,7 +4,7 @@
     "initials": "AH",
     "title": "Full Stack Automation Developer ",
     "subtitle": "I design and automate B2B SaaS and marketing pipelines using GoHighLevel, n8n, Supabase, and AI—helping businesses automate lead generation, newsletters, and content operations.",
-    "tagline": "B2B SaaS & Marketing Automation | GHL · n8n · Supabase",
+    "tagline": "AI Automation Engineer",
     "profileImage": "/profile-nano.png",
     "heroImage": "/profile-nano.png"
   },
@@ -12,8 +12,8 @@
     "title": "Meet",
     "highlightedTitle": "ABDUL HANNAN",
     "paragraphs": [
-      "I build B2B SaaS and marketing automation solutions using no-code and low-code tools like GoHighLevel (GHL), n8n, and Supabase. I design end-to-end pipelines for lead generation, content curation, and newsletter automation that scale without heavy engineering.",
-      "My focus is automating business workflows—connecting CRMs, scraping and curating content, generating AI-powered newsletters, and delivering reliable email campaigns. I help companies reduce manual work, increase engagement, and deliver measurable growth with production-ready automations."
+      "I design and deliver B2B marketing automation and SaaS systems focused on chatbots, UGC content automation pipelines, and voice agents. I build GoHighLevel (GHL) solutions that include lead qualification, appointment booking, UTM tracking, funnels, and conversational workflows to drive acquisition and conversion.",
+      "My implementations connect CRMs, n8n automations, Supabase backends, and AI services to create production-ready pipelines for chatbots, voice-enabled agents, and UGC workflows—reducing manual work, improving lead flow, and increasing customer engagement and retention."
     ]
   },
   "navigation": [
@@ -346,7 +346,7 @@
         "platform": "AI Powered Linkedin and X (Twitter) Content Automation System",
         "featured": false,
         "rating": 5,
-        "title": "Social Content AI Automation",
+        "title": "AI-Driven Social Content & Lead Generation System",
         "category": "AI Content Automation",
         "date": "March 15, 2025 - April 30, 2025",
         "client": {
@@ -393,7 +393,7 @@
         "platform": "AI & E-commerce Automation",
         "featured": true,
         "rating": 5,
-        "title": "Sheeen.store : Automated Instagram Post Workflow",
+        "title": "Automated Instagram Post Workflow",
         "category": "AI Content Automation",
         "date": "April 2026",
         "client": {
@@ -444,7 +444,7 @@
         "platform": "AI Marketing & Automation",
         "featured": true,
         "rating": 5,
-        "title": "Innoclan - AI-Driven Marketing Architecture for Payroll Newsletter",
+        "title": "AI-Driven Marketing Architecture for Payroll Newsletter",
         "category": "AI Marketing Automation",
         "date": "Live",
         "client": {
@@ -462,8 +462,8 @@
           "B2B Dashboard",
           "Email Marketing"
         ],
-        "description": "Comprehensive AI-driven marketing pipeline featuring automated content scraping, intelligent article curation, AI-generated newsletters, custom B2B dashboard, and automated email delivery orchestrated through advanced n8n workflows.",
-        "detailedDescription": "Built a complete end-to-end AI marketing architecture for Calan's payroll-focused newsletter. The system automatically scrapes content from CFO-focused sources (CFO.com, DAF Mag, Option Finance), applies thematic filtering to exclude irrelevant topics (crypto, trading, pure macro), and performs intelligent article deduplication with auto-tagging for categories like payroll, compliance, AI, and automation. Non-English articles are automatically translated. The Supabase database maintains a structured schema for articles, newsletters, contacts, and send logs. AI generates contextual editorial intros and article summaries, outputting send-ready responsive HTML newsletters. The custom web interface allows browsing, filtering, and reviewing articles with newsletter preview capabilities (rendered and raw HTML). Contact management includes tag-based segmentation, enabling targeted newsletter distribution. The entire workflow is orchestrated through n8n with on-demand or scheduled generation, integrated with Brevo for reliable email delivery and comprehensive send tracking.",
+        "description": "AI-driven marketing automation system for content scraping, curation, newsletter generation, and email delivery through n8n and Supabase.",
+        "detailedDescription": "Built an end-to-end AI marketing system for Calan's payroll-focused newsletter. It scrapes finance content, filters and tags relevant articles, translates non-English pieces, and generates send-ready newsletters. The workflow is orchestrated through n8n with Supabase for data storage and Brevo for delivery and tracking.",
         "objectives": [
           "Automate content discovery and curation from multiple finance and CFO-focused sources",
           "Implement intelligent filtering, deduplication, and auto-tagging for relevant payroll content",
@@ -496,7 +496,7 @@
           "Workflow Automation"
         ],
         "video": "<div style=\"position: relative; padding-bottom: 56.2500%; height: 0;\"><iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"https://www.tella.tv/video/vid_cml46ik5903dc04jp0dl6b8o2/embed?b=1&title=1&a=1&loop=0&t=0&muted=0&wt=1&o=1\" allow=\"autoplay; fullscreen\" allowtransparency></iframe></div>",
-        "liveUrl": "https://innoclan-dashboard.vercel.app/",
+        "liveUrl": "https://inno-calan.vercel.app/",
         "domain": "AI Marketing & Automation",
         "duration": "Live"
       }
@@ -1051,56 +1051,26 @@
     {
       "text": "The AI automation transformed our internal operations, streamlining our data management. The smart workflows keep our processes perfectly optimized effortlessly.",
       "image": "/Rifak.jpeg",
-      "name": "Briana Patton",
-      "role": "Operations Manager"
+      "name": "Rifak",
+      "role": "Founder of Novaprotect Insurance"
     },
     {
       "text": "Deploying these AI and automation systems was smooth and quick. The intelligent bots made scaling our customer support completely effortless.",
       "image": "/imran.jpeg",
-      "name": "Bilal Ahmed",
-      "role": "Startup Founder"
+      "name": "Imrane Abdoul",
+      "role": "Co-founder of Velios"
     },
     {
       "text": "The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our systems run at peak efficiency around the clock.",
       "image": "/Baptiste.jpeg",
-      "name": "Saman Malik",
-      "role": "Head of Marketing"
+      "name": "Baptiste Simard",
+      "role": "Founder at Velios"
     },
     {
       "text": "The seamless integration of N8N workflows enhanced our software's capabilities. Highly recommend for its smart automation and robust reliability.",
       "image": "/Enzo.jpeg",
-      "name": "Omar Raza",
+      "name": "Enzo",
       "role": "Technical Architect"
-    },
-    {
-      "text": "Its robust tracking and quick support have transformed our lead generation, making our sales pipeline significantly faster and more efficient.",
-      "image": "/hamza.png",
-      "name": "Zainab Hussain",
-      "role": "Sales Director"
-    },
-    {
-      "text": "The smooth implementation exceeded expectations. It streamlined our CRM structure, improving overall revenue forecasting dramatically.",
-      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-      "name": "Aliza Khan",
-      "role": "Business Analyst"
-    },
-    {
-      "text": "Our team's productivity improved instantly with a user-friendly design and excellent smart routing that adapts to our ever-changing business logic.",
-      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
-      "name": "Farhan Siddiqui",
-      "role": "Agency Owner"
-    },
-    {
-      "text": "They delivered an AI solution that exceeded expectations, understanding our specific needs and enhancing our daily operational throughput immensely.",
-      "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=150&q=80",
-      "name": "Sana Sheikh",
-      "role": "Real Estate Broker"
-    },
-    {
-      "text": "Using these custom solutions, our overhead costs significantly decreased while maintaining perfect accuracy all year round. Absolutely incredible.",
-      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80",
-      "name": "Hassan Ali",
-      "role": "Tech Entrepreneur"
     }
   ]
 }

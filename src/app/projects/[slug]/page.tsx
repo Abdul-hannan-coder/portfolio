@@ -49,6 +49,8 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
     notFound();
   }
 
+  const video = (project as any)?.video;
+
   return (
     <main className="flex-1 flex flex-col min-h-screen">
       {/* Header with Navigation */}
@@ -190,21 +192,25 @@ export default async function ProjectDetail({ params }: { params: Promise<{ slug
           </div>
 
           {/* Video Section if available */}
-          {project.video && (
+            {video && (
              <div className="bg-surface-container-low rounded-xl p-8 overflow-hidden">
                 <h2 className="font-headline text-2xl font-bold mb-6 flex items-center gap-2">
                   <span className="material-symbols-outlined text-primary">play_circle</span>
                   Demo Video
                 </h2>
                 <div className="aspect-video w-full rounded-xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30">
-                  <iframe 
-                    className="w-full h-full" 
-                    src={project.video} 
-                    title={`${project.title} Demo`}
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowFullScreen
-                  ></iframe>
+                  {typeof video === 'string' && video.trim().startsWith('<') ? (
+                    <div className="w-full h-full" dangerouslySetInnerHTML={{ __html: video }} />
+                  ) : (
+                    <iframe
+                      className="w-full h-full"
+                      src={String(video)}
+                      title={`${project.title} Demo`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                  )}
                 </div>
              </div>
           )}
