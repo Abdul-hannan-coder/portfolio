@@ -3,8 +3,8 @@
     "name": "Abdul Hannan ",
     "initials": "AH",
     "title": "Full Stack Automation Developer ",
-    "subtitle": "I specialize in building high-performance, scalable web applications using modern technologies like React/Next.js .I also have vast experience in automating business processes using Gohighlevel. With a strong background in frontend development and a passion for creating seamless user experiences, I help businesses enhance their online presence and streamline operations through innovative solutions.",
-    "tagline": "Full Stack Automation Developer | Gohighlevel Expert",
+    "subtitle": "I design and automate B2B SaaS and marketing pipelines using GoHighLevel, n8n, Supabase, and AI—helping businesses automate lead generation, newsletters, and content operations.",
+    "tagline": "B2B SaaS & Marketing Automation | GHL · n8n · Supabase",
     "profileImage": "/profile-nano.png",
     "heroImage": "/profile-nano.png"
   },
@@ -12,7 +12,8 @@
     "title": "Meet",
     "highlightedTitle": "ABDUL HANNAN",
     "paragraphs": [
-      "I am a passionate and dedicated software engineer with a strong background in frontend development and automation. With over 2 years of experience in the industry, I have honed my skills in building high-performance web applications and automating business processes using Gohighlevel. My expertise lies in creating seamless user experiences and helping businesses enhance their online presence through innovative solutions. I am committed to continuous learning and staying up-to-date with the latest technologies to deliver exceptional results for my clients."
+      "I build B2B SaaS and marketing automation solutions using no-code and low-code tools like GoHighLevel (GHL), n8n, and Supabase. I design end-to-end pipelines for lead generation, content curation, and newsletter automation that scale without heavy engineering.",
+      "My focus is automating business workflows—connecting CRMs, scraping and curating content, generating AI-powered newsletters, and delivering reliable email campaigns. I help companies reduce manual work, increase engagement, and deliver measurable growth with production-ready automations."
     ]
   },
   "navigation": [
@@ -494,7 +495,7 @@
           "Tag-based Segmentation",
           "Workflow Automation"
         ],
-        "video": "https://www.loom.com/embed/your-video-id-here",
+        "video": "<div style=\"position: relative; padding-bottom: 56.2500%; height: 0;\"><iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"https://www.tella.tv/video/vid_cml46ik5903dc04jp0dl6b8o2/embed?b=1&title=1&a=1&loop=0&t=0&muted=0&wt=1&o=1\" allow=\"autoplay; fullscreen\" allowtransparency></iframe></div>",
         "liveUrl": "https://innoclan-dashboard.vercel.app/",
         "domain": "AI Marketing & Automation",
         "duration": "Live"
