@@ -499,6 +499,48 @@
         "liveUrl": "https://inno-calan.vercel.app/",
         "domain": "AI Marketing & Automation",
         "duration": "Live"
+      },
+      {
+        "slug": "vantek-quote-management",
+        "platform": "B2B",
+        "featured": false,
+        "rating": 5,
+        "title": "Vantek — Industrial Parts Quote Management",
+        "category": "B2B Quote Management",
+        "date": "May 2026",
+        "tags": [
+          "Supabase",
+          "n8n",
+          "Axonaut",
+          "Quote Automation",
+          "B2B"
+        ],
+        "description": "B2B quote management system automating request intake, supplier search, and quote generation with Supabase and n8n.",
+        "detailedDescription": "Streamlines the full quote lifecycle from email intake to Axonaut PDF generation. Supports supplier search, Excel imports, bilingual UI, and admin user management.",
+        "objectives": [
+          "Secure operator login and dashboard KPIs",
+          "Automate request intake from email/WhatsApp",
+          "Search and select supplier offers via n8n",
+          "Generate quote drafts and push to Axonaut",
+          "Manage suppliers and import from Excel"
+        ],
+        "image": [
+          "/vantek/thumbnail.png",
+          "/vantek/placeholder1.png",
+          "/vantek/placeholder2.png"
+        ],
+        "technologies": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Supabase",
+          "n8n",
+          "Axonaut"
+        ],
+        "video": null,
+        "liveUrl": null,
+        "domain": "B2B Operations",
+        "duration": "May 2026"
       }
     ],
     "archivedItems": [
