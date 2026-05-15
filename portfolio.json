@@ -222,6 +222,21 @@
           "Set up conversion tracking and analytics pipeline",
           "Develop quiz/assessment logic with branching conditional workflows"
         ],
+        "userJourney": [
+          "Customer sends quote request via email or WhatsApp",
+          "Email forwarded to n8n which creates a request in Supabase",
+          "Data Operator reviews request, extracts parts, and searches suppliers",
+          "Operator selects offers; selections are written to quote lines in Supabase",
+          "Operator generates quote draft via n8n and reviews pricing",
+          "Quote is pushed to Axonaut and PDF is delivered to the customer"
+        ],
+        "highlights": [
+          "Automated intake from email and WhatsApp",
+          "Supplier search orchestration via n8n",
+          "Excel supplier import and brand matching",
+          "Bilingual UI (EN/FR) and admin user management",
+          "Axonaut integration for PDF quotes and tracking"
+        ],
         "image": [
           "/stopfindingleads/thumbnail.png",
           "/stopfindingleads/funnel1.png",
