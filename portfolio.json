@@ -288,7 +288,7 @@
         ],
         "detailedDescription": "The project began with a thorough analysis of the client's business goals and target audience to design an effective marketing funnel. The funnel was structured to capture leads through various touchpoints, including landing pages, forms, and email campaigns. The community platform was set up to foster engagement and build a loyal customer base, featuring discussion forums, resource sharing, and exclusive content. Automations were implemented to streamline lead nurturing, follow-ups, and customer interactions, resulting in improved marketing efficiency and enhanced customer experience.",
         "image": [
-          "/thumbnails/listcatcher_yellow.png",
+          "/listcatcher/thumbnail.png",
           "/funnels/listcatcher1.png",
           "/funnels/listcatcher2.png",
           "/listcatcher/l1.jpeg",
@@ -338,8 +338,7 @@
           "Maintain high reliability with automated LLM fallback (GPT-4o-mini to GPT-5-mini)"
         ],
         "image": [
-          "/shopify-chatbot-laptopstation/Whisk_6db2c33c62d55d390e44c907bdf04d13dr.jpeg",
-          "/shopify-chatbot-laptopstation/Whisk_a2afcc52f16c15e91c34305d70dce612dr.jpeg",
+          "/shopify-chatbot-laptopstation/thumbnail.png",
           "/shopify-chatbot-laptopstation/screencapture-laptopstation-chatbot-vercel-app-2026-03-28-10_31_01.png",
           "/shopify-chatbot-laptopstation/screencapture-n8n-clariana-co-uk-workflow-lhGicziiE3X2VK3G-2026-03-28-10_33_00.png"
         ],
@@ -388,7 +387,7 @@
         ],
         "detailedDescription": "This project focused on building a complete content automation system for professionals growing their presence on LinkedIn and X (Twitter). The platform combines a SaaS dashboard with backend automations so users can research competitors, generate high-quality posts, and create supporting lead magnets in one workflow. I built the frontend experience in Next.js and TypeScript, developed n8n automations for competitor analysis, and integrated AI-driven content generation to produce content tailored to each user's niche, positioning, and audience.",
         "image": [
-          "/project1.png"
+          "/ai-x-and-linkedin-posting/thumbnail.png"
         ],
         "technologies": [
           "Next.js",
@@ -489,6 +488,7 @@
           "Orchestrate complete marketing pipeline through advanced n8n automation workflows"
         ],
         "image": [
+          "/innoclan/thumbnail.png",
           "/innoclan/i1.jpeg",
           "/innoclan/i2.jpeg",
           "/innoclan/i3.jpeg",
@@ -575,9 +575,7 @@
           "Bilingual English/French interface with centralized config for Supabase keys, webhook URLs, brand lookup, quote generation, Axonaut creation, and admin emails"
         ],
         "image": [
-          "/vantek/thumbnail.png",
-          "/vantek/placeholder1.png",
-          "/vantek/placeholder2.png"
+          "/vantek/thumnail.png"
         ],
         "technologies": [
           "Next.js",
@@ -622,14 +620,11 @@
         ],
         "detailedDescription": "Facebook Postsiva is an AI-powered platform designed to help users create and schedule engaging content for their Facebook pages. The platform leverages advanced AI algorithms to generate content based on user preferences and trends, ensuring maximum engagement. Users can easily schedule posts, manage their content calendar, and track performance metrics. The intuitive interface and seamless integration with Facebook API make it a powerful tool for social media management.",
         "image": [
-          "/facebook-postsiva/post3.jpg",
-          "/facebook-postsiva/post8.jpg",
-          "/facebook-postsiva/post5.jpg",
-          "/facebook-postsiva/post4.jpg",
-          "/facebook-postsiva/post7.jpg",
-          "/facebook-postsiva/post2.jpg",
-          "/facebook-postsiva/post6.jpg",
-          "/facebook-postsiva/post1.jpg"
+          "/arhived/facebook/Thumbnail.jpeg",
+          "/arhived/facebook/create-post.jpeg",
+          "/arhived/facebook/schedule.jpeg",
+          "/arhived/facebook/storage.jpeg",
+          "/arhived/facebook/profile.jpeg"
         ],
         "technologies": [
           "Fastapi",
@@ -671,7 +666,11 @@
           "Create an intuitive frontend interface for seamless content creation workflow"
         ],
         "image": [
-          "/linkedin/hero-section.png"
+          "/arhived/linkedin/hero-section.png",
+          "/arhived/linkedin/create-post.png",
+          "/arhived/linkedin/schedule.png",
+          "/arhived/linkedin/storage.png",
+          "/arhived/linkedin/profile.png"
         ],
         "technologies": [
           "Next.js",
@@ -714,7 +713,12 @@
           "Deliver immersive experiences with high user satisfaction and retention rates"
         ],
         "image": [
-          "/fronix/Thumbnail.png"
+          "/arhived/fronix/Thumbnail.png",
+          "/arhived/fronix/Dashboard.png",
+          "/arhived/fronix/Analytic.png",
+          "/arhived/fronix/client-portfolio.png",
+          "/arhived/fronix/setting.png",
+          "/arhived/fronix/team.png"
         ],
         "technologies": [
           "Next.js",
@@ -763,7 +767,8 @@
           "Unlock AI-powered financial intelligence for businesses"
         ],
         "image": [
-          "/finescope/first-thumbnail.png"
+          "/arhived/finescope/first-thumbnail.png",
+          "/arhived/finescope/second-thumbnail.png"
         ],
         "technologies": [
           "Next.js",
@@ -809,7 +814,8 @@
           "Empower businesses of all sizes to scale shipping operations"
         ],
         "image": [
-          "/shipx/first-thumbnail.png"
+          "/arhived/shipx/first-thumbnail.png",
+          "/arhived/shipx/second-thumbnail.png"
         ],
         "technologies": [
           "Next.js",
@@ -848,7 +854,10 @@
           "Provide enterprise-grade scalability and seamless, responsive UX"
         ],
         "image": [
-          "/smart-analytic/second-thumbnail.png"
+          "/arhived/smart-analytic/first-thumbnail.png",
+          "/arhived/smart-analytic/second-thumbnail.png",
+          "/arhived/smart-analytic/nexa-flow-dashboard.png",
+          "/arhived/smart-analytic/nexa-flow-project.png"
         ],
         "technologies": [
           "Next.js",
@@ -885,7 +894,9 @@
           "Facilitate smart scaling with operational insights and robust infrastructure"
         ],
         "image": [
-          "/clarinova/first-thumbnail.png"
+          "/arhived/clarinova/first-thumbnail.png",
+          "/arhived/clarinova/second-thumbnail.png",
+          "/arhived/clarinova/dashboard.png"
         ],
         "technologies": [
           "Next.js",
@@ -921,7 +932,10 @@
           "Enable effortless transactions, strong security, and robust performance"
         ],
         "image": [
-          "/chainex/thumbnail.png"
+          "/arhived/chainex/thumbnail.png",
+          "/arhived/chainex/hero.png",
+          "/arhived/chainex/dashboard.png",
+          "/arhived/chainex/1.png"
         ],
         "technologies": [
           "Next.js",
@@ -958,7 +972,11 @@
           "Integrate AI-powered learning experiences to personalize and enhance skill development"
         ],
         "image": [
-          "/platform/Thumbnail.png"
+          "/arhived/platform/Thumbnail.png",
+          "/arhived/platform/1.png",
+          "/arhived/platform/2.png",
+          "/arhived/platform/3.png",
+          "/arhived/platform/4.png"
         ],
         "technologies": [
           "Next.js",
@@ -998,7 +1016,11 @@
           "Deliver an enterprise-ready, fully responsive layout for professional financial products"
         ],
         "image": [
-          "/finance/Thumbnail.png"
+          "/arhived/finance/Thumbnail.png",
+          "/arhived/finance/Dashoard.png",
+          "/arhived/finance/Budget.png",
+          "/arhived/finance/Transaction.png",
+          "/arhived/finance/Setting.png"
         ],
         "technologies": [
           "Next.js",
@@ -1035,7 +1057,9 @@
           "Highlight ability to design professional landing pages, dashboards, and SaaS UI"
         ],
         "image": [
-          "/portfolio-image/Thumbnail.png"
+          "/arhived/portfolio-image/Thumbnail.png",
+          "/arhived/portfolio-image/shadow (1).png",
+          "/arhived/portfolio-image/shadow (2).png"
         ],
         "technologies": [
           "Next.js",
@@ -1069,7 +1093,8 @@
           "Showcase expertise in fintech and crypto UI/UX design concepts"
         ],
         "image": [
-          "/crypto/Thumbnail.png"
+          "/arhived/crypto/Thumbnail.png",
+          "/arhived/crypto/landing.png"
         ],
         "technologies": [
           "Next.js",
