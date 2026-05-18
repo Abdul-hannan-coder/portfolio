@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import portfolioData from "../../portfolio.json";
+import portfolioData from "@/lib/portfolio-data";
 import FilteredProjects from "@/components/FilteredProjects";
 
 export default function Home() {

@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import portfolioData from '../../portfolio.json';
+import portfolioData from '@/lib/portfolio-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://abdulhannan.dev';

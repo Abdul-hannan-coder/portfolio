@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import portfolioData from "../../portfolio.json";
+import portfolioData from "@/lib/portfolio-data";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 

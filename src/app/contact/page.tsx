@@ -2,7 +2,7 @@
 
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import portfolioData from "../../../portfolio.json";
+import portfolioData from "@/lib/portfolio-data";
 import { useState } from "react";
 
 export default function Contact() {

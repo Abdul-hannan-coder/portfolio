@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SkillsSection from "@/components/SkillsSection";
-import portfolioData from "../../../portfolio.json";
+import portfolioData from "@/lib/portfolio-data";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import portfolioData from "../../../portfolio.json";
+import portfolioData from "@/lib/portfolio-data";
 import type { Metadata } from "next";
 import Image from "next/image";
 

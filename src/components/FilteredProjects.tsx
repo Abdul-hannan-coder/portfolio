@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import portfolioData from "../../portfolio.json";
+import portfolioData from "@/lib/portfolio-data";
 
 export default function FilteredProjects() {
   const { projects } = portfolioData;
