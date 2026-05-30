@@ -47,7 +47,7 @@ export default function FilteredProjects() {
             key={project.slug}
             className="project-card group bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col md:flex-row border border-transparent hover:border-outline-variant/30 transition-all duration-500"
           >
-            <div className="w-full md:w-[45%] lg:w-2/5 shrink-0 aspect-[16/10] md:aspect-auto relative overflow-hidden">
+            <div className="w-full md:w-[45%] lg:w-2/5 shrink-0 aspect-[16/10] md:aspect-auto relative overflow-hidden bg-surface-container">
               <Link href={`/projects/${project.slug}`} className="absolute inset-0 block w-full h-full">
                 <Image
                   fill
@@ -60,10 +60,10 @@ export default function FilteredProjects() {
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>
               </Link>
             </div>
-            <div className="p-5 lg:p-8 flex flex-col flex-1 justify-center relative">
+            <div className="p-5 lg:p-8 flex flex-col flex-1 justify-center relative min-w-0">
               <div className="flex justify-between items-start mb-3 gap-4">
                 <Link href={`/projects/${project.slug}`} className="hover:underline flex-1">
-                  <h4 className="font-headline text-lg lg:text-xl font-bold group-hover:text-primary transition-colors">
+                  <h4 className="font-headline text-lg lg:text-xl font-bold group-hover:text-primary transition-colors line-clamp-2">
                     {project.title}
                   </h4>
                 </Link>
@@ -79,8 +79,8 @@ export default function FilteredProjects() {
                   )}
                 </div>
               </div>
-              <p className="text-sm text-on-surface-variant font-label mb-5 line-clamp-2">
-                {project.description}
+              <p className="text-sm md:text-[15px] text-on-surface-variant font-label leading-7 mb-6 line-clamp-3 min-h-[5.25rem] max-w-3xl">
+                {project.cardDescription ?? project.description}
               </p>
               <div className="mt-auto flex flex-col sm:flex-row sm:items-center justify-between gap-6">
                 <div className="flex flex-wrap gap-2 flex-1">

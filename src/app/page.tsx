@@ -33,14 +33,14 @@ export default function Home() {
       </section>
 
       {/* Portfolio Content Section */}
-      <section className="flex-1 bg-surface-container-low rounded-xl p-8 lg:p-12 overflow-hidden">
+      <section className="flex-1 bg-surface-container-low rounded-xl p-5 md:p-8 lg:p-12 overflow-hidden">
         {/* Filter Controls */}
         <FilteredProjects />
 
 
 
         {/* Custom CTA Section */}
-        <div className="mt-20 p-8 md:p-12 rounded-xl premium-gradient flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 relative overflow-hidden group">
+        <div className="mt-20 p-6 md:p-12 rounded-xl premium-gradient flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 relative overflow-hidden group">
           <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
           <div className="relative z-10 text-on-primary text-center md:text-left">
             <h3 className="font-headline text-2xl md:text-3xl font-bold mb-2 break-words">Have a project in mind?</h3>

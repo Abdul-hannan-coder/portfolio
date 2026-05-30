@@ -53,9 +53,10 @@
   --color-background: #131313;
   --color-inverse-on-surface: #313030;
   
-  --font-headline: var(--font-sans);
+  --font-headline: var(--font-heading);
   --font-body: var(--font-sans);
-  --font-label: var(--font-mono);
+  --font-label: var(--font-sans);
+  --font-mono: var(--font-sans);
 }
 
 :root {

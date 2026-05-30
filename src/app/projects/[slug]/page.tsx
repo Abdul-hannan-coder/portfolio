@@ -1,265 +1,357 @@
 import Link from "next/link";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import InteractiveGallery from "@/components/InteractiveGallery";
 import portfolioData from "@/lib/portfolio-data";
-import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 
-// Generate static params for all projects
-export function generateStaticParams() {
-  return portfolioData.projects.items.map((project) => ({
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  const allProjects = [
+    ...portfolioData.projects.items,
+    ...(portfolioData.projects.archivedItems || []),
+  ];
+  return allProjects.map((project) => ({
     slug: project.slug,
   }));
 }
 
-import type { Metadata } from "next";
-
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const project = portfolioData.projects.items.find((p) => p.slug === slug) || 
-                  portfolioData.projects.archivedItems?.find((p) => p.slug === slug);
+  const allProjects = [
+    ...portfolioData.projects.items,
+    ...(portfolioData.projects.archivedItems || []),
+  ];
+  const project = allProjects.find((p) => p.slug === slug);
 
-  if (!project) return { title: 'Project Not Found' };
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
 
   return {
-    title: project.title,
-    description: project.description,
-    keywords: project.tags,
-    openGraph: {
-      title: project.title + ' | A Hannan',
-      description: project.description,
-      images: project.image?.length > 0 ? [{ url: project.image[0] }] : [],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: project.title,
-      description: project.description,
-      images: project.image?.length > 0 ? [project.image[0]] : [],
-    }
+    title: `${project.title} | Project Case Study`,
+    description: project.cardDescription ?? project.description,
   };
 }
 
-
-export default async function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ProjectDetailPage({ params }: PageProps) {
   const { slug } = await params;
-
-  const project = portfolioData.projects.items.find((p) => p.slug === slug);
+  const allProjects = [
+    ...portfolioData.projects.items,
+    ...(portfolioData.projects.archivedItems || []),
+  ];
+  const project = allProjects.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
   }
 
-  const video = (project as any)?.video;
+  // Helper to split objective string into a smart title and body description
+  const parseObjective = (text: string) => {
+    const words = text.split(" ");
+    let title = words.slice(0, 2).join(" ");
+    
+    // Clean trailing commas/prepositions from the short title if present
+    if (title.endsWith(",") || title.endsWith(":") || title.toLowerCase() === "to" || title.toLowerCase() === "and") {
+      title = words.slice(0, 3).join(" ");
+    }
+    
+    return {
+      title: title.replace(/[:,\s]+$/, ""),
+      body: text
+    };
+  };
 
   return (
-    <main className="flex-1 flex flex-col min-h-screen">
-      {/* Header with Navigation */}
-      <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">
-        <Navigation />
-      </header>
+    <main className="flex-1 flex flex-col min-w-0 font-sans">
+      {/* Stitch Layout Custom CSS Injected Safely */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        .glow-yellow { box-shadow: 0 0 40px -10px rgba(255, 209, 101, 0.15); }
+        .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        @media (max-width: 768px) { .gallery-grid { grid-template-columns: 1fr; } }
+        .tech-tag {
+            background: rgba(255, 209, 101, 0.02);
+            border: 1px solid rgba(255, 209, 101, 0.12);
+            transition: all 0.3s ease;
+        }
+        .tech-tag:hover {
+            border-color: #ffd165;
+            background: rgba(255, 209, 101, 0.08);
+            color: #ffd165;
+        }
+      `}} />
 
-      {/* Project Hero / Details Section */}
-      <section className="bg-surface-container-low rounded-xl p-8 lg:p-12 mb-8 relative overflow-hidden flex flex-col gap-8">
-        <div className="relative z-10 flex flex-col lg:flex-row gap-8 justify-between items-start">
-          <div className="flex-1 max-w-3xl">
-            <Link 
-              href="/" 
-              className="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors font-label text-sm mb-6 group"
-            >
-              <span className="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
-              Back to Projects
-            </Link>
+      <div className="max-w-5xl mx-auto w-full px-4 md:px-0">
+        {/* Header with Navigation */}
+        <header className="flex justify-between items-center mb-12 mt-20 lg:mt-8">
+          <Navigation />
+        </header>
 
-            <div className="flex gap-3 mb-4 flex-wrap">
-              <span className="px-3 py-1 bg-primary/20 text-primary rounded-full text-xs font-bold uppercase tracking-wider">
-                {project.category}
-              </span>
-              <span className="px-3 py-1 bg-surface-container-highest text-on-surface-variant rounded-full text-xs font-label">
-                {project.date}
-              </span>
-              {/* Optional Company / Client rendering */}
-              {((project as any).company || (project.client && project.client.name)) && (
-                <span className="px-3 py-1 border border-outline-variant/30 text-on-surface-variant rounded-full text-xs font-label flex items-center gap-1">
-                  <span className="material-symbols-outlined text-[14px]">domain</span>
-                  {(project as any).company || project.client?.name}
-                </span>
-              )}
+        {/* Back Link */}
+        <div className="mb-8">
+          <Link
+            href="/"
+            className="group inline-flex items-center gap-2 text-sm font-label text-on-surface-variant hover:text-primary transition-colors duration-200"
+          >
+            <span className="material-symbols-outlined text-base transition-transform group-hover:-translate-x-1">
+              arrow_back
+            </span>
+            Back to Projects
+          </Link>
+        </div>
+
+        {/* SECTION 1: Intro Section (Bento Card Hero Layout) */}
+        <section className="bg-surface-container-low rounded-2xl p-6 md:p-8 lg:p-10 mb-10 border border-outline-variant/15 shadow-md relative overflow-hidden">
+          {/* Abstract glowing background element for visual balance */}
+          <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-[90px] pointer-events-none"></div>
+          <div className="absolute -left-10 -top-10 w-48 h-48 bg-primary/2 rounded-full blur-[60px] pointer-events-none"></div>
+          
+          <div className="max-w-3xl relative z-10 space-y-5">
+            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Live Project
             </div>
             
-            <h1 className="font-headline text-4xl lg:text-5xl font-bold tracking-tight mb-4 leading-tight">
-              {project.title}
-            </h1>
-            
-            <p className="text-xl text-on-surface-variant font-label leading-relaxed mb-6">
+            <div className="space-y-2">
+              <h1 className="font-headline text-2xl md:text-3xl lg:text-[2.25rem] font-extrabold leading-tight tracking-tight text-on-surface">
+                {project.title.split(" - ")[0]}
+              </h1>
+              {project.title.split(" - ")[1] && (
+                <p className="font-headline text-lg md:text-xl font-medium text-primary tracking-wide">
+                  {project.title.split(" - ")[1]}
+                </p>
+              )}
+            </div>
+
+            <p className="text-sm md:text-base text-on-surface-variant leading-relaxed max-w-2xl font-body">
               {project.description}
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-6">
+            <div className="flex flex-wrap gap-3 pt-2">
               {project.liveUrl && (
-                <Link
+                <a
                   href={project.liveUrl}
                   target="_blank"
-                  className="px-6 py-3 bg-primary text-on-primary font-bold rounded-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-lg shadow-primary/20"
+                  rel="noopener noreferrer"
+                  className="bg-primary hover:bg-primary/90 text-on-primary px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:scale-[1.02] transition-all shadow-md shadow-primary/15 cursor-pointer text-xs"
                 >
                   Visit Live Site
-                  <span className="material-symbols-outlined">launch</span>
-                </Link>
+                  <span className="material-symbols-outlined text-sm">launch</span>
+                </a>
+              )}
+              {project.video && (
+                <a
+                  href="#demo-video"
+                  className="border border-outline-variant/30 bg-surface-container-high px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-surface-variant transition-colors text-xs"
+                >
+                  <span className="material-symbols-outlined text-sm">play_circle</span>
+                  Watch Demo
+                </a>
               )}
             </div>
           </div>
+        </section>
 
-          <div className="w-full lg:w-80 shrink-0 flex flex-col gap-6 bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/30">
-            {project.client && (
-              <>
-                <div>
-                  <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Client</h3>
-                  <p className="font-bold">{project.client?.name}</p>
-                </div>
-                {project.client?.feedback && (
-                  <div>
-                    <h3 className="text-sm font-label text-on-surface-variant mb-2 uppercase tracking-wider">Feedback</h3>
-                    <div className="relative">
-                      <span className="material-symbols-outlined absolute -top-2 -left-3 text-4xl text-primary/20">format_quote</span>
-                      <p className="italic text-on-surface relative z-10 text-sm">"{project.client?.feedback}"</p>
-                    </div>
-                  </div>
-                )}
-              </>
-            )}
-            {project.domain && (
-              <div>
-                <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Domain</h3>
-                <p className="font-bold">{project.domain}</p>
+        {/* SECTION 2: Detailed Overview & Sidebar Details Card */}
+        <section className="py-12 mb-12 border-y border-outline-variant/10">
+          <div className="grid md:grid-cols-3 gap-10 lg:gap-12">
+            {/* Left Detailed Overview */}
+            <div className="md:col-span-2 space-y-6">
+              <div className="flex items-center gap-3">
+                <span className="material-symbols-outlined text-primary text-xl">description</span>
+                <h2 className="font-headline text-xl md:text-2xl font-bold">Detailed Overview</h2>
               </div>
-            )}
-            {project.duration && (
-              <div>
-                <h3 className="text-sm font-label text-on-surface-variant mb-1 uppercase tracking-wider">Duration</h3>
-                <p className="font-bold">{project.duration}</p>
-              </div>
-            )}
-            {project.technologies && project.technologies.length > 0 && (
-              <div>
-                <h3 className="text-sm font-label text-on-surface-variant mb-2 uppercase tracking-wider">Technologies</h3>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map(tech => (
-                    <span key={tech} className="px-2 py-1 bg-secondary-container text-on-secondary-container rounded text-xs font-bold">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Abstract background element */}
-        <div className="absolute -right-40 -top-40 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
-      </section>
-
-      {/* Main Content (Objectives & Details) */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-        <div className="lg:col-span-2 space-y-8">
-          <div className="bg-surface-container-low rounded-xl p-8 lg:p-12">
-            {project.detailedDescription && (
-              <>
-                <h2 className="font-headline text-2xl font-bold mb-6 flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary">description</span>
-                  Detailed Overview
-                </h2>
-                <p className="text-on-surface-variant leading-relaxed mb-8 whitespace-pre-line">
-                  {project.detailedDescription}
-                </p>
-              </>
-            )}
-
-            {project.objectives && project.objectives.length > 0 && (
-              <>
-                <h3 className="font-headline text-xl font-bold mb-4 flex items-center gap-2 mt-8">
-                  <span className="material-symbols-outlined text-primary">target</span>
-                  Key Objectives
-                </h3>
-                <ul className="space-y-4">
-                  {project.objectives.map((objective, i) => (
-                    <li key={i} className="flex gap-3 text-on-surface-variant">
-                      <span className="material-symbols-outlined text-primary shrink-0">check_circle</span>
-                      <span>{objective}</span>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </div>
-
-          {/* Video Section if available */}
-            {video && (
-             <div className="bg-surface-container-low rounded-xl p-8 overflow-hidden">
-                <h2 className="font-headline text-2xl font-bold mb-6 flex items-center gap-2">
-                  <span className="material-symbols-outlined text-primary">play_circle</span>
-                  Demo Video
-                </h2>
-                <div className="aspect-video w-full rounded-xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30">
-                  {typeof video === 'string' && video.trim().startsWith('<') ? (
-                    <div className="w-full h-full" dangerouslySetInnerHTML={{ __html: video }} />
-                  ) : (
-                    <iframe
-                      className="w-full h-full"
-                      src={String(video)}
-                      title={`${project.title} Demo`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    ></iframe>
-                  )}
-                </div>
-             </div>
-          )}
-        </div>
-
-        {/* Image Gallery */}
-        {project.image && project.image.length > 0 && (
-          <div className="lg:col-span-1 space-y-6">
-            <div className="bg-surface-container-low rounded-xl p-6 border border-outline-variant/10">
-              <h3 className="font-headline text-xl font-bold mb-6 flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary">photo_library</span>
-                Gallery
-              </h3>
-              <div className="flex flex-col gap-4">
-                {project.image.map((img, i) => (
-                  <div key={i} className="relative rounded-xl overflow-y-auto max-h-[60vh] md:max-h-[500px] border border-outline-variant/20 hover:border-primary/50 transition-colors custom-scrollbar bg-surface-container-lowest">
-                    <Image 
-                      src={img} 
-                      alt={`Gallery preview ${i+1}`} 
-                      width={1200}
-                      height={2500}
-                      unoptimized={img.includes('.gif')}
-                      className="w-full h-auto object-top" 
-                    />
-                  </div>
+              <div className="space-y-4 text-on-surface-variant leading-relaxed text-sm md:text-base">
+                {project.detailedDescription.split("\n\n").map((para, i) => (
+                  <p key={i}>{para}</p>
                 ))}
               </div>
             </div>
+
+            {/* Right Sidebar Details */}
+            <div className="space-y-6 w-full">
+              <div className="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/15 shadow-sm sticky top-24">
+                <h3 className="font-label text-xs text-primary font-bold uppercase tracking-[0.15em] mb-6 pb-3 border-b border-outline-variant/15">
+                  Project Details
+                </h3>
+                <div className="space-y-6">
+                  <div className="flex flex-col gap-1">
+                    <p className="text-on-surface-variant/50 text-[10px] font-semibold uppercase tracking-wider">
+                      Client
+                    </p>
+                    <p className="font-bold text-sm md:text-base text-on-surface">
+                      {project.client?.name || "Private Client"}
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <p className="text-on-surface-variant/50 text-[10px] font-semibold uppercase tracking-wider">
+                      Duration
+                    </p>
+                    <p className="font-bold text-sm md:text-base text-on-surface">
+                      {project.duration || "Live Implementation"}
+                    </p>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    <p className="text-on-surface-variant/50 text-[10px] font-semibold uppercase tracking-wider">
+                      Technologies
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.technologies.map((tech) => (
+                        <span
+                          key={tech}
+                          className="tech-tag px-2.5 py-1 rounded text-[11px] font-semibold text-primary/95 font-label"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
+
+        {/* SECTION 3: Key Objectives Section */}
+        {project.objectives && project.objectives.length > 0 && (
+          <section className="py-12 mb-12">
+            <div className="flex items-center gap-3 mb-10">
+              <span className="material-symbols-outlined text-primary text-xl">target</span>
+              <h2 className="font-headline text-xl md:text-2xl font-bold">Key Objectives</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {project.objectives.map((objective, i) => {
+                const card = parseObjective(objective);
+                return (
+                  <div
+                    key={i}
+                    className="bg-surface-container border border-outline-variant/15 p-6 rounded-2xl hover:border-primary/50 transition-all duration-300 group flex flex-col h-full hover:shadow-md"
+                  >
+                    <span
+                      className="material-symbols-outlined text-primary mb-4 text-xl"
+                      style={{ fontVariationSettings: "'FILL' 1" }}
+                    >
+                      check_circle
+                    </span>
+                    <h4 className="font-bold font-headline text-base md:text-lg mb-2 text-on-surface">
+                      {card.title}
+                    </h4>
+                    <p className="text-on-surface-variant text-xs md:text-sm leading-relaxed">
+                      {card.body}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
         )}
-      </section>
 
-      {/* Modern CTA */}
-      <section className="mt-8 mb-16 p-8 md:p-12 rounded-xl premium-gradient flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 relative overflow-hidden group">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-        <div className="relative z-10 text-on-primary text-center md:text-left">
-          <h3 className="font-headline text-2xl md:text-3xl font-bold mb-2 break-words">Want to build something similar?</h3>
-          <p className="font-label opacity-80 text-sm md:text-base">Let's discuss how we can bring your vision to life.</p>
-        </div>
-        <Link
-          href="/contact"
-          className="relative z-10 px-8 py-4 bg-surface text-primary font-bold rounded-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-2xl"
-        >
-          Start a Conversation
-          <span className="material-symbols-outlined">arrow_forward</span>
-        </Link>
-      </section>
+        {/* SECTION 4: Demo Video Block (Anchor enabled for header buttons) */}
+        {project.video && (
+          <section id="demo-video" className="py-12 mb-12 border-t border-outline-variant/10">
+            <div className="flex items-center gap-3 mb-10">
+              <span className="material-symbols-outlined text-primary text-xl">play_circle</span>
+              <h2 className="font-headline text-xl md:text-2xl font-bold">Demo Video</h2>
+            </div>
+            <div className="bg-surface-container p-6 rounded-2xl border border-outline-variant/15 shadow-sm max-w-4xl mx-auto">
+              {project.video.startsWith("<") ? (
+                <div
+                  dangerouslySetInnerHTML={{ __html: project.video }}
+                  className="w-full rounded-xl overflow-hidden shadow-lg border border-outline-variant/10 [&>div]:!aspect-video [&>div]:!height-auto [&_iframe]:!aspect-video [&_iframe]:!height-auto [&_iframe]:!width-full"
+                />
+              ) : (
+                <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg border border-outline-variant/10 bg-surface-container-lowest">
+                  <iframe
+                    src={project.video}
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full border-0"
+                  ></iframe>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
 
-      <Footer />
+        {/* SECTION 5: Project Gallery Section */}
+        {project.image && project.image.length > 0 && (
+          <section className="py-12 mb-12 border-t border-outline-variant/10">
+            <div className="flex items-center gap-3 mb-10">
+              <span className="material-symbols-outlined text-primary text-xl">photo_library</span>
+              <h2 className="font-headline text-xl md:text-2xl font-bold">Project Gallery</h2>
+            </div>
+            <InteractiveGallery images={project.image} projectTitle={project.title} />
+          </section>
+        )}
+
+        {/* SECTION 6: Testimonial Quote Block */}
+        {project.client?.feedback && (
+          <section className="py-16 max-w-4xl mx-auto text-center relative overflow-hidden mb-12 border-t border-outline-variant/10">
+            <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+              <span
+                className="material-symbols-outlined text-[300px]"
+                style={{ fontVariationSettings: "'FILL' 1" }}
+              >
+                format_quote
+              </span>
+            </div>
+            <div className="relative z-10 space-y-6">
+              <h2 className="font-label text-xs text-primary tracking-[0.3em] uppercase font-bold">
+                Testimonial
+              </h2>
+              <blockquote className="font-headline text-xl md:text-2xl lg:text-3xl leading-snug italic text-on-surface font-semibold max-w-3xl mx-auto">
+                "{project.client.feedback}"
+              </blockquote>
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-12 h-0.5 bg-primary rounded-full"></div>
+                <p className="font-bold font-headline text-base">Client Team</p>
+                <p className="text-on-surface-variant/60 text-[10px] font-bold tracking-wider uppercase font-label">
+                  {project.client.name}
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* SECTION 7: Premium Call To Action (CTA) Section */}
+        <section className="py-12">
+          <div className="bg-primary rounded-[2.5rem] p-10 md:p-16 lg:p-20 relative overflow-hidden group shadow-2xl shadow-primary/10">
+            <div className="absolute top-0 right-0 p-8 opacity-10 pointer-events-none">
+              <span className="material-symbols-outlined text-[200px] -rotate-12 transition-transform group-hover:rotate-0 duration-1000 text-on-primary">
+                rocket_launch
+              </span>
+            </div>
+            <div className="relative z-10 grid md:grid-cols-2 gap-10 items-center">
+              <div className="space-y-4">
+                <h2 className="font-headline text-2xl md:text-3xl lg:text-[2.25rem] font-bold text-on-primary leading-tight">
+                  Ready to scale your leads?
+                </h2>
+                <p className="text-on-primary/80 font-body text-sm md:text-base max-w-md leading-relaxed">
+                  Let's discuss how we can bring your vision to life through high-performance AI automation and bespoke funnel design.
+                </p>
+              </div>
+              <div className="flex md:justify-end">
+                <Link
+                  href="/contact"
+                  className="bg-on-primary text-primary px-10 py-4.5 rounded-2xl font-bold flex items-center gap-2.5 hover:scale-105 transition-all shadow-xl hover:shadow-2xl text-xs"
+                >
+                  Start a Conversation
+                  <span className="material-symbols-outlined text-base">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
     </main>
   );
 }

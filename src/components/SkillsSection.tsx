@@ -166,7 +166,7 @@ export default function SkillsSection({
             </span>
           </motion.div>
           <motion.h2
-            className="font-headline text-4xl md:text-5xl font-bold mb-3"
+            className="font-headline text-3xl md:text-5xl font-bold mb-3"
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -187,7 +187,7 @@ export default function SkillsSection({
 
       {/* Skills Flex-Wrap Row Layout */}
       <motion.div
-        className="flex flex-wrap gap-3 sm:gap-4"
+        className="flex flex-wrap gap-2 sm:gap-4"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -199,13 +199,15 @@ export default function SkillsSection({
             <motion.div
               key={index}
               variants={cardVariants}
-              whileHover={{ scale: 1.03, y: -2 }}
-              className="skill-badge-card group flex items-center gap-4 p-4 pr-6 rounded-2xl"
+              whileHover={{ scale: 1.05, y: -2 }}
+              className="skill-badge-card group flex items-center gap-3 sm:gap-4 p-2.5 sm:p-4 pr-4 sm:pr-6 rounded-xl sm:rounded-2xl max-w-full"
             >
-              <div className="skill-icon-box flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 shadow-inner">
-                {icon}
+              <div className="skill-icon-box flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-lg sm:rounded-xl transition-all duration-300 group-hover:scale-110 shadow-inner">
+                <div className="scale-[0.8] sm:scale-100 flex items-center justify-center">
+                  {icon}
+                </div>
               </div>
-              <span className="font-label text-[14px] font-bold text-on-surface group-hover:text-primary transition-colors duration-300 leading-snug whitespace-nowrap">
+              <span className="font-label text-xs sm:text-[14px] font-bold text-on-surface group-hover:text-primary transition-colors duration-300 leading-snug break-words">
                 {skill}
               </span>
             </motion.div>

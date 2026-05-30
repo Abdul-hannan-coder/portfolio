@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 
@@ -9,8 +9,8 @@ const inter = Inter({
   display: "block",
 });
 
-const manrope = Manrope({
-  variable: "--font-mono", // Using as the secondary font
+const sora = Sora({
+  variable: "--font-heading",
   subsets: ["latin"],
   display: "block",
 });
@@ -64,7 +64,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet"/>
       </head>
       <body
-        className={`${inter.variable} ${manrope.variable} flex min-h-screen p-4 md:p-8 lg:p-12 gap-8 selection:bg-primary-container selection:text-on-primary-container font-sans antialiased text-foreground bg-background`}
+        className={`${inter.variable} ${sora.variable} flex min-h-screen p-4 md:p-8 lg:p-12 gap-8 selection:bg-primary-container selection:text-on-primary-container font-sans antialiased text-foreground bg-background`}
       >
         <Sidebar />
         {children}
