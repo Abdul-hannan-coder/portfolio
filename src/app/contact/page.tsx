@@ -3,6 +3,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "@/lib/portfolio-data";
+import { ShinyText } from "@/components/ui/shiny-text";
 import { useState } from "react";
 
 export default function Contact() {
@@ -69,7 +70,7 @@ export default function Contact() {
           {/* Editorial Headline (Asymmetric) */}
           <div className="lg:col-span-12 mb-8">
             <h1 className="font-headline text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter leading-tight max-w-3xl">
-              Let's build the <span className="text-primary italic">future</span> together.
+              Let's build the <ShinyText text="future" className="italic" /> together.
             </h1>
           </div>
           {/* Contact Form Section */}

@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import portfolioData from "@/lib/portfolio-data";
 import FilteredProjects from "@/components/FilteredProjects";
+import { ShinyText } from "@/components/ui/shiny-text";
 
 export default function Home() {
   const { personal, projects } = portfolioData;
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="relative z-10">
           <div className="max-w-2xl">
             <h2 className="font-headline text-4xl lg:text-5xl font-bold tracking-tight mb-4 leading-tight">
-              AI Automation & <span className="text-primary italic">Gohighlevel Expert</span>
+              AI Automation & <ShinyText text="Gohighlevel Expert" className="italic" />
             </h2>
             <p className="text-on-surface-variant font-label leading-relaxed">
               {personal.subtitle}

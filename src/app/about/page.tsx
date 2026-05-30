@@ -1,8 +1,9 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+import { ShinyText } from "@/components/ui/shiny-text";
 import portfolioData from "@/lib/portfolio-data";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -25,7 +26,7 @@ export default function About() {
           <div className="grid grid-cols-12 gap-8 items-start">
             <div className="col-span-12 lg:col-span-8">
               <h2 className="font-headline text-4xl lg:text-6xl font-bold tracking-tighter mb-8 leading-tight lg:leading-none uppercase break-words">
-                {about.title} <span className="gold-gradient-text">{about.highlightedTitle}</span>.
+                {about.title} <ShinyText text={about.highlightedTitle} />.
               </h2>
               <div className="space-y-6 text-lg text-on-surface-variant leading-relaxed font-body">
                 {about.paragraphs.map((para: string, index: number) => (
@@ -94,39 +95,9 @@ export default function About() {
 
         {/* Testimonials Section */}
         {testimonials.length > 0 && (
-          <section className="mb-24">
-            <h3 className="font-headline text-2xl md:text-3xl font-bold mb-8 md:mb-12 flex items-center gap-4 text-right">
-              <span className="h-px flex-1 bg-outline-variant/20"></span>
-              Client Feedback
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {testimonials.map((testimonial, idx) => (
-                <div key={idx} className="relative bg-surface-container-lowest p-6 md:p-10 rounded-2xl editorial-shadow overflow-hidden flex flex-col justify-between group">
-                  <span className="absolute top-2 left-4 md:top-4 md:left-6 text-8xl md:text-9xl font-serif text-primary/5 select-none transition-transform group-hover:scale-110 group-hover:text-primary/10">“</span>
-                  <div className="relative z-10 flex-1 flex flex-col">
-                    <p className="font-body text-lg text-on-surface italic mb-8 flex-1">
-                      "{testimonial.text}"
-                    </p>
-                    <div className="flex items-center gap-4 mt-auto">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12 rounded-full object-cover bg-surface-container-high shrink-0"
-                      />
-                      <div>
-                        <h5 className="font-headline font-bold text-on-surface line-clamp-1">{testimonial.name}</h5>
-                        <p className="font-label text-xs text-on-surface-variant line-clamp-1">
-                          {testimonial.role}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
+          <div className="mb-24">
+            <Testimonials testimonials={testimonials} />
+          </div>
         )}
 
         <Footer />

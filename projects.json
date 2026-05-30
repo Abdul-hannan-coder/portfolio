@@ -290,7 +290,7 @@
       "date": "April 2026",
       "client": {
         "name": "Sheeen.store (Fashion Brand)",
-        "feedback": "The automation completely removed manual content work from our plate. Every post looks premium and goes out on schedule — it's like having a full-time social media team on autopilot."
+        "feedback": "The automation completely removed manual content work from our plate. Every post looks premium and goes out on schedule. It's like having a full-time social media team on autopilot."
       },
       "tags": [
         "n8n",
@@ -433,7 +433,7 @@
       "platform": "B2B",
       "featured": false,
       "rating": 5,
-      "title": "Vantek — Industrial Parts Quote Management",
+      "title": "Vantek: Industrial Parts Quote Management",
       "category": "B2B Quote Management",
       "date": "May 2026",
       "tags": [
@@ -661,9 +661,9 @@
       "platform": "FinTech",
       "featured": true,
       "rating": 5,
-      "title": "Finescope – The Future of Smart Financial Management",
+      "title": "Finescope: The Future of Smart Financial Management",
       "category": "FinTech",
-      "date": "Live — Feb 2026",
+      "date": "Live, Feb 2026",
       "tags": [
         "Finescope",
         "FinTech",
@@ -709,9 +709,9 @@
       "platform": "Logistics & SaaS",
       "featured": true,
       "rating": 5,
-      "title": "ShipX – Smart Shipping Made Simple",
+      "title": "ShipX: Smart Shipping Made Simple",
       "category": "Logistics & SaaS",
-      "date": "Live — Feb 2026",
+      "date": "Live, Feb 2026",
       "tags": [
         "ShipX",
         "Logistics",
@@ -796,7 +796,7 @@
       "platform": "SaaS",
       "featured": true,
       "rating": 5,
-      "title": "ClariNova AI — Build Faster. Scale Smarter",
+      "title": "ClariNova AI: Build Faster. Scale Smarter",
       "category": "SaaS",
       "date": "Completed - Feb 2026",
       "tags": [
@@ -837,7 +837,7 @@
       "platform": "Crypto Exchange",
       "featured": true,
       "rating": 5,
-      "title": "Your Gateway to the Crypto World — Chainex",
+      "title": "Chainex: Your Gateway to the Crypto World",
       "category": "Crypto Exchange",
       "date": "Completed - Feb 2026",
       "tags": [

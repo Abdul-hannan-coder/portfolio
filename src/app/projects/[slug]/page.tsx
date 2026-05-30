@@ -121,13 +121,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             
             <div className="space-y-2">
               <h1 className="font-headline text-2xl md:text-3xl lg:text-[2.25rem] font-extrabold leading-tight tracking-tight text-on-surface">
-                {project.title.split(" - ")[0]}
+                {project.title}
               </h1>
-              {project.title.split(" - ")[1] && (
-                <p className="font-headline text-lg md:text-xl font-medium text-primary tracking-wide">
-                  {project.title.split(" - ")[1]}
-                </p>
-              )}
             </div>
 
             <p className="text-sm md:text-base text-on-surface-variant leading-relaxed max-w-2xl font-body">
@@ -260,7 +255,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <span className="material-symbols-outlined text-primary text-xl">play_circle</span>
               <h2 className="font-headline text-xl md:text-2xl font-bold">Demo Video</h2>
             </div>
-            <div className="bg-surface-container p-6 rounded-2xl border border-outline-variant/15 shadow-sm max-w-4xl mx-auto">
+            <div className="bg-surface-container p-2 sm:p-4 md:p-6 rounded-2xl border border-outline-variant/15 shadow-sm max-w-4xl mx-auto">
               {project.video.startsWith("<") ? (
                 <div
                   dangerouslySetInnerHTML={{ __html: project.video }}

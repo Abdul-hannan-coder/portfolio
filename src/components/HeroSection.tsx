@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { ShinyText } from "@/components/ui/shiny-text";
 
 export default function HeroSection() {
   return (
@@ -26,7 +27,7 @@ export default function HeroSection() {
           </motion.p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9] mb-8 text-foreground">
             Crafting <br />
-            <span className="text-muted-foreground">Premium</span> <br />
+            <ShinyText text="Premium" shimmerWidth={180} /> <br />
             Experiences.
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-12 font-mono leading-relaxed">

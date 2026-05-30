@@ -87,7 +87,7 @@ export default function FilteredProjects() {
                   {project.technologies.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider uppercase bg-secondary-container text-on-secondary-container"
+                      className="px-2.5 py-1 rounded-md text-[11px] font-semibold tracking-wide uppercase bg-primary/10 text-primary border border-primary/20"
                     >
                       {tech}
                     </span>

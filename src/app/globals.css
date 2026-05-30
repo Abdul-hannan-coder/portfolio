@@ -174,6 +174,65 @@ body {
   background: linear-gradient(90deg, rgba(241, 193, 0, 0.8), var(--color-primary), #ffcc00);
 }
 
+/* ─── Shiny text (big headings) ─── */
+@keyframes shiny-text {
+  0% {
+    background-position: calc(-1 * var(--shimmer-width, 120px)) 0;
+  }
+  100% {
+    background-position: calc(100% + var(--shimmer-width, 120px)) 0;
+  }
+}
+.shiny-text {
+  /* inline-block + right padding keeps the text-clipped background from
+     cropping the last (italic) glyph's overhang. */
+  display: inline-block;
+  vertical-align: baseline;
+  padding-right: 0.18em;
+  color: transparent;
+  background-color: var(--shiny-base, #f1c100);
+  background-image: linear-gradient(
+    120deg,
+    transparent 35%,
+    var(--shiny-shine, #fff8dc) 50%,
+    transparent 65%
+  );
+  background-repeat: no-repeat;
+  background-size: var(--shimmer-width, 120px) 100%;
+  background-position: calc(-1 * var(--shimmer-width, 120px)) 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shiny-text var(--shiny-duration, 4s) infinite linear;
+}
+.shiny-text--hover {
+  animation-play-state: paused;
+}
+.shiny-text--hover:hover {
+  animation-play-state: running;
+}
+@media (prefers-reduced-motion: reduce) {
+  .shiny-text {
+    animation: none;
+  }
+}
+
+/* ─── Marquee (testimonials) ─── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+.animate-marquee {
+  animation: marquee var(--duration) linear infinite;
+}
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
 .primary-gradient-bg {
   background: linear-gradient(135deg, #f1c100, #ffcc00);
 }

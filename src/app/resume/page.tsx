@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SkillsSection from "@/components/SkillsSection";
+import { ShinyText } from "@/components/ui/shiny-text";
 import portfolioData from "@/lib/portfolio-data";
 import type { Metadata } from "next";
 
@@ -37,7 +38,7 @@ export default function Resume() {
         <section className="flex-1 pb-16 w-full">
           <div className="mb-10 md:mb-20">
             <h1 className="font-headline text-3xl sm:text-5xl lg:text-7xl font-extrabold tracking-tighter mb-4">
-              The <span className="gold-gradient-text">Architectural</span> Ledger.
+              The <ShinyText text="Architectural" /> Ledger.
             </h1>
             <p className="text-on-surface-variant text-base sm:text-xl max-w-2xl font-light leading-relaxed">
               A chronicle of professional evolution, technical mastery, and the transformation of logic into digital artistry.
