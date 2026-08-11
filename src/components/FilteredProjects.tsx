@@ -55,7 +55,7 @@ export default function FilteredProjects() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   alt={project.title}
                   className="project-image object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                  src={project.image[0] || "/profile-nano.png"}
+                  src={project.image[0] || "/pf.png"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-lowest via-transparent to-transparent opacity-80 pointer-events-none"></div>
               </Link>
