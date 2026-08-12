@@ -33,90 +33,123 @@
   },
   "items": [
     {
-      "slug": "stop-losing-leads-hq",
-      "platform": "Loveable & GHL Builder",
+      "slug": "graywater-plumbing",
+      "platform": "GoHighLevel (GHL)",
       "featured": true,
       "rating": 5,
-      "title": "Stop Losing the Leads HQ - Lead Automation Funnel",
-      "category": "Sales Automation & Lead Management Funnel",
-      "date": "Live",
+      "title": "Graywater Plumbing - Multi-Funnel GHL Lead Generation & Routing System",
+      "category": "GoHighLevel Setup & Automation",
+      "date": "Live System Setup",
       "client": {
-        "name": "Stop Losing Leads HQ",
-        "feedback": "Outstanding work building out the entire funnel structure and automating the complex lead routing logic."
+        "name": "Graywater Plumbing (Australia)"
       },
       "tags": [
         "GoHighLevel",
-        "lead-routing",
-        "automation-workflow",
-        "form-submission",
-        "crm-integration",
-        "conversational-ai",
-        "landing-page",
-        "sales-funnel",
-        "SaaS"
+        "CRM & Pipelines",
+        "Meta Ads Sync",
+        "Call Tracking",
+        "Lead Routing",
+        "Attribution",
+        "Email/SMS Alerts"
       ],
-      "description": "A comprehensive lead generation and management system that transforms visitor inquiries into qualified leads through intelligent routing, automated follow-up sequences, and real-time CRM integration.",
-      "cardDescription": "Lead capture funnel with smart qualification and routing. Automated CRM follow-ups keep every prospect moving. Built to reduce lead leakage and improve sales response time.",
-      "detailedDescription": "Stop Losing Leads HQ is an integrated lead generation ecosystem built on GoHighLevel that captures, qualifies, and converts prospects at scale. The platform combines Loveable's intuitive UI with enterprise-grade automation to deliver a seamless journey from first touch to customer acquisition. Every form submission flows directly into the CRM with intelligent lead scoring that prioritizes high-value prospects. AI-powered response sequences automatically nurture leads through personalized follow-up workflows while our real-time analytics ensure your team can respond to opportunities immediately. The system maintains complete visibility across your sales pipeline with automated reporting that tracks conversions, engagement rates, and sales velocity in real time.",
+      "description": "Built and managed multi-funnel lead generation systems for an Australian plumbing business across multiple service niches under a single GHL subaccount. Features dynamic call tracking, automated routing, and instant client notifications.",
+      "cardDescription": "Comprehensive GHL setup containing three systems under one subaccount. Integrates Meta/Google Ads, automated form routing, dynamic call tracking pools, and instant email/SMS notifications.",
+      "detailedDescription": "This project involved designing, building, and deploying a multi-funnel lead generation and workflow automation system for Graywater Plumbing, an Australian plumbing business. The architecture runs entirely under a single GoHighLevel (GHL) subaccount to streamline customer data and minimize platform overhead, while successfully dividing traffic, messaging, and pipelines across three distinct service systems.\n\nBy linking Google Ads call tracking, Meta Lead Forms, and custom landing page forms, every prospective lead is dynamically captured, tagged, and routed based on service niche, urgency, and source. The system ensures immediate responsiveness via automated confirmations and text/email alerts, while preserving accurate campaign attribution through rigorous UTM mapping.",
       "objectives": [
-        "Capture qualified leads through multi-stage landing funnels with progressive profiling that gathers information gradually",
-        "Route leads intelligently to the sales team based on behavior patterns, budget indicators, and other qualification criteria",
-        "Automate personalized follow-up sequences that drive engagement through targeted content and strategic timing",
-        "Score and categorize leads using AI to identify sales-ready opportunities instantly without sales team review",
-        "Track conversion performance with complete analytics, multi-touch attribution, and ROI calculation by campaign",
-        "Qualify prospects through smart quiz and assessment workflows that gather intent data while educating prospects",
-        "Eliminate lead leakage with automated workflows ensuring no prospect falls through cracks regardless of source",
-        "Provide sales team with complete prospect context including conversation history, budget, and specific pain points",
-        "Enable continuous optimization through A/B testing and performance analytics that reveal winning strategies"
-      ],
-      "userJourney": [
-        "Prospective client arrives at landing page through paid advertising, organic search, or direct link and sees compelling value proposition targeting their specific pain point",
-        "Visitor completes initial qualification form providing company size, industry, current workflow, and specific challenges they face",
-        "System immediately scores the lead using AI, analyzing form responses against known conversion indicators and customer success profiles",
-        "High-priority leads receive instant welcome sequence with automation confirming receipt, providing immediate value through resource or consultation booking",
-        "Prospect receives strategic welcome email with personalized case study demonstrating success with similar companies in their industry",
-        "Sales team receives real-time Slack or email notification with lead profile, conversation history, scoring, and recommended next action",
-        "Sales rep reviews prospect context including engagement signals showing which content resonated most before reaching out by phone",
-        "Mid-priority leads enter automated nurture track receiving weekly educational content designed to build trust and establish expertise",
-        "When prospects engage with nurture content (opening emails, clicking links, returning to website), nurture track accelerates with sales-ready content",
-        "Conversion event triggers (budget discussion, team size expansion, competitive situation emerges) automatically escalate lead to immediate sales outreach",
-        "Performance dashboard continuously tracks conversion rates by source, landing page, quiz response, and follow-up sequence",
-        "Winning sequences identified through analytics are scaled while underperforming variations are replaced with new optimization tests"
+        "Consolidate multiple service niches and traffic funnels under a single GHL subaccount for unified operations",
+        "Develop automated intake and routing workflows for website forms, Meta Ads, Google Ads, and incoming phone inquiries",
+        "Integrate Meta Lead Forms directly with GHL custom fields, tags, and automatic pipeline placement",
+        "Configure Google Ads call tracking pools with dynamic number swapping for precise campaign attribution",
+        "Implement real-time internal notifications and automated email/SMS reminder workflows to reduce response times",
+        "Track end-to-end UTM parameters across paid, organic, and call channels for transparent ROI tracking"
       ],
       "highlights": [
-        "Multi-stage landing funnel with progressive lead qualification and intelligent routing algorithms",
-        "Real-time lead scoring engine that prioritizes high-value prospects using AI behavioral analysis",
-        "Automated email and SMS follow-up sequences triggered by lead behavior and engagement signals",
-        "Conversion tracking with complete attribution modeling revealing which campaigns drive sales",
-        "Built-in A/B testing framework for optimizing landing page headlines, copy, and call-to-action buttons",
-        "Contact segmentation by lead status, industry, company size, and engagement level for targeted campaigns",
-        "Responsive design that converts equally well on mobile, tablet, and desktop devices",
-        "Real-time performance dashboard showing daily lead volume, conversion rates, and pipeline value",
-        "Webhook integration with existing business tools including CRM, email, and accounting platforms",
-        "Custom quiz logic that gathers intent data while qualifying prospects automatically"
+        "Three distinct lead acquisition systems unified under one GHL subaccount",
+        "Dynamic number-pool call tracking swapping phone numbers dynamically on pages",
+        "Instant Meta Lead Form contact records synchronization with GHL custom fields",
+        "Robust lead routing and pipeline automation sorting inquiries by service niche",
+        "Automated confirmation email/SMS reminders and no-show follow-ups",
+        "Complete UTM attribution configuration for Meta Ads, Google Ads, and organic traffic"
       ],
       "image": [
-        "/stopfindingleads/thumbnail.png",
-        "/stopfindingleads/funnel1.png",
-        "/stopfindingleads/s1.jpeg",
-        "/stopfindingleads/s2.jpeg",
-        "/stopfindingleads/s3.jpeg"
+        "/Graywater-Plumbing/thumbnail.png",
+        "/Graywater-Plumbing/1st-step-funnel/survery-intake.png",
+        "/Graywater-Plumbing/1st-step-funnel/customer-mark.png",
+        "/Graywater-Plumbing/1st-step-funnel/meta-conversion.png",
+        "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 1 - Nurture.png",
+        "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 2 - Booking Confirmed.png",
+        "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - FOLLOW UPS .png",
+        "/Graywater-Plumbing/2-step-funnel/Meta Ad Lead Intake.png",
+        "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sesisons .png",
+        "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - NO SHOWS.png",
+        "/Graywater-Plumbing/purewater/purewater-funnel.png",
+        "/Graywater-Plumbing/purewater/purewater-thankyou-page.png",
+        "/Graywater-Plumbing/purewater/Purewater-leadintake.png",
+        "/Graywater-Plumbing/purewater/meta-lead-intake.png",
+        "/Graywater-Plumbing/purewater/google-ads-lead.png"
       ],
       "technologies": [
         "GoHighLevel (GHL)",
-        "Loveable",
-        "API/Webhooks Integration",
-        "Automation Workflows",
-        "Conditional Logic",
-        "Form Submission Handling",
-        "CRM Integration",
-        "AI/Automation Engine",
-        "Responsive Design"
+        "Meta Ads Manager",
+        "Google Ads Call Tracking",
+        "Dynamic Number Pools",
+        "UTM Tracking & Attribution",
+        "SMS & Email Automation",
+        "Pipeline Management"
       ],
-      "video": "https://www.loom.com/embed/00f4bf07dc4d4dafae61bb3bc1b8b842",
-      "liveUrl": "https://stoplosingleadshq.com/",
-      "domain": "stoplosingleadshq.com",
-      "duration": "Live"
+      "video": "<div style=\"position: relative; padding-bottom: 56.2500%; height: 0;\"><iframe style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"https://www.tella.tv/video/plumbing-client-lead-gen-system-walkthrough-6pvk/embed?b=1&title=1&a=1&loop=0&t=0&muted=0&wt=1&o=1\" allow=\"autoplay; fullscreen\" allowtransparency></iframe></div>",
+      "liveUrl": null,
+      "domain": "graywaterplumbing.com.au",
+      "duration": "Live System",
+      "systems": [
+        {
+          "name": "System 1: Survey Intake & Lead Profiling Funnel",
+          "description": "Designed for organic search and high-intent plumbing keywords, this system captures lead details using a conversion-optimized 1-step survey. It dynamically profiles leads based on the type of service needed (emergency repair, hot water system, blocked drains) and their urgency level, tagging them and updating GHL pipelines in real-time.",
+          "highlights": [
+            "1-step survey layout optimized for high conversion rate on mobile",
+            "Automatic profiling and tag assignment based on service requirements",
+            "Instant Meta conversion synchronization for qualified inquiries"
+          ],
+          "images": [
+            "/Graywater-Plumbing/1st-step-funnel/survery-intake.png",
+            "/Graywater-Plumbing/1st-step-funnel/customer-mark.png",
+            "/Graywater-Plumbing/1st-step-funnel/meta-conversion.png"
+          ]
+        },
+        {
+          "name": "System 2: Multi-Stage Booking & Nurture System",
+          "description": "Created for discovery sessions and complex quote bookings. A 2-step funnel directs prospects from an initial information form to an integrated interactive calendar. Once booked, leads receive custom email and SMS confirmations, dynamic follow-up sequences, and a specialized 'No-Show' recovery workflow to recapture missed appointments.",
+          "highlights": [
+            "2-step funnel with seamless GHL calendar booking integration",
+            "Automated multi-channel confirmations and reminder flows",
+            "Targeted follow-up and 'No-Show' recovery sequences to optimize attendance"
+          ],
+          "images": [
+            "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sesisons .png",
+            "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 1 - Nurture.png",
+            "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 2 - Booking Confirmed.png",
+            "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - FOLLOW UPS .png",
+            "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - NO SHOWS.png",
+            "/Graywater-Plumbing/2-step-funnel/Meta Ad Lead Intake.png"
+          ]
+        },
+        {
+          "name": "System 3: Meta & Google Ads Call Attribution System",
+          "description": "Built for pure water systems and ad campaigns. Integrates Meta Lead Forms with custom mapped fields, and tracks phone calls using Google Ads dynamic number pools. It automatically swaps phone numbers on landing pages to tie calls to exact search campaigns, logs calls in GHL, and routes them to the sales pipeline with instant push notifications.",
+          "highlights": [
+            "Meta Lead Forms synchronized directly into GoHighLevel custom fields",
+            "Dynamic number swapping on landing pages for campaign attribution",
+            "Automated call tracking, pipeline updates, and real-time team alerts"
+          ],
+          "images": [
+            "/Graywater-Plumbing/purewater/purewater-funnel.png",
+            "/Graywater-Plumbing/purewater/purewater-thankyou-page.png",
+            "/Graywater-Plumbing/purewater/Purewater-leadintake.png",
+            "/Graywater-Plumbing/purewater/meta-lead-intake.png",
+            "/Graywater-Plumbing/purewater/google-ads-lead.png"
+          ]
+        }
+      ]
     },
     {
       "slug": "Gohighlevel",
@@ -427,87 +460,96 @@
       "liveUrl": "https://inno-calan.vercel.app/",
       "domain": "AI Marketing & Automation",
       "duration": "Live"
-    },
-    {
-      "slug": "vantek-quote-management",
-      "platform": "B2B",
-      "featured": false,
-      "rating": 5,
-      "title": "Vantek: Industrial Parts Quote Management",
-      "category": "B2B Quote Management",
-      "date": "May 2026",
-      "tags": [
-        "Supabase",
-        "n8n",
-        "Axonaut",
-        "Quote Automation",
-        "B2B",
-        "Supplier Search",
-        "Excel Import",
-        "Bilingual Dashboard",
-        "Admin User Management"
-      ],
-      "description": "A production-grade quote operations platform that transforms how industrial parts teams respond to customer requests by automating research, supplier coordination, and quote generation from initial inquiry to final delivery.",
-      "cardDescription": "B2B quote platform for industrial parts teams. Operators manage requests, suppliers, offers, and quote lines. Axonaut integration generates final quotes and PDFs.",
-      "detailedDescription": "Vantek serves as the operational nervous system for industrial parts quote teams, eliminating time-consuming manual processes while maintaining complete accuracy and compliance. The platform opens with a secure authenticated dashboard where operators immediately see their workload organized by urgency. When customer requests arrive via email, WhatsApp, or phone, the system extracts all critical details and stores them with full context, so no information is ever lost or duplicated. Operators then search the supplier network through a single integrated search interface that aggregates offers by product specification, allowing rapid price and availability comparison across multiple vendors. The most attractive offers are selected and immediately recorded, maintaining a complete audit trail. When the operator is ready to finalize the quote, the system validates all calculations, applies margin rules, and generates the final PDF through Axonaut integration. The entire process is tracked with real-time status updates visible to both operators and management, eliminating the need for follow-up emails about quote status. By supporting bilingual workflows, bulk actions, and role-based permissions, Vantek enables teams to process significantly more quotes with fewer errors and faster turnaround times.",
-      "objectives": [
-        "Build a secure operator portal with Supabase Auth, persistent sessions, password reset, logout, and admin-only user creation",
-        "Create a dashboard with KPIs for new requests, urgent cases, pending quotes, sent quotes, request trends, and pipeline status",
-        "Automate customer request intake from email while supporting manual creation for WhatsApp, phone, and direct inquiries",
-        "Provide a filterable request management workflow with pagination, bulk status updates, delete actions, CSV export, and normalized status badges",
-        "Design a request detail flow with editable client identity, original message, extracted parts, urgency controls, and a six-step progress tracker",
-        "Integrate n8n supplier search webhooks to fetch offers, group results by part reference, rank best prices, and filter by condition, country, currency, price, and text search",
-        "Write selected supplier offers directly into Supabase quote lines and keep request statuses synchronized across the workflow",
-        "Generate quote drafts, validate quote lines and totals, then create Axonaut quotes with returned quotation IDs and PDF links",
-        "Manage the supplier directory with search, country filtering, manual supplier entry, editing, and Excel or CSV import",
-        "Deliver bilingual EN/FR UX improvements including toast notifications, copy-to-clipboard, disabled action hints, age color coding, and mobile-friendly stepper states"
-      ],
-      "userJourney": [
-        "Customer sends an industrial parts quote request by email, WhatsApp, phone, or manual operator entry",
-        "n8n creates the request in Supabase, storing customer identity, raw message, part references, quantities, brands, urgency, source, and initial status",
-        "Operator logs in, reviews dashboard KPIs, checks urgent cases, and opens the request from the filtered request list or pipeline board",
-        "Operator verifies customer details and extracted parts, edits fields inline when needed, and marks the request as reviewed",
-        "Operator runs supplier search, triggering n8n to fetch and insert supplier offers grouped by part reference",
-        "Operator compares supplier offers by price, condition, country, currency, availability, lead time, and warranty, then selects the best offer for each part",
-        "Selected offers are written to Supabase quote lines and the request moves to supplier-selected status",
-        "Operator proceeds to quote generation, which calls the generate-quote webhook and opens the quote validation screen",
-        "Operator reviews draft quote lines, buy prices, sell prices, tax, margin, totals, customer details, and quote status",
-        "Operator creates the final quote in Axonaut and receives an Axonaut quotation number plus a PDF link for customer delivery"
-      ],
-      "highlights": [
-        "End-to-end quote lifecycle from customer request intake to Axonaut PDF quote creation with complete audit trail",
-        "Supabase Auth with secure sessions, password reset, change password, logout ensuring operator security",
-        "Operational dashboard with KPIs showing New Today, Urgent Cases, Pending Quotes, Sent This Week, trend analysis",
-        "Request management with multi-filter search, status normalization, bulk actions, pagination, CSV export capability",
-        "Request detail workspace with editable client info, extractable parts table, brand lookup, urgency management",
-        "n8n-powered supplier search aggregating hundreds of offers grouped by part reference with best-price highlighting",
-        "Real-time Supabase quote line updates when operators select or change supplier offers",
-        "Quote validation screen with automatic tax calculation, margin application, and total verification",
-        "Axonaut integration creating professional PDF quotes and storing quotation IDs for tracking",
-        "Supplier database with advanced search, country filtration, Excel/CSV import supporting thousands of suppliers",
-        "Mobile-responsive design enabling operators to manage quotes from any device or location",
-        "Bilingual EN/FR interface supporting global teams and international supplier networks",
-        "Real-time notifications alerting team to new requests and quote status changes",
-        "Quote status tracking providing complete visibility into pipeline from intake through delivery"
-      ],
-      "image": [
-        "/vantek/thumnail.png"
-      ],
-      "technologies": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Supabase",
-        "n8n",
-        "Axonaut"
-      ],
-      "video": null,
-      "liveUrl": null,
-      "domain": "B2B Operations",
-      "duration": "May 2026"
     }
+    
   ],
   "archivedItems": [
+     {
+      "slug": "stop-losing-leads-hq",
+      "platform": "Loveable & GHL Builder",
+      "featured": true,
+      "rating": 5,
+      "title": "Stop Losing the Leads HQ - Lead Automation Funnel",
+      "category": "Sales Automation & Lead Management Funnel",
+      "date": "Live",
+      "client": {
+        "name": "Stop Losing Leads HQ",
+        "feedback": "Outstanding work building out the entire funnel structure and automating the complex lead routing logic."
+      },
+      "tags": [
+        "GoHighLevel",
+        "lead-routing",
+        "automation-workflow",
+        "form-submission",
+        "crm-integration",
+        "conversational-ai",
+        "landing-page",
+        "sales-funnel",
+        "SaaS"
+      ],
+      "description": "A comprehensive lead generation and management system that transforms visitor inquiries into qualified leads through intelligent routing, automated follow-up sequences, and real-time CRM integration.",
+      "cardDescription": "Lead capture funnel with smart qualification and routing. Automated CRM follow-ups keep every prospect moving. Built to reduce lead leakage and improve sales response time.",
+      "detailedDescription": "Stop Losing Leads HQ is an integrated lead generation ecosystem built on GoHighLevel that captures, qualifies, and converts prospects at scale. The platform combines Loveable's intuitive UI with enterprise-grade automation to deliver a seamless journey from first touch to customer acquisition. Every form submission flows directly into the CRM with intelligent lead scoring that prioritizes high-value prospects. AI-powered response sequences automatically nurture leads through personalized follow-up workflows while our real-time analytics ensure your team can respond to opportunities immediately. The system maintains complete visibility across your sales pipeline with automated reporting that tracks conversions, engagement rates, and sales velocity in real time.",
+      "objectives": [
+        "Capture qualified leads through multi-stage landing funnels with progressive profiling that gathers information gradually",
+        "Route leads intelligently to the sales team based on behavior patterns, budget indicators, and other qualification criteria",
+        "Automate personalized follow-up sequences that drive engagement through targeted content and strategic timing",
+        "Score and categorize leads using AI to identify sales-ready opportunities instantly without sales team review",
+        "Track conversion performance with complete analytics, multi-touch attribution, and ROI calculation by campaign",
+        "Qualify prospects through smart quiz and assessment workflows that gather intent data while educating prospects",
+        "Eliminate lead leakage with automated workflows ensuring no prospect falls through cracks regardless of source",
+        "Provide sales team with complete prospect context including conversation history, budget, and specific pain points",
+        "Enable continuous optimization through A/B testing and performance analytics that reveal winning strategies"
+      ],
+      "userJourney": [
+        "Prospective client arrives at landing page through paid advertising, organic search, or direct link and sees compelling value proposition targeting their specific pain point",
+        "Visitor completes initial qualification form providing company size, industry, current workflow, and specific challenges they face",
+        "System immediately scores the lead using AI, analyzing form responses against known conversion indicators and customer success profiles",
+        "High-priority leads receive instant welcome sequence with automation confirming receipt, providing immediate value through resource or consultation booking",
+        "Prospect receives strategic welcome email with personalized case study demonstrating success with similar companies in their industry",
+        "Sales team receives real-time Slack or email notification with lead profile, conversation history, scoring, and recommended next action",
+        "Sales rep reviews prospect context including engagement signals showing which content resonated most before reaching out by phone",
+        "Mid-priority leads enter automated nurture track receiving weekly educational content designed to build trust and establish expertise",
+        "When prospects engage with nurture content (opening emails, clicking links, returning to website), nurture track accelerates with sales-ready content",
+        "Conversion event triggers (budget discussion, team size expansion, competitive situation emerges) automatically escalate lead to immediate sales outreach",
+        "Performance dashboard continuously tracks conversion rates by source, landing page, quiz response, and follow-up sequence",
+        "Winning sequences identified through analytics are scaled while underperforming variations are replaced with new optimization tests"
+      ],
+      "highlights": [
+        "Multi-stage landing funnel with progressive lead qualification and intelligent routing algorithms",
+        "Real-time lead scoring engine that prioritizes high-value prospects using AI behavioral analysis",
+        "Automated email and SMS follow-up sequences triggered by lead behavior and engagement signals",
+        "Conversion tracking with complete attribution modeling revealing which campaigns drive sales",
+        "Built-in A/B testing framework for optimizing landing page headlines, copy, and call-to-action buttons",
+        "Contact segmentation by lead status, industry, company size, and engagement level for targeted campaigns",
+        "Responsive design that converts equally well on mobile, tablet, and desktop devices",
+        "Real-time performance dashboard showing daily lead volume, conversion rates, and pipeline value",
+        "Webhook integration with existing business tools including CRM, email, and accounting platforms",
+        "Custom quiz logic that gathers intent data while qualifying prospects automatically"
+      ],
+      "image": [
+        "/stopfindingleads/thumbnail.png",
+        "/stopfindingleads/funnel1.png",
+        "/stopfindingleads/s1.jpeg",
+        "/stopfindingleads/s2.jpeg",
+        "/stopfindingleads/s3.jpeg"
+      ],
+      "technologies": [
+        "GoHighLevel (GHL)",
+        "Loveable",
+        "API/Webhooks Integration",
+        "Automation Workflows",
+        "Conditional Logic",
+        "Form Submission Handling",
+        "CRM Integration",
+        "AI/Automation Engine",
+        "Responsive Design"
+      ],
+      "video": "https://www.loom.com/embed/00f4bf07dc4d4dafae61bb3bc1b8b842",
+      "liveUrl": "https://stoplosingleadshq.com/",
+      "domain": "stoplosingleadshq.com",
+      "duration": "Live"
+    },
     {
       "slug": "facebook-postsiva",
       "platform": "SAAS",
@@ -606,6 +648,86 @@
       "video": null,
       "liveUrl": "https://linkedin-ui-lemon.vercel.app/"
     },
+{
+      "slug": "vantek-quote-management",
+      "platform": "B2B",
+      "featured": false,
+      "rating": 5,
+      "title": "Vantek: Industrial Parts Quote Management",
+      "category": "B2B Quote Management",
+      "date": "May 2026",
+      "tags": [
+        "Supabase",
+        "n8n",
+        "Axonaut",
+        "Quote Automation",
+        "B2B",
+        "Supplier Search",
+        "Excel Import",
+        "Bilingual Dashboard",
+        "Admin User Management"
+      ],
+      "description": "A production-grade quote operations platform that transforms how industrial parts teams respond to customer requests by automating research, supplier coordination, and quote generation from initial inquiry to final delivery.",
+      "cardDescription": "B2B quote platform for industrial parts teams. Operators manage requests, suppliers, offers, and quote lines. Axonaut integration generates final quotes and PDFs.",
+      "detailedDescription": "Vantek serves as the operational nervous system for industrial parts quote teams, eliminating time-consuming manual processes while maintaining complete accuracy and compliance. The platform opens with a secure authenticated dashboard where operators immediately see their workload organized by urgency. When customer requests arrive via email, WhatsApp, or phone, the system extracts all critical details and stores them with full context, so no information is ever lost or duplicated. Operators then search the supplier network through a single integrated search interface that aggregates offers by product specification, allowing rapid price and availability comparison across multiple vendors. The most attractive offers are selected and immediately recorded, maintaining a complete audit trail. When the operator is ready to finalize the quote, the system validates all calculations, applies margin rules, and generates the final PDF through Axonaut integration. The entire process is tracked with real-time status updates visible to both operators and management, eliminating the need for follow-up emails about quote status. By supporting bilingual workflows, bulk actions, and role-based permissions, Vantek enables teams to process significantly more quotes with fewer errors and faster turnaround times.",
+      "objectives": [
+        "Build a secure operator portal with Supabase Auth, persistent sessions, password reset, logout, and admin-only user creation",
+        "Create a dashboard with KPIs for new requests, urgent cases, pending quotes, sent quotes, request trends, and pipeline status",
+        "Automate customer request intake from email while supporting manual creation for WhatsApp, phone, and direct inquiries",
+        "Provide a filterable request management workflow with pagination, bulk status updates, delete actions, CSV export, and normalized status badges",
+        "Design a request detail flow with editable client identity, original message, extracted parts, urgency controls, and a six-step progress tracker",
+        "Integrate n8n supplier search webhooks to fetch offers, group results by part reference, rank best prices, and filter by condition, country, currency, price, and text search",
+        "Write selected supplier offers directly into Supabase quote lines and keep request statuses synchronized across the workflow",
+        "Generate quote drafts, validate quote lines and totals, then create Axonaut quotes with returned quotation IDs and PDF links",
+        "Manage the supplier directory with search, country filtering, manual supplier entry, editing, and Excel or CSV import",
+        "Deliver bilingual EN/FR UX improvements including toast notifications, copy-to-clipboard, disabled action hints, age color coding, and mobile-friendly stepper states"
+      ],
+      "userJourney": [
+        "Customer sends an industrial parts quote request by email, WhatsApp, phone, or manual operator entry",
+        "n8n creates the request in Supabase, storing customer identity, raw message, part references, quantities, brands, urgency, source, and initial status",
+        "Operator logs in, reviews dashboard KPIs, checks urgent cases, and opens the request from the filtered request list or pipeline board",
+        "Operator verifies customer details and extracted parts, edits fields inline when needed, and marks the request as reviewed",
+        "Operator runs supplier search, triggering n8n to fetch and insert supplier offers grouped by part reference",
+        "Operator compares supplier offers by price, condition, country, currency, availability, lead time, and warranty, then selects the best offer for each part",
+        "Selected offers are written to Supabase quote lines and the request moves to supplier-selected status",
+        "Operator proceeds to quote generation, which calls the generate-quote webhook and opens the quote validation screen",
+        "Operator reviews draft quote lines, buy prices, sell prices, tax, margin, totals, customer details, and quote status",
+        "Operator creates the final quote in Axonaut and receives an Axonaut quotation number plus a PDF link for customer delivery"
+      ],
+      "highlights": [
+        "End-to-end quote lifecycle from customer request intake to Axonaut PDF quote creation with complete audit trail",
+        "Supabase Auth with secure sessions, password reset, change password, logout ensuring operator security",
+        "Operational dashboard with KPIs showing New Today, Urgent Cases, Pending Quotes, Sent This Week, trend analysis",
+        "Request management with multi-filter search, status normalization, bulk actions, pagination, CSV export capability",
+        "Request detail workspace with editable client info, extractable parts table, brand lookup, urgency management",
+        "n8n-powered supplier search aggregating hundreds of offers grouped by part reference with best-price highlighting",
+        "Real-time Supabase quote line updates when operators select or change supplier offers",
+        "Quote validation screen with automatic tax calculation, margin application, and total verification",
+        "Axonaut integration creating professional PDF quotes and storing quotation IDs for tracking",
+        "Supplier database with advanced search, country filtration, Excel/CSV import supporting thousands of suppliers",
+        "Mobile-responsive design enabling operators to manage quotes from any device or location",
+        "Bilingual EN/FR interface supporting global teams and international supplier networks",
+        "Real-time notifications alerting team to new requests and quote status changes",
+        "Quote status tracking providing complete visibility into pipeline from intake through delivery"
+      ],
+      "image": [
+        "/vantek/thumnail.png"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "n8n",
+        "Axonaut"
+      ],
+      "video": null,
+      "liveUrl": null,
+      "domain": "B2B Operations",
+      "duration": "May 2026"
+    }
+
+    ,
     {
       "slug": "fronixtech-metaverse",
       "platform": "Metaverse",

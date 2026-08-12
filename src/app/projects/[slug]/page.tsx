@@ -275,15 +275,70 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           </section>
         )}
 
-        {/* SECTION 5: Project Gallery Section */}
-        {project.image && project.image.length > 0 && (
-          <section className="py-12 mb-12 border-t border-outline-variant/10">
-            <div className="flex items-center gap-3 mb-10">
-              <span className="material-symbols-outlined text-primary text-xl">photo_library</span>
-              <h2 className="font-headline text-xl md:text-2xl font-bold">Project Gallery</h2>
+        {/* SECTION 5: Systems Showcase or Project Gallery Section */}
+        {(project as any).systems && (project as any).systems.length > 0 ? (
+          <section className="py-12 mb-12 border-t border-outline-variant/10 space-y-16">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="material-symbols-outlined text-primary text-xl">layers</span>
+              <h2 className="font-headline text-xl md:text-2xl font-bold">Integrated Core Systems</h2>
             </div>
-            <InteractiveGallery images={project.image} projectTitle={project.title} />
+
+            {(project as any).systems.map((system: any, index: number) => (
+              <div 
+                key={system.name} 
+                className="bg-surface-container-low rounded-2xl p-6 md:p-8 border border-outline-variant/15 shadow-sm space-y-6 relative overflow-hidden"
+              >
+                <div className="absolute top-0 right-0 p-6 opacity-5 pointer-events-none">
+                  <span className="material-symbols-outlined text-8xl text-primary">
+                    {index === 0 ? "filter_alt" : index === 1 ? "calendar_month" : "call"}
+                  </span>
+                </div>
+
+                <div className="space-y-2">
+                  <span className="text-primary font-label text-xs font-bold uppercase tracking-widest">
+                    System {index + 1}
+                  </span>
+                  <h3 className="font-headline text-xl md:text-2xl font-bold text-on-surface">
+                    {system.name}
+                  </h3>
+                </div>
+
+                <p className="text-sm md:text-base text-on-surface-variant leading-relaxed max-w-3xl font-body">
+                  {system.description}
+                </p>
+
+                {system.highlights && system.highlights.length > 0 && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 max-w-4xl">
+                    {system.highlights.map((highlight: string, hIdx: number) => (
+                      <div key={hIdx} className="flex items-start gap-2.5 text-xs md:text-sm text-on-surface-variant">
+                        <span className="material-symbols-outlined text-primary text-base md:text-lg shrink-0 mt-0.5" style={{ fontVariationSettings: "'FILL' 1" }}>
+                          check_circle
+                        </span>
+                        <span>{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <div className="pt-4 border-t border-outline-variant/10">
+                  <p className="text-xs font-label text-on-surface-variant/60 mb-4 font-bold tracking-wider uppercase">
+                    System Screenshots (Click to expand)
+                  </p>
+                  <InteractiveGallery images={system.images} projectTitle={`${project.title} - ${system.name}`} />
+                </div>
+              </div>
+            ))}
           </section>
+        ) : (
+          project.image && project.image.length > 0 && (
+            <section className="py-12 mb-12 border-t border-outline-variant/10">
+              <div className="flex items-center gap-3 mb-10">
+                <span className="material-symbols-outlined text-primary text-xl">photo_library</span>
+                <h2 className="font-headline text-xl md:text-2xl font-bold">Project Gallery</h2>
+              </div>
+              <InteractiveGallery images={project.image} projectTitle={project.title} />
+            </section>
+          )
         )}
 
         {/* SECTION 6: Testimonial Quote Block */}
