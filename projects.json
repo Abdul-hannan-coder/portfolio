@@ -136,12 +136,20 @@
         "/Graywater-Plumbing/1st-step-funnel/survery-intake.png",
         "/Graywater-Plumbing/1st-step-funnel/customer-mark.png",
         "/Graywater-Plumbing/1st-step-funnel/meta-conversion.png",
+        "/Graywater-Plumbing/1st-step-funnel/WF-Job-Booked → Move to _Booked_ .png",
+        "/Graywater-Plumbing/1st-step-funnel/WF-Quote-Sent → Move to _Quoted.png",
+        "/Graywater-Plumbing/1st-step-funnel/WF-Job-Completed → Move to _Job Done.png",
+        "/Graywater-Plumbing/1st-step-funnel/WON_Lost.png",
         "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 1 - Nurture.png",
         "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 2 - Booking Confirmed.png",
         "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - FOLLOW UPS .png",
         "/Graywater-Plumbing/2-step-funnel/Meta Ad Lead Intake.png",
         "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sesisons .png",
         "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - NO SHOWS.png",
+        "/Graywater-Plumbing/2-step-funnel/Job-booked.png",
+        "/Graywater-Plumbing/2-step-funnel/MissedCall_AlertKurt .png",
+        "/Graywater-Plumbing/2-step-funnel/ServiceM8 Lead.png",
+        "/Graywater-Plumbing/2-step-funnel/WON_Lost.png",
         "/Graywater-Plumbing/purewater/purewater-funnel.png",
         "/Graywater-Plumbing/purewater/purewater-thankyou-page.png",
         "/Graywater-Plumbing/purewater/Purewater-leadintake.png",
@@ -177,7 +185,11 @@
             "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - STEP 2 - Booking Confirmed.png",
             "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - FOLLOW UPS .png",
             "/Graywater-Plumbing/2-step-funnel/2-Step Funnel - Discovery Sessions - NO SHOWS.png",
-            "/Graywater-Plumbing/2-step-funnel/Meta Ad Lead Intake.png"
+            "/Graywater-Plumbing/2-step-funnel/Meta Ad Lead Intake.png",
+            "/Graywater-Plumbing/2-step-funnel/Job-booked.png",
+            "/Graywater-Plumbing/2-step-funnel/MissedCall_AlertKurt .png",
+            "/Graywater-Plumbing/2-step-funnel/ServiceM8 Lead.png",
+            "/Graywater-Plumbing/2-step-funnel/WON_Lost.png"
           ]
         },
         {
@@ -209,7 +221,11 @@
           "images": [
             "/Graywater-Plumbing/1st-step-funnel/survery-intake.png",
             "/Graywater-Plumbing/1st-step-funnel/customer-mark.png",
-            "/Graywater-Plumbing/1st-step-funnel/meta-conversion.png"
+            "/Graywater-Plumbing/1st-step-funnel/meta-conversion.png",
+            "/Graywater-Plumbing/1st-step-funnel/WF-Job-Booked → Move to _Booked_ .png",
+            "/Graywater-Plumbing/1st-step-funnel/WF-Quote-Sent → Move to _Quoted.png",
+            "/Graywater-Plumbing/1st-step-funnel/WF-Job-Completed → Move to _Job Done.png",
+            "/Graywater-Plumbing/1st-step-funnel/WON_Lost.png"
           ]
         }
       ]

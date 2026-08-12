@@ -10,15 +10,15 @@ export default function FilteredProjects() {
   const displayFilters = ["All Projects", "GoHighLevel", "n8n", "SaaS", "AI"];
   const [activeFilter, setActiveFilter] = useState(displayFilters[0]);
 
-  const filteredProjects = activeFilter === "All Projects" 
-    ? projects.items 
+  const filteredProjects = activeFilter === "All Projects"
+    ? projects.items
     : projects.items.filter(project => {
-        const filterStr = activeFilter.toLowerCase();
-        return (
-           project.category.toLowerCase().includes(filterStr) || 
-           project.tags.some(tag => tag.toLowerCase().includes(filterStr))
-        );
-      });
+      const filterStr = activeFilter.toLowerCase();
+      return (
+        project.category.toLowerCase().includes(filterStr) ||
+        project.tags.some(tag => tag.toLowerCase().includes(filterStr))
+      );
+    });
 
   return (
     <>
@@ -29,11 +29,10 @@ export default function FilteredProjects() {
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-4 py-1.5 rounded-full text-xs font-label transition-colors ${
-                activeFilter === filter
+              className={`px-4 py-1.5 rounded-full text-xs font-label transition-colors ${activeFilter === filter
                   ? "bg-primary text-on-primary"
                   : "bg-surface-container-high text-on-surface-variant hover:text-primary"
-              }`}
+                }`}
             >
               {filter}
             </button>
@@ -93,7 +92,7 @@ export default function FilteredProjects() {
                     </span>
                   ))}
                 </div>
-                <Link 
+                <Link
                   href={`/projects/${project.slug}`}
                   className="flex justify-center items-center gap-2 px-6 py-3 w-full sm:w-auto bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface-variant rounded-xl font-bold text-sm transition-colors"
                 >
