@@ -290,17 +290,30 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               >
                 <div className="absolute top-0 right-0 p-6 opacity-5 pointer-events-none">
                   <span className="material-symbols-outlined text-8xl text-primary">
-                    {index === 0 ? "filter_alt" : index === 1 ? "calendar_month" : "call"}
+                    {index === 0 ? "calendar_month" : index === 1 ? "call" : "filter_alt"}
                   </span>
                 </div>
 
-                <div className="space-y-2">
-                  <span className="text-primary font-label text-xs font-bold uppercase tracking-widest">
-                    System {index + 1}
-                  </span>
-                  <h3 className="font-headline text-xl md:text-2xl font-bold text-on-surface">
-                    {system.name}
-                  </h3>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-2">
+                    <span className="text-primary font-label text-xs font-bold uppercase tracking-widest">
+                      System {index + 1}
+                    </span>
+                    <h3 className="font-headline text-xl md:text-2xl font-bold text-on-surface font-extrabold">
+                      {system.name}
+                    </h3>
+                  </div>
+                  {system.liveUrl && (
+                    <a
+                      href={system.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 px-4 py-2.5 rounded-xl font-bold text-xs hover:scale-[1.02] transition-all cursor-pointer self-start sm:self-center"
+                    >
+                      Visit Live Funnel
+                      <span className="material-symbols-outlined text-xs">launch</span>
+                    </a>
+                  )}
                 </div>
 
                 <p className="text-sm md:text-base text-on-surface-variant leading-relaxed max-w-3xl font-body">
@@ -336,7 +349,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 <span className="material-symbols-outlined text-primary text-xl">photo_library</span>
                 <h2 className="font-headline text-xl md:text-2xl font-bold">Project Gallery</h2>
               </div>
-              <InteractiveGallery images={project.image} projectTitle={project.title} />
+              <InteractiveGallery images={project.image.filter((img: string) => !img.toLowerCase().includes("thumb") && !img.toLowerCase().includes("thumnail"))} projectTitle={project.title} />
             </section>
           )
         )}
