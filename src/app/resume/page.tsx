@@ -22,7 +22,7 @@ export default function Resume() {
   const skillPercentages = [95, 92, 90, 88, 85, 80];
 
   return (
-    <main className="flex-1 flex flex-col">
+    <main className="flex-1 flex flex-col min-w-0">
       <div className="max-w-6xl mx-auto w-full">
         {/* Header with Tabs Navigation */}
         <header className="flex justify-between items-center mb-8 md:mb-16 mt-20 lg:mt-8">

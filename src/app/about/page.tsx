@@ -14,7 +14,7 @@ export default function About() {
   const { about, personal, testimonials } = portfolioData;
 
   return (
-    <main className="flex-1 flex flex-col">
+    <main className="flex-1 flex flex-col min-w-0">
       <div className="max-w-5xl mx-auto w-full">
         {/* Header with Navigation */}
         <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">

@@ -11,7 +11,7 @@ export default function Home() {
   
 
   return (
-    <main className="flex-1 flex flex-col">
+    <main className="flex-1 flex flex-col min-w-0">
       {/* Header with Navigation */}
       <header className="flex justify-between items-center mb-8 lg:mb-16 mt-20 lg:mt-8">
         <Navigation />

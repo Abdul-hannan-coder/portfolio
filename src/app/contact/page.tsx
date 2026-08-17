@@ -58,7 +58,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="flex-1 flex flex-col">
+    <main className="flex-1 flex flex-col min-w-0">
       <div className="max-w-7xl mx-auto w-full">
         {/* Header with Tabs Navigation */}
         <header className="flex justify-between items-center mb-16 mt-20 lg:mt-8">

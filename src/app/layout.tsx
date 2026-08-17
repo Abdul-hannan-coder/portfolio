@@ -64,7 +64,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet"/>
       </head>
       <body
-        className={`${inter.variable} ${sora.variable} flex min-h-screen p-4 md:p-8 lg:p-12 gap-8 selection:bg-primary-container selection:text-on-primary-container font-sans antialiased text-foreground bg-background`}
+        className={`${inter.variable} ${sora.variable} flex min-h-screen p-4 md:p-8 lg:p-12 gap-8 selection:bg-primary-container selection:text-on-primary-container font-sans antialiased text-foreground bg-background overflow-x-hidden`}
       >
         <Sidebar />
         {children}

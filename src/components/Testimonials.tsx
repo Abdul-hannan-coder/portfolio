@@ -123,7 +123,7 @@ export default function Testimonials({
   if (!testimonials?.length) return null;
 
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       {/* Decorative gold glows */}
       <div className="pointer-events-none absolute top-20 -left-20 z-10 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-20 z-10 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
